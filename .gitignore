@@ -3,6 +3,9 @@ node_modules/
 /.pnp
 .pnp.js
 
+# Sensitive information
+Figma Token.txt
+
 # Production build files
 /build/
 /dist/
