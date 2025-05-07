@@ -1,13 +1,13 @@
 :root {
   /* Color Palette */
   --color-primary: #FF4C29;
-  --color-secondary: #082032;
-  --color-tertiary: #2C394B;
-  --color-background: #334756;
-  --color-text: #FFFFFF;
-  --color-text-secondary: #CCCCCC;
+  --color-secondary: #F8F9FA;
+  --color-tertiary: #E9ECEF;
+  --color-background: #FFFFFF;
+  --color-text: #212529;
+  --color-text-secondary: #6C757D;
   --color-accent: #FF7F50;
-  --color-border: #4F5D6A;
+  --color-border: #DEE2E6;
   
   /* Typography */
   --font-family-primary: 'Montserrat', sans-serif;
