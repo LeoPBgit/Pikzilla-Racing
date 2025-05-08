@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import './variables.css';
 
 * {
@@ -211,25 +211,56 @@ button:hover {
 
 /* Header Styles */
 .header {
-  background-color: var(--color-background);
   position: sticky;
   top: 0;
   z-index: var(--z-index-sticky);
+  background-color: #000000;
   box-shadow: var(--shadow-sm);
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--color-border);
 }
 
-.header-container {
+/* Top Bar */
+.top-bar {
+  padding-bottom: var(--spacing-xs);
+  padding-top: var(--spacing-md); /* Increased spacing above the icons */
+  /* Removed divider line */
+}
+
+.top-bar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.top-right {
+  display: flex;
+  gap: var(--spacing-lg); /* Increased spacing between icons */
+  align-items: center;
+}
+
+.search-button, .login-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: #ffffff;
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-normal);
+}
+
+.search-button:hover, .login-button:hover {
+  color: var(--color-primary);
+}
+
+/* Logo */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  padding-bottom: var(--spacing-lg); /* Increased spacing between logo and menu */
+}
+
 .logo {
-  height: 50px;
+  height: 45px;
 }
 
 .logo img {
@@ -237,17 +268,47 @@ button:hover {
   width: auto;
 }
 
+/* Main Navigation */
+.main-nav {
+  background-color: #000000;
+  /* Removed divider line */
+  margin-bottom: var(--spacing-2xl); /* Increased spacing below the menu */
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-xl);
+  padding: var(--spacing-sm) 0;
+  position: relative; /* Added for positioning the indicator */
+}
+
+/* Active indicator that will be animated */
+.nav-indicator {
+  position: absolute;
+  height: 3px;
+  bottom: -10px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .nav-link {
-  color: var(--color-text);
-  font-weight: var(--font-weight-medium);
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500; /* Medium */
   transition: color var(--transition-normal);
   position: relative;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  letter-spacing: 1px;
+  font-size: var(--font-size-sm);
 }
 
 .nav-link:hover {
@@ -255,40 +316,36 @@ button:hover {
 }
 
 .nav-link.active {
-  color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 800; /* ExtraBold */
 }
 
-.nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-primary);
-}
+/* Remove the static indicator since we're using an animated one */
 
 .mobile-menu-button {
   display: none;
   background: none;
   border: none;
-  color: var(--color-text);
+  color: #ffffff;
   font-size: var(--font-size-xl);
   padding: var(--spacing-xs);
+  position: absolute;
+  right: var(--spacing-md);
 }
 
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
     position: absolute;
-    top: var(--header-height);
+    top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--color-background);
+    background-color: #000000;
     flex-direction: column;
     padding: var(--spacing-md);
     box-shadow: var(--shadow-sm);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
   }
   
   .nav-menu.active {
@@ -297,6 +354,10 @@ button:hover {
   
   .mobile-menu-button {
     display: block;
+  }
+  
+  .search-button span, .login-button span {
+    display: none;
   }
 }
 
@@ -319,7 +380,7 @@ button:hover {
 }
 
 .footer-logo img {
-  height: 60px;
+  height: 45px;
   width: auto;
   margin-bottom: var(--spacing-md);
 }
@@ -488,8 +549,7 @@ button:hover {
 }
 
 .hero-button {
-  padding: var(--spacing-md) var(--spacing-xl);
-  font-size: var(--font-size-md);
+  /* Using standard button padding and font size */
   font-weight: var(--font-weight-semibold);
 }
 
@@ -855,49 +915,89 @@ button:hover {
 .btn {
   display: inline-block;
   padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: var(--border-radius-md);
+  border-radius: 0; /* Remove border radius for flat design */
   font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-primary);
   text-align: center;
   cursor: pointer;
-  transition: background-color var(--transition-normal), color var(--transition-normal);
+  transition: all var(--transition-normal);
+  text-transform: none; /* Ensure text is not transformed */
+  letter-spacing: normal;
+  line-height: 1.5;
+  font-size: var(--font-size-md);
 }
 
+/* Primary button - For light backgrounds (white/grey) */
+/* Black background with white text */
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-text);
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent);
-}
-
-.btn-secondary {
-  background-color: var(--color-secondary);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-tertiary);
-}
-
-.btn-outline {
   background-color: transparent;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+  color: #000000;
+  border: 2px solid #000000; /* Increased border thickness */
+}
+
+/* Inverse button - For dark backgrounds (black) and over images */
+/* White background with black text */
+.btn-inverse {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-inverse:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF; /* Increased border thickness */
+}
+
+/* Outline button - White background with black border and text */
+.btn-outline {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .btn-outline:hover {
-  background-color: var(--color-primary);
-  color: var(--color-text);
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF; /* Increased border thickness */
 }
 
-.btn-lg {
-  padding: var(--spacing-md) var(--spacing-xl);
-  font-size: var(--font-size-lg);
+/* Dashed button - White background with dashed border */
+.btn-dashed {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px dashed #000000;
 }
 
-.btn-sm {
-  padding: var(--spacing-xs) var(--spacing-md);
-  font-size: var(--font-size-sm);
+.btn-dashed:hover {
+  background-color: #F5F5F5; /* Light gray background on hover */
+  border: 2px dashed #000000; /* Increased border thickness */
 }
+
+/* Context-specific button classes */
+.dark-bg .btn-primary, .image-bg .btn-primary {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #FFFFFF;
+}
+
+.dark-bg .btn-primary:hover, .image-bg .btn-primary:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF; /* Increased border thickness */
+}
+
+/* Add image-bg class to sections with background images */
+.image-bg {
+  position: relative;
+  z-index: 1;
+}
+
+/* Button sizes - standardized to one size */
+/* All buttons now use the default size defined in the .btn class */

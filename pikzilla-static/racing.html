@@ -13,26 +13,43 @@
 <body>
   <!-- Header -->
   <header class="header">
+    <div class="top-bar">
+      <div class="container top-bar-container">
+        <div class="spacer"></div>
+        <div class="top-right">
+          <a href="#" class="search-button">
+            <span>Search</span>
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="login-button">
+            <span>Login</span>
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="container header-container">
       <div class="logo">
         <a href="index.html">
-          <img src="assets/Logo/Pikzilla Logo.svg" alt="Pikzilla Racing">
+          <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
         </a>
       </div>
-      <nav>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
         <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="team.html" class="nav-link">Team</a></li>
-          <li><a href="cars.html" class="nav-link">Cars</a></li>
-          <li><a href="racing.html" class="nav-link">Racing</a></li>
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="team.html" class="nav-link">TEAM</a></li>
+          <li><a href="cars.html" class="nav-link">CARS</a></li>
+          <li><a href="racing.html" class="nav-link">RACING</a></li>
+          <li><a href="blog.html" class="nav-link">BLOG</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
         </ul>
         <button class="mobile-menu-button">
           <i class="fas fa-bars"></i>
         </button>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <!-- Main Content -->
@@ -46,12 +63,13 @@
         <div class="hero-content">
           <h1 class="hero-title">WHERE SPEED MEETS GLORY</h1>
           <p class="hero-subtitle">Experience the thrill of motorsport with Pikzilla Racing's upcoming and past racing events.</p>
+          <a href="#upcoming-events" class="btn btn-inverse hero-button">View Events</a>
         </div>
       </div>
     </section>
 
     <!-- Upcoming Events -->
-    <section class="section">
+    <section id="upcoming-events" class="section">
       <div class="container">
         <h2 class="section-title">Upcoming Events</h2>
         
@@ -70,7 +88,7 @@
             <p class="event-description">Join us at the iconic Silverstone Circuit for the British Grand Prix, one of the most prestigious events on the racing calendar. Witness Pikzilla Racing compete against the world's best on this historic track known for its challenging corners and unpredictable weather.</p>
             <div class="flex gap-md mt-md">
               <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-outline">Event Details</a>
+              <a href="#" class="btn btn-primary">Event Details</a>
             </div>
           </div>
         </div>
@@ -90,7 +108,7 @@
             <p class="event-description">Experience the thrill of high-speed racing at the Temple of Speed. The Italian Grand Prix at Monza is known for its long straights and passionate fans, creating an electric atmosphere that makes this event truly special.</p>
             <div class="flex gap-md mt-md">
               <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-outline">Event Details</a>
+              <a href="#" class="btn btn-primary">Event Details</a>
             </div>
           </div>
         </div>
@@ -110,7 +128,7 @@
             <p class="event-description">The challenging Suzuka Circuit awaits as Pikzilla Racing takes on one of the most technical tracks in motorsport. With its unique figure-eight layout and demanding corners, this race is a true test of driver skill and car performance.</p>
             <div class="flex gap-md mt-md">
               <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-outline">Event Details</a>
+              <a href="#" class="btn btn-primary">Event Details</a>
             </div>
           </div>
         </div>
@@ -130,7 +148,7 @@
             <p class="event-description">The Circuit of the Americas presents a modern challenge with its mix of fast straights, tight corners, and elevation changes. Join us in Austin for an exciting race weekend filled with action both on and off the track.</p>
             <div class="flex gap-md mt-md">
               <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-outline">Event Details</a>
+              <a href="#" class="btn btn-primary">Event Details</a>
             </div>
           </div>
         </div>
@@ -150,7 +168,7 @@
             <p class="event-description">The season finale takes place at the spectacular Yas Marina Circuit, where day turns to night during the race. This unique twilight event provides a fitting end to the racing calendar, with championship positions often decided under the lights.</p>
             <div class="flex gap-md mt-md">
               <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-outline">Event Details</a>
+              <a href="#" class="btn btn-primary">Event Details</a>
             </div>
           </div>
         </div>
@@ -336,7 +354,7 @@
     <div class="container">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="assets/Logo/Pikzilla Logo.svg" alt="Pikzilla Racing">
+          <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
           <p>Pushing the boundaries of speed and precision in motorsport.</p>
         </div>
         

@@ -13,26 +13,43 @@
 <body>
   <!-- Header -->
   <header class="header">
+    <div class="top-bar">
+      <div class="container top-bar-container">
+        <div class="spacer"></div>
+        <div class="top-right">
+          <a href="#" class="search-button">
+            <span>Search</span>
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="login-button">
+            <span>Login</span>
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="container header-container">
       <div class="logo">
         <a href="index.html">
-          <img src="assets/Logo/Pikzilla Logo.svg" alt="Pikzilla Racing">
+          <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
         </a>
       </div>
-      <nav>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
         <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="team.html" class="nav-link">Team</a></li>
-          <li><a href="cars.html" class="nav-link">Cars</a></li>
-          <li><a href="racing.html" class="nav-link">Racing</a></li>
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="team.html" class="nav-link">TEAM</a></li>
+          <li><a href="cars.html" class="nav-link">CARS</a></li>
+          <li><a href="racing.html" class="nav-link">RACING</a></li>
+          <li><a href="blog.html" class="nav-link">BLOG</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
         </ul>
         <button class="mobile-menu-button">
           <i class="fas fa-bars"></i>
         </button>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <!-- Main Content -->
@@ -46,6 +63,7 @@
         <div class="hero-content">
           <h1 class="hero-title">STORIES FROM THE GARAGE, THE TRACK, AND BEYOND</h1>
           <p class="hero-subtitle">Dive into the world of motorsport with insights, updates, and behind-the-scenes stories from Pikzilla Racing.</p>
+          <a href="#latest-stories" class="btn btn-inverse hero-button">Read Stories</a>
         </div>
       </div>
     </section>
@@ -54,11 +72,11 @@
     <section class="section">
       <div class="container">
         <div class="flex justify-center gap-md" style="flex-wrap: wrap;">
-          <a href="#" class="btn btn-outline">All Posts</a>
-          <a href="#" class="btn btn-outline">Race Reports</a>
-          <a href="#" class="btn btn-outline">Team Updates</a>
-          <a href="#" class="btn btn-outline">Technical Insights</a>
-          <a href="#" class="btn btn-outline">Behind the Scenes</a>
+          <a href="#" class="btn btn-primary">All Posts</a>
+          <a href="#" class="btn btn-primary">Race Reports</a>
+          <a href="#" class="btn btn-primary">Team Updates</a>
+          <a href="#" class="btn btn-primary">Technical Insights</a>
+          <a href="#" class="btn btn-primary">Behind the Scenes</a>
         </div>
       </div>
     </section>
@@ -91,7 +109,7 @@
     </section>
 
     <!-- Latest Posts -->
-    <section class="section" style="background-color: var(--color-secondary);">
+    <section id="latest-stories" class="section" style="background-color: var(--color-secondary);">
       <div class="container">
         <h2 class="section-title">Latest Stories</h2>
         
@@ -222,7 +240,7 @@
     <div class="container">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="assets/Logo/Pikzilla Logo.svg" alt="Pikzilla Racing">
+          <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
           <p>Pushing the boundaries of speed and precision in motorsport.</p>
         </div>
         
