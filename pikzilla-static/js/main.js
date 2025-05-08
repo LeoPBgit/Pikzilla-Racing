@@ -9,16 +9,56 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Set active nav link based on current page
+  // Create and add the animated indicator
+  const indicator = document.createElement('div');
+  indicator.className = 'nav-indicator';
+  navMenu.appendChild(indicator);
+  
+  // Set active nav link based on current page and position the indicator
   const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
   const navLinks = document.querySelectorAll('.nav-link');
+  
+  let activeLink = null;
   
   navLinks.forEach(link => {
     const linkPage = link.getAttribute('href').replace('.html', '');
     if (currentPage === linkPage || (currentPage === '' && linkPage === 'index')) {
       link.classList.add('active');
+      activeLink = link;
     }
+    
+    // Add event listeners for hover effect
+    link.addEventListener('mouseenter', function() {
+      positionIndicator(this);
+    });
+    
+    link.addEventListener('mouseleave', function() {
+      if (activeLink) {
+        positionIndicator(activeLink);
+      }
+    });
   });
+  
+  // Position the indicator under the active link on page load
+  if (activeLink) {
+    positionIndicator(activeLink);
+  }
+  
+  // Function to position the indicator
+  function positionIndicator(element) {
+    indicator.style.width = `${element.offsetWidth}px`;
+    indicator.style.left = `${element.offsetLeft}px`;
+  }
+  
+  // Search button functionality
+  const searchButton = document.querySelector('.search-button');
+  if (searchButton) {
+    searchButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      // For now, just show an alert. In a real implementation, this would open a search modal
+      alert('Search functionality will be implemented in a future update.');
+    });
+  }
   
   // Contact form validation
   const contactForm = document.querySelector('.contact-form');
