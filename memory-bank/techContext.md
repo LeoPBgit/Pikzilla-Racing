@@ -4,69 +4,54 @@
 
 The Pikzilla Racing website is built using the following technologies:
 
-### Frontend Framework
-- **React**: A JavaScript library for building user interfaces
-- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript
-- **React Router**: For client-side routing and navigation
+### Frontend Technologies
+- **HTML5**: For structure and content
+- **CSS3**: For styling and layout
+- **JavaScript**: For interactivity and dynamic elements
 
 ### Styling
-- **CSS**: Using component-specific CSS files and CSS variables
+- **CSS**: Using global CSS files and CSS variables
 - **Responsive Design**: Media queries and flexible layouts for all device sizes
 
-### Build Tools
-- **Vite**: A modern frontend build tool that provides a faster and leaner development experience
-- **ESLint**: For code linting and enforcing coding standards
-- **TypeScript Compiler**: For type checking and transpilation
-
 ### Asset Management
-- **Static Assets**: Images, icons, and other media stored in the public directory
+- **Static Assets**: Images, icons, and other media stored in the assets directory
 - **SVG**: Vector graphics for logos and icons
 
 ## Development Environment
 
 ### Required Tools
-- **Node.js**: JavaScript runtime environment
-- **npm**: Package manager for JavaScript
 - **Git**: Version control system
-- **Code Editor**: Visual Studio Code recommended with extensions for React, TypeScript, and ESLint
+- **Code Editor**: Visual Studio Code recommended with extensions for HTML, CSS, and JavaScript
+- **Web Browser**: Chrome, Firefox, or Edge with developer tools
 
 ### Setup Instructions
 1. Clone the repository
-2. Install dependencies with `npm install`
-3. Start the development server with `npm run dev`
-4. Build for production with `npm run build`
+2. Open the project in a code editor
+3. View the website by opening HTML files directly in a browser
+4. For local development, use a simple HTTP server if needed
 
 ### Project Structure
-The project follows a feature-based structure with clear separation of concerns:
+The project follows a clean, organized structure:
 
 ```
-pikzilla-racing/
-├── public/            # Static assets
-├── src/               # Source code
-│   ├── assets/        # Internal assets
-│   ├── components/    # Reusable UI components
-│   ├── pages/         # Page components
-│   ├── styles/        # Global styles
-│   ├── types/         # TypeScript type definitions
-│   ├── App.tsx        # Main application component
-│   └── main.tsx       # Entry point
-├── package.json       # Dependencies and scripts
-└── tsconfig.json      # TypeScript configuration
+pikzilla-static/
+├── assets/            # Static assets (images, icons, etc.)
+│   ├── Icons/         # Icon files
+│   ├── Images/        # Image files
+│   ├── Logo/          # Logo files
+│   └── Vectors/       # Vector graphics
+├── css/               # CSS stylesheets
+│   ├── styles.css     # Main stylesheet
+│   └── variables.css  # CSS variables
+├── js/                # JavaScript files
+│   └── main.js        # Main JavaScript file
+├── index.html         # Home page
+├── team.html          # Team page
+├── cars.html          # Cars page
+├── racing.html        # Racing page
+├── blog.html          # Blog page
+└── contact.html       # Contact page
 ```
-
-## Key Dependencies
-
-### Core Dependencies
-- `react`: ^19.1.0
-- `react-dom`: ^19.1.0
-- `react-router-dom`: ^6.22.0
-
-### Development Dependencies
-- `@vitejs/plugin-react`: ^4.4.1
-- `typescript`: ~5.8.3
-- `vite`: ^6.3.5
-- `eslint`: ^9.25.0
-- `typescript-eslint`: ^8.30.1
 
 ## Technical Constraints
 
@@ -92,23 +77,22 @@ The website is designed to support modern browsers:
 
 ## Deployment Strategy
 
-### Build Process
-1. TypeScript compilation and type checking
-2. Vite bundling and optimization
-3. Asset optimization (minification, compression)
-4. Generation of static files
+### Deployment Process
+1. Validate HTML, CSS, and JavaScript
+2. Optimize assets (minification, compression)
+3. Upload files to web server
 
 ### Hosting Options
-- **Static Hosting**: GitHub Pages, Netlify, Vercel
+- **Static Hosting**: GitHub Pages, Netlify, Vercel, or any web hosting service
 - **CDN**: For improved global performance
-- **CI/CD**: Automated deployment pipeline
+- **HTTPS**: Secure connection for all pages
 
 ## Asset Management
 
 ### Image Guidelines
 - Use optimized formats (WebP where supported, with JPEG/PNG fallbacks)
 - Responsive images with appropriate sizes for different viewports
-- Lazy loading for images below the fold
+- Lazy loading for images below the fold using native loading="lazy" attribute
 - Maintain aspect ratios to prevent layout shifts
 
 ### Icon System
@@ -168,8 +152,8 @@ CSS variables are defined in `variables.css` and include:
 
 ### Naming Conventions
 - BEM (Block, Element, Modifier) methodology for class names
-- Component-specific CSS files with the same name as the component
-- Descriptive class names that reflect component structure
+- Descriptive class names that reflect element structure and purpose
+- Consistent naming patterns across all pages
 
 ### Responsive Breakpoints
 - Mobile: < 576px
@@ -177,49 +161,53 @@ CSS variables are defined in `variables.css` and include:
 - Desktop: > 992px
 - Large Desktop: > 1200px
 
-## TypeScript Configuration
+## JavaScript Usage
 
-The project uses TypeScript with strict type checking:
+The project uses vanilla JavaScript for enhanced functionality:
 
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
-}
+```javascript
+// Example JavaScript Pattern
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize navigation
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+  }
+  
+  // Form validation
+  const contactForm = document.querySelector('#contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', validateForm);
+  }
+  
+  function validateForm(event) {
+    // Form validation logic
+  }
+});
 ```
 
 ## Performance Considerations
 
-### Code Splitting
-- Route-based code splitting for reduced initial load time
-- Lazy loading of components not needed for initial render
+### HTML Optimization
+- Minimal HTML structure
+- Proper use of semantic elements
+- Efficient document structure
 
 ### Asset Optimization
 - Image compression and appropriate sizing
 - SVG optimization
 - Font subsetting where applicable
+- Minification of CSS and JavaScript for production
 
-### Rendering Optimization
-- Memoization of expensive computations
-- Preventing unnecessary re-renders
-- Virtual DOM reconciliation optimization
+### Loading Optimization
+- Critical CSS inlined in the head
+- Deferred loading of non-critical JavaScript
+- Preloading of critical assets
+- Proper use of caching headers
 
 ## Security Considerations
 
@@ -236,14 +224,14 @@ The project uses TypeScript with strict type checking:
 ## Future Technical Considerations
 
 ### Potential Enhancements
-- Server-side rendering for improved SEO and performance
 - Progressive Web App capabilities
-- Integration with a headless CMS for content management
+- Integration with a backend for dynamic content
 - Analytics integration for user behavior tracking
-- A/B testing framework for UI optimization
+- Enhanced JavaScript functionality
+- Animation and transition improvements
 
 ### Scalability Considerations
-- Component library development for consistent UI
-- Micro-frontend architecture for larger scale
+- Modular CSS architecture for easier maintenance
+- Structured JavaScript for extensibility
 - Internationalization support
 - Theme switching capabilities

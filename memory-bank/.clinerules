@@ -3,35 +3,36 @@
 ## Project Conventions
 
 ### File Naming
-- React components: PascalCase (e.g., `HomePage.tsx`)
-- CSS files: Match component name (e.g., `HomePage.css`)
-- Utility files: camelCase (e.g., `imageUtils.ts`)
-- Test files: ComponentName.test.tsx (e.g., `HomePage.test.tsx`)
+- HTML files: Lowercase with hyphens (e.g., `team.html`)
+- CSS files: Lowercase with hyphens (e.g., `styles.css`)
+- JavaScript files: Lowercase with hyphens (e.g., `main.js`)
+- Image files: Descriptive names with hyphens (e.g., `hero-banner.jpg`)
 
 ### Code Style
-- Use TypeScript for all code files
-- Use functional components with hooks
+- Use HTML5 semantic elements
+- Use CSS3 with variables for theming
+- Use vanilla JavaScript (ES6+)
 - Prefer const over let when variables won't be reassigned
-- Use explicit return types for functions
-- Use interface over type for object definitions
-- Use CSS variables for theming and consistent styling
+- Use descriptive variable and function names
+- Add comments for complex logic
 
-### Component Structure
-- Each component should have its own directory if it has multiple files
-- Keep components focused on a single responsibility
-- Extract reusable logic into custom hooks
-- Use composition over inheritance
-- Limit component nesting to avoid prop drilling
+### HTML Structure
+- Use proper document structure with doctype, html, head, and body tags
+- Include meta tags for viewport and character encoding
+- Use semantic elements (header, nav, main, section, article, footer)
+- Keep markup clean and minimal
+- Use proper heading hierarchy (h1-h6)
+- Include appropriate ARIA attributes for accessibility
 
 ### CSS Conventions
 - Use BEM naming convention for CSS classes
-- Component-specific styles in component CSS files
-- Global styles in global.css
+- Global styles in styles.css
+- Variables defined in variables.css
 - Use CSS variables for theming
 - Mobile-first approach with media queries for larger screens
 
 ### Asset Management
-- Store assets in the public directory
+- Store assets in the assets directory
 - Organize assets by type (Icons, Images, Logo, Vectors)
 - Use relative paths for asset loading
 - Optimize images before adding to the project
@@ -40,9 +41,9 @@
 
 ### Development Process
 1. Review requirements and visual references
-2. Create component structure
-3. Implement basic functionality
-4. Style components according to design
+2. Create HTML structure
+3. Implement basic styling
+4. Add JavaScript functionality
 5. Add responsive behavior
 6. Test and refine
 
@@ -61,21 +62,21 @@
 ## Critical Implementation Paths
 
 ### Page Structure
-1. Create page component file (e.g., `TeamPage.tsx`)
-2. Create corresponding CSS file (e.g., `TeamPage.css`)
-3. Import and use Layout component
-4. Implement page-specific sections
-5. Add responsive styling
-6. Add to router configuration
+1. Create HTML file (e.g., `team.html`)
+2. Include links to CSS files
+3. Set up basic page structure with semantic elements
+4. Include header and footer
+5. Implement page-specific content
+6. Add responsive styling
 
 ### Asset Loading
-1. Ensure assets are in the correct public directory
-2. Use relative paths from the public directory
+1. Ensure assets are in the correct directory
+2. Use relative paths from the HTML file
 3. Implement fallback for missing assets
 4. Optimize images for performance
 
 ### Styling Implementation
-1. Define component-specific classes
+1. Define global and page-specific classes
 2. Use CSS variables for theming
 3. Implement responsive behavior
 4. Test on different screen sizes
@@ -102,7 +103,7 @@
 
 ## Project-Specific Patterns
 
-### Page Components
+### Page Structure
 - Each page follows a similar structure:
   1. Hero section with background image
   2. Introduction or overview section
@@ -123,31 +124,31 @@
 
 ## Known Challenges
 
-### Development Environment
-- Issues with Vite development server
-- Workaround: Using static file server
-
-### Asset Path Management
-- Ensuring assets load correctly in all environments
-- Solution: Use public directory and relative paths
+### Browser Compatibility
+- Some CSS features not supported in older browsers
+- Solution: Add fallbacks for critical features
 
 ### Responsive Design Edge Cases
 - Some layouts break at specific screen sizes
 - Solution: Add additional media queries for these cases
 
-### Browser Compatibility
-- Some CSS features not supported in older browsers
-- Solution: Add fallbacks for critical features
+### JavaScript Functionality
+- Implementing interactive elements consistently
+- Solution: Use progressive enhancement approach
+
+### Form Handling
+- Client-side validation implementation
+- Solution: Use HTML5 validation with JavaScript enhancement
 
 ## Evolution of Project Decisions
 
 ### Initial Approach
 - Started with basic page structure
 - Focused on implementing visual design
-- Used simple component structure
+- Used simple HTML structure
 
 ### Current Approach
-- More modular component structure
+- More semantic HTML structure
 - Better separation of concerns
 - More consistent styling with CSS variables
 - Improved asset management
@@ -161,9 +162,9 @@
 ## Tool Usage Patterns
 
 ### Visual Studio Code
-- Use ESLint for code quality
+- Use HTML, CSS, and JavaScript extensions
 - Use Prettier for code formatting
-- Use React and TypeScript extensions for better development experience
+- Use Live Server for local development
 
 ### Browser Developer Tools
 - Use for debugging layout issues
@@ -171,8 +172,8 @@
 - Test responsive design with device emulation
 - Monitor performance with Lighthouse
 
-### Terminal Commands
-- `npm run dev`: Start development server
-- `npm run build`: Build for production
-- `npm run lint`: Run ESLint
-- `serve -s pikzilla-racing`: Serve static files
+### File Management
+- Organize files by type and purpose
+- Keep related files together
+- Use consistent naming conventions
+- Maintain clear directory structure

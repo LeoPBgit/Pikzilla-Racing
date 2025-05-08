@@ -20,11 +20,11 @@ Pikzilla Racing is a professional racing team website designed to showcase the t
    - Contact: Provide ways for visitors to get in touch with the team
 
 3. **Technical Requirements**
-   - Built with React and TypeScript for a modern, maintainable codebase
+   - Built with HTML, CSS, and JavaScript for a modern, maintainable codebase
    - Utilize CSS variables for consistent styling
    - Implement responsive design principles
    - Ensure fast loading times and optimal performance
-   - Organize code in a modular, component-based structure
+   - Organize code in a clean, structured manner
 
 4. **Content Requirements**
    - High-quality images of cars, team members, and racing events
@@ -62,7 +62,7 @@ Pikzilla Racing is a professional racing team website designed to showcase the t
 4. Consistent design language throughout the site
 5. Clear information architecture that makes content easy to find
 6. Engaging visual elements that capture the excitement of racing
-7. Proper implementation of React components and TypeScript
+7. Proper implementation of HTML, CSS, and JavaScript
 8. Code organization that follows best practices and is maintainable
 
 ## Timeline and Phases
@@ -70,9 +70,9 @@ Pikzilla Racing is a professional racing team website designed to showcase the t
 The project will be developed in phases:
 
 1. **Phase 1: Setup and Structure**
-   - Project initialization with React and TypeScript
-   - Component architecture planning
-   - Basic routing and page structure
+   - Project initialization with HTML, CSS, and JavaScript
+   - Page structure planning
+   - Basic navigation setup
 
 2. **Phase 2: Core Pages Development**
    - Implementation of all required pages
