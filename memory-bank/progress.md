@@ -36,9 +36,12 @@
 - [x] Implemented consistent styling across the site
 - [x] Updated typography to Manrope with Figma text styles
 
-### Project Structure
-- [x] Consolidated project to use root directory only
-- [x] Ensured GitHub Pages displays the latest changes
+### Project Structure and Deployment
+- [x] Consolidated project to use root directory only for all files
+- [x] Removed duplicate files and ensured all development happens in the root directory
+- [x] Updated GitHub Pages configuration to serve from the root directory
+- [x] Documented the deployment process in README.md and memory-bank files
+- [x] Established a clear workflow for making changes and deploying to GitHub Pages
 
 ### Documentation
 - [x] Created memory bank documentation
@@ -71,7 +74,6 @@
 - [ ] Improve mobile navigation experience
 
 ### Medium-term Tasks
-- [ ] Set up deployment process
 - [ ] Establish content update workflow
 - [ ] Add analytics for user behavior tracking
 - [ ] Implement SEO optimizations
@@ -86,7 +88,7 @@
 
 ## Current Status
 
-The project is in the implementation phase, with all six main pages completed according to the visual references. The website is currently viewable by opening the HTML files directly in a browser.
+The project is in the implementation phase, with all six main pages completed according to the visual references. The website is deployed to GitHub Pages and accessible at https://leopbgit.github.io/Pikzilla-Racing/. The site can also be viewed locally by opening the HTML files directly in a browser.
 
 ### What Works
 - All six pages are implemented with responsive design
@@ -119,8 +121,8 @@ The next milestone is to enhance the interactivity of the website. This includes
 | Setup and Structure | Completed | Week 1 |
 | Core Pages Development | Completed | Week 3 |
 | Styling and Polish | In Progress | Week 4 |
+| Deployment | Completed | Week 4 |
 | Testing and Optimization | Not Started | Week 5 |
-| Deployment | Not Started | Week 6 |
 
 ## Resource Allocation
 
@@ -128,7 +130,8 @@ The next milestone is to enhance the interactivity of the website. This includes
 - **Design Implementation**: 90% complete
 - **Content Integration**: 70% complete
 - **Testing**: 20% complete
-- **Documentation**: 80% complete
+- **Documentation**: 90% complete
+- **Deployment**: 100% complete
 
 ## Risk Assessment Update
 

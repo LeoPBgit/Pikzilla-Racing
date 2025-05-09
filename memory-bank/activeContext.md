@@ -33,10 +33,12 @@ Each page has been implemented with responsive design principles, following the 
 - Added animations and transitions for interactive elements
 - Updated typography to use Manrope with Figma text styles
 
-### Project Structure
+### Project Structure and Deployment
 - Consolidated project to use root directory only for all files
-- Copied all files from pikzilla-static to root directory
-- Ensured GitHub Pages displays the latest changes
+- Removed duplicate files and ensured all development happens in the root directory
+- Updated GitHub Pages configuration to serve from the root directory of the master branch
+- Documented the deployment process in README.md and memory-bank files
+- Established a clear workflow for making changes and deploying to GitHub Pages
 
 ## Active Decisions
 
@@ -114,8 +116,8 @@ Each page has been implemented with responsive design principles, following the 
 ## Current Environment
 
 - **Development**: Local development with direct file access
-- **Staging**: Not yet implemented
-- **Production**: Not yet deployed
+- **Staging**: Not applicable for this project
+- **Production**: Deployed to GitHub Pages at https://leopbgit.github.io/Pikzilla-Racing/
 
 ## Recent Feedback
 

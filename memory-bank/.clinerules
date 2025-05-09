@@ -103,6 +103,20 @@
 
 ## Project-Specific Patterns
 
+### Repository Structure
+- All website files are stored in the root directory
+- Never create duplicate copies of files in subdirectories
+- GitHub Pages is configured to serve from the root directory of the master branch
+- The deployment URL is https://leopbgit.github.io/Pikzilla-Racing/
+
+### Deployment Workflow
+1. Make changes to files in the root directory
+2. Test changes locally by opening HTML files in a browser
+3. Commit changes with descriptive commit messages
+4. Push changes to the master branch
+5. GitHub Pages automatically rebuilds and deploys the site
+6. Changes are typically visible within a few minutes
+
 ### Page Structure
 - Each page follows a similar structure:
   1. Hero section with background image

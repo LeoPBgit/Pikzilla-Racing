@@ -27,15 +27,28 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 
 ## Directory Structure
 
-- **`pikzilla-static/`**: Main website implementation
-  - `assets/`: Static assets (images, icons, etc.)
-  - `css/`: Stylesheets
-  - `js/`: JavaScript files
-  - HTML files for each page
+- **Root Directory**: Main website implementation
+  - `assets/`: Static assets (images, icons, logos, vectors)
+  - `css/`: Stylesheets (styles.css, variables.css)
+  - `js/`: JavaScript files (main.js)
+  - HTML files for each page (index.html, team.html, etc.)
 - **`Graphic Design Assets/`**: Original design assets
 - **`memory-bank/`**: Project documentation
 - **`visual references/`**: Design references for each page
-- **`pikzilla-racing-showcase.html`**: Static showcase of all pages
+
+> **Note**: All development should be done directly in the root directory. The site is deployed from the root directory via GitHub Pages.
+
+## Deployment
+
+The Pikzilla Racing website is deployed using GitHub Pages:
+
+- **Configuration**: GitHub Pages is set up to serve the site from the root directory of the master branch
+- **Workflow**:
+  1. Make changes to files in the root directory
+  2. Commit and push changes to the master branch
+  3. GitHub Pages automatically rebuilds and deploys the site
+  4. Changes are typically visible within a few minutes at [https://leopbgit.github.io/Pikzilla-Racing/](https://leopbgit.github.io/Pikzilla-Racing/)
+- **Important**: Always work directly in the root directory to ensure changes are properly deployed
 
 ## Technologies Used
 
@@ -60,7 +73,7 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 
 2. Open any HTML file in your browser:
    ```
-   open pikzilla-static/index.html
+   open index.html
    ```
 
 3. For local development with live reloading, you can use any simple HTTP server.

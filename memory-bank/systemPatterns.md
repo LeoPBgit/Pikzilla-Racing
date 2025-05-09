@@ -125,12 +125,14 @@ The website uses standard HTML navigation with consistent linking between pages:
 </nav>
 ```
 
-## File Structure
+## Repository and Deployment Structure
+
+### File Structure
 
 The project follows a clean, organized file structure in the root directory:
 
 ```
-/
+Pikzilla-Racing/
 ├── assets/
 │   ├── Icons/
 │   │   ├── Blog News/
@@ -156,6 +158,8 @@ The project follows a clean, organized file structure in the root directory:
 │   └── variables.css
 ├── js/
 │   └── main.js
+├── memory-bank/       # Project documentation
+├── visual references/ # Design references
 ├── index.html
 ├── team.html
 ├── cars.html
@@ -164,7 +168,18 @@ The project follows a clean, organized file structure in the root directory:
 └── contact.html
 ```
 
-This structure ensures that GitHub Pages correctly serves the website from the root directory.
+### GitHub Pages Deployment
+
+The website is deployed using GitHub Pages with the following configuration:
+
+1. **Source**: Root directory of the master branch
+2. **URL**: https://leopbgit.github.io/Pikzilla-Racing/
+3. **Workflow**: 
+   - All development work is done directly in the root directory
+   - Changes are committed and pushed to the master branch
+   - GitHub Pages automatically rebuilds and deploys the site
+
+> **Critical Pattern**: Always maintain all website files in the root directory. Never create duplicate copies of files in subdirectories, as this can lead to confusion and deployment issues. All paths in HTML, CSS, and JavaScript files should be relative to the root directory.
 
 ## Key Technical Decisions
 

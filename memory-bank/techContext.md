@@ -31,10 +31,10 @@ The Pikzilla Racing website is built using the following technologies:
 4. For local development, use a simple HTTP server if needed
 
 ### Project Structure
-The project follows a clean, organized structure:
+The project follows a clean, organized structure with all files in the root directory:
 
 ```
-pikzilla-static/
+Pikzilla-Racing/
 ├── assets/            # Static assets (images, icons, etc.)
 │   ├── Icons/         # Icon files
 │   ├── Images/        # Image files
@@ -50,8 +50,13 @@ pikzilla-static/
 ├── cars.html          # Cars page
 ├── racing.html        # Racing page
 ├── blog.html          # Blog page
-└── contact.html       # Contact page
+├── contact.html       # Contact page
+├── memory-bank/       # Project documentation
+├── visual references/ # Design references
+└── Graphic Design Assets/ # Original design files
 ```
+
+> **Important**: All development work should be done directly in the root directory. The GitHub Pages site is configured to serve from the root directory of the master branch.
 
 ## Technical Constraints
 
@@ -77,15 +82,29 @@ The website is designed to support modern browsers:
 
 ## Deployment Strategy
 
-### Deployment Process
-1. Validate HTML, CSS, and JavaScript
-2. Optimize assets (minification, compression)
-3. Upload files to web server
+### GitHub Pages Deployment
+The Pikzilla Racing website is deployed using GitHub Pages:
 
-### Hosting Options
-- **Static Hosting**: GitHub Pages, Netlify, Vercel, or any web hosting service
-- **CDN**: For improved global performance
-- **HTTPS**: Secure connection for all pages
+1. **Configuration**: 
+   - GitHub Pages is set up to serve from the root directory of the master branch
+   - URL: https://leopbgit.github.io/Pikzilla-Racing/
+
+2. **Deployment Process**:
+   - Make changes to files in the root directory
+   - Commit and push changes to the master branch
+   - GitHub Pages automatically rebuilds and deploys the site
+   - Changes are typically visible within a few minutes
+
+3. **Important Guidelines**:
+   - Always work directly in the root directory
+   - Never create duplicate copies of files in subdirectories
+   - Ensure all asset paths are relative to the root directory
+   - Test locally before pushing changes
+
+### Hosting Considerations
+- **HTTPS**: GitHub Pages provides HTTPS by default
+- **CDN**: GitHub Pages includes CDN capabilities for improved global performance
+- **Caching**: Be aware of browser and CDN caching when testing changes
 
 ## Asset Management
 
