@@ -572,46 +572,110 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.7);
 }
 
-.hero-content {
-  max-width: 800px;
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
 }
 
+.hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  padding-bottom: var(--spacing-3xl);
+  position: relative;
+}
+
+.hero-title-container {
+  flex: 0 0 auto;
+  margin-bottom: var(--spacing-lg);
+}
+
 .hero-title {
-  font-size: var(--font-size-headline);
-  line-height: var(--line-height-headline);
-  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
   color: #FFFFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+
+.hero-title-line {
+  font-size: var(--font-size-headline);
+  line-height: 1.1;
+  font-weight: var(--font-weight-bold);
+  display: block;
+}
+
+.hero-subtitle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero-subtitle {
-  font-size: var(--font-size-subheading-2);
+  font-size: var(--font-size-subheading-1);
   margin-bottom: var(--spacing-lg);
   color: #FFFFFF;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
 }
 
 .hero-button {
-  /* Using standard button padding and font size */
   font-weight: var(--font-weight-semibold);
+  align-self: flex-start;
+  padding: var(--spacing-sm) var(--spacing-xl);
+  font-size: var(--font-size-paragraph-2);
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: var(--spacing-2xl);
+  }
+  
+  .hero-subtitle-container {
+    margin-left: 0;
+    margin-top: var(--spacing-lg);
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .hero-subtitle {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 70vh;
   }
   
-  .hero-title {
+  .hero-title-line {
     font-size: var(--font-size-heading);
-    line-height: 1.2;
   }
   
   .hero-subtitle {
     font-size: var(--font-size-subheading-3);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .hero-title-line {
+    font-size: var(--font-size-3xl);
   }
 }
 
