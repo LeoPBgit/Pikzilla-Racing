@@ -57,11 +57,13 @@ The project uses a CSS-based styling approach with:
 /* Example of CSS Variables Pattern */
 :root {
   /* Color Palette */
-  --color-primary: #FF4C29;
-  --color-secondary: #082032;
-  --color-tertiary: #2C394B;
-  --color-background: #334756;
-  --color-text: #FFFFFF;
+  --color-primary: #FF2C01; /* Official Red */
+  --color-secondary: #E9E9E9; /* Official Light Grey */
+  --color-tertiary: #E9E9E9; /* Official Light Grey */
+  --color-background: #FFFFFF; /* Official White */
+  --color-text: #000000; /* Official Black */
+  --color-accent: #FF7301; /* Official Orange */
+  --color-border: #E9E9E9; /* Official Light Grey */
   
   /* Typography */
   --font-family-primary: 'Manrope', sans-serif;

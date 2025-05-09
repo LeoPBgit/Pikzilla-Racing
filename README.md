@@ -80,12 +80,14 @@ Detailed documentation about the project can be found in the `memory-bank/` dire
 
 The project uses a consistent design system with CSS variables for theming:
 
-- **Color Palette**: Dark theme with orange accents
-  - Primary: #FF4C29
-  - Secondary: #082032
-  - Tertiary: #2C394B
-  - Background: #334756
-  - Text: #FFFFFF
+- **Color Palette**: Modern theme with red and orange accents
+  - Primary: #FF2C01 (Official Red)
+  - Secondary: #E9E9E9 (Official Light Grey)
+  - Tertiary: #E9E9E9 (Official Light Grey)
+  - Background: #FFFFFF (Official White)
+  - Text: #000000 (Official Black)
+  - Accent: #FF7301 (Official Orange)
+  - Border: #E9E9E9 (Official Light Grey)
 
 - **Typography**:
   - Font Family: Manrope (all weights from 200-800)

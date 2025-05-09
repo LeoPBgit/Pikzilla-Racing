@@ -108,14 +108,14 @@ CSS variables are defined in `variables.css` and include:
 ```css
 :root {
   /* Color Palette */
-  --color-primary: #FF4C29;
-  --color-secondary: #082032;
-  --color-tertiary: #2C394B;
-  --color-background: #334756;
-  --color-text: #FFFFFF;
-  --color-text-secondary: #CCCCCC;
-  --color-accent: #FF7F50;
-  --color-border: #4F5D6A;
+  --color-primary: #FF2C01; /* Official Red */
+  --color-secondary: #E9E9E9; /* Official Light Grey */
+  --color-tertiary: #E9E9E9; /* Official Light Grey */
+  --color-background: #FFFFFF; /* Official White */
+  --color-text: #000000; /* Official Black */
+  --color-text-secondary: #000000; /* Official Black, slightly transparent for secondary text */
+  --color-accent: #FF7301; /* Official Orange */
+  --color-border: #E9E9E9; /* Official Light Grey */
   
   /* Typography */
   --font-family-primary: 'Manrope', sans-serif;
