@@ -34,6 +34,7 @@
 - [x] Created global CSS files
 - [x] Developed responsive designs for all pages
 - [x] Implemented consistent styling across the site
+- [x] Updated typography to Manrope with Figma text styles
 
 ### Documentation
 - [x] Created memory bank documentation
@@ -89,6 +90,7 @@ The project is in the implementation phase, with all six main pages completed ac
 - Navigation between pages works correctly
 - Styling is consistent across the site
 - The website matches the visual references provided
+- Typography system follows Figma text styles with Manrope font
 
 ### Known Issues
 - Need for additional interactive elements

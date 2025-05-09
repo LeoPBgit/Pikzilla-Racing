@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import './variables.css';
 
 * {
@@ -35,32 +35,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-headline);
+  line-height: var(--line-height-headline);
 }
 
 h2 {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-heading);
 }
 
 h3 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-subheading-1);
 }
 
 h4 {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-subheading-2);
 }
 
 h5 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-subheading-3);
 }
 
 h6 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-paragraph-1);
+  font-weight: var(--font-weight-semibold);
 }
 
 p {
   margin-bottom: var(--spacing-md);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-paragraph-1);
+  line-height: var(--line-height-auto);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
 }
 
 a {
@@ -302,13 +307,13 @@ button:hover {
 
 .nav-link {
   color: #ffffff;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500; /* Medium */
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
   transition: color var(--transition-normal);
   position: relative;
   padding: var(--spacing-xs) var(--spacing-sm);
   letter-spacing: 1px;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-menu);
 }
 
 .nav-link:hover {
@@ -317,7 +322,7 @@ button:hover {
 
 .nav-link.active {
   color: #ffffff;
-  font-weight: 800; /* ExtraBold */
+  font-weight: var(--font-weight-extrabold);
 }
 
 /* Remove the static indicator since we're using an animated one */
@@ -535,14 +540,15 @@ button:hover {
 }
 
 .hero-title {
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-headline);
+  line-height: var(--line-height-headline);
   margin-bottom: var(--spacing-md);
   color: #FFFFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-subheading-2);
   margin-bottom: var(--spacing-lg);
   color: #FFFFFF;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -559,11 +565,12 @@ button:hover {
   }
   
   .hero-title {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-heading);
+    line-height: 1.2;
   }
   
   .hero-subtitle {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-subheading-3);
   }
 }
 
@@ -604,14 +611,16 @@ button:hover {
 }
 
 .card-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-subheading-2);
   margin-bottom: var(--spacing-sm);
   color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
 }
 
 .card-text {
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-paragraph-1);
 }
 
 .card-link {
@@ -683,18 +692,21 @@ button:hover {
 }
 
 .team-member-name {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-subheading-2);
   margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-semibold);
 }
 
 .team-member-role {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-paragraph-2);
 }
 
 .team-member-bio {
   color: var(--color-text-secondary);
+  font-size: var(--font-size-paragraph-1);
 }
 
 /* Car Specs Styles */
@@ -761,8 +773,9 @@ button:hover {
 }
 
 .event-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-subheading-2);
   margin-bottom: var(--spacing-sm);
+  font-weight: var(--font-weight-semibold);
 }
 
 .event-location {
@@ -771,11 +784,13 @@ button:hover {
   gap: var(--spacing-xs);
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-paragraph-2);
 }
 
 .event-description {
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-paragraph-1);
 }
 
 @media (max-width: 768px) {
@@ -807,6 +822,7 @@ button:hover {
   display: block;
   margin-bottom: var(--spacing-xs);
   font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-paragraph-1);
 }
 
 .form-input,
@@ -818,6 +834,7 @@ button:hover {
   background-color: var(--color-secondary);
   color: var(--color-text);
   font-family: var(--font-family-primary);
+  font-size: var(--font-size-paragraph-1);
 }
 
 .form-textarea {
@@ -902,13 +919,15 @@ button:hover {
 }
 
 .blog-post-title {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-subheading-1);
   margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-semibold);
 }
 
 .blog-post-excerpt {
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-paragraph-1);
 }
 
 /* Button Variations */
@@ -923,8 +942,8 @@ button:hover {
   transition: all var(--transition-normal);
   text-transform: none; /* Ensure text is not transformed */
   letter-spacing: normal;
-  line-height: 1.5;
-  font-size: var(--font-size-md);
+  line-height: var(--line-height-auto);
+  font-size: var(--font-size-button);
 }
 
 /* Primary button - For light backgrounds (white/grey) */
@@ -1001,3 +1020,81 @@ button:hover {
 
 /* Button sizes - standardized to one size */
 /* All buttons now use the default size defined in the .btn class */
+
+/* Figma Text Styles */
+.text-button {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-menu {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-menu);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-menu-bold {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-menu);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-headline {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-headline);
+  line-height: var(--line-height-headline);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-heading {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-subheading-1 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-subheading-1);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-subheading-2 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-subheading-2);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-subheading-3 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-subheading-3);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-paragraph-1 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-paragraph-1);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-paragraph-2 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-paragraph-2);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-tag {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-tag);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-medium);
+}

@@ -31,12 +31,13 @@ Each page has been implemented with responsive design principles, following the 
 - Created global CSS files
 - Implemented responsive breakpoints
 - Added animations and transitions for interactive elements
+- Updated typography to use Manrope with Figma text styles
 
 ## Active Decisions
 
 ### Design System
 - **Color Scheme**: Using a dark theme with orange accents to convey speed and excitement
-- **Typography**: Using a modern, clean font hierarchy for readability
+- **Typography**: Using Manrope font family with a comprehensive text style system based on Figma designs
 - **Spacing**: Consistent spacing system based on a 4px grid
 - **UI Patterns**: Reusable card designs, buttons, and section layouts
 

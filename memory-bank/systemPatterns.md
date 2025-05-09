@@ -56,14 +56,54 @@ The project uses a CSS-based styling approach with:
 ```css
 /* Example of CSS Variables Pattern */
 :root {
+  /* Color Palette */
   --color-primary: #FF4C29;
   --color-secondary: #082032;
   --color-tertiary: #2C394B;
   --color-background: #334756;
   --color-text: #FFFFFF;
+  
+  /* Typography */
+  --font-family-primary: 'Manrope', sans-serif;
+  --font-family-secondary: 'Manrope', sans-serif;
+  
+  /* Font Sizes based on Figma Text Styles */
+  --font-size-button: 0.75rem;    /* 12px */
+  --font-size-menu: 0.75rem;      /* 12px */
+  --font-size-headline: 4.375rem;  /* 70px */
+  
+  /* Line Heights */
+  --line-height-auto: 1.5;
+  --line-height-headline: 80px;
+  
   /* ... other variables ... */
 }
 ```
+
+### Typography Pattern
+
+The project uses a consistent typography system based on Figma text styles:
+
+```css
+/* Text Style Classes */
+.text-headline {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-headline);
+  line-height: var(--line-height-headline);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-paragraph-1 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-paragraph-1);
+  line-height: var(--line-height-auto);
+  font-weight: var(--font-weight-regular);
+}
+
+/* ... other text styles ... */
+```
+
+These text style classes can be applied to elements to ensure consistent typography throughout the site.
 
 ### Navigation Pattern
 

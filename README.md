@@ -1,6 +1,6 @@
 # Pikzilla Racing
 
-A professional racing team website built with React and TypeScript, showcasing the team's achievements, vehicles, upcoming races, and team members.
+A professional racing team website built with HTML, CSS, and JavaScript, showcasing the team's achievements, vehicles, upcoming races, and team members.
 
 ![Pikzilla Racing Logo](Graphic%20Design%20Assets/Logo/Pikzilla%20Logo.svg)
 
@@ -14,7 +14,7 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 - **Racing-Themed Design Language**: Dark theme with orange accents to convey speed and excitement
 - **Comprehensive Content Structure**: Six key sections organized logically for easy navigation
 - **High-Quality Visual Elements**: Professional images of cars, team members, and racing events
-- **Component-Based Architecture**: Clean, maintainable code with reusable components
+- **Clean Code Architecture**: Maintainable code with consistent styling and organization
 
 ## Pages
 
@@ -27,13 +27,11 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 
 ## Directory Structure
 
-- **`pikzilla-racing/`**: Main React/TypeScript project
-  - `src/`: Source code
-    - `components/`: Reusable UI components
-    - `pages/`: Page components
-    - `styles/`: Global styles and variables
-    - `types/`: TypeScript type definitions
-  - `public/`: Static assets
+- **`pikzilla-static/`**: Main website implementation
+  - `assets/`: Static assets (images, icons, etc.)
+  - `css/`: Stylesheets
+  - `js/`: JavaScript files
+  - HTML files for each page
 - **`Graphic Design Assets/`**: Original design assets
 - **`memory-bank/`**: Project documentation
 - **`visual references/`**: Design references for each page
@@ -41,19 +39,18 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 
 ## Technologies Used
 
-- **Frontend Framework**: React 19.1.0 with TypeScript 5.8.3
-- **Routing**: React Router 6.22.0
-- **Styling**: CSS with variables for theming
-- **Build Tool**: Vite 6.3.5
+- **HTML5**: For structure and content
+- **CSS3**: For styling and layout with variables for theming
+- **JavaScript**: For interactivity and dynamic elements
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (latest LTS version recommended)
-- npm or yarn
+- Any modern web browser
+- A code editor (Visual Studio Code recommended)
 
-### Installation
+### Viewing the Website
 
 1. Clone the repository:
    ```
@@ -61,27 +58,12 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
    cd Pikzilla-Racing
    ```
 
-2. Install dependencies:
+2. Open any HTML file in your browser:
    ```
-   cd pikzilla-racing
-   npm install
-   ```
-
-3. Start the development server:
-   ```
-   npm run dev
+   open pikzilla-static/index.html
    ```
 
-4. Open your browser and navigate to:
-   ```
-   http://localhost:5173
-   ```
-
-### Building for Production
-
-```
-npm run build
-```
+3. For local development with live reloading, you can use any simple HTTP server.
 
 ## Project Documentation
 
@@ -106,8 +88,18 @@ The project uses a consistent design system with CSS variables for theming:
   - Text: #FFFFFF
 
 - **Typography**:
-  - Primary Font: Montserrat
-  - Secondary Font: Roboto
+  - Font Family: Manrope (all weights from 200-800)
+  - Text Styles from Figma:
+    - Headline: 70px/80px (Bold)
+    - Heading: 40px/Auto (Bold)
+    - Subheading 1: 30px/Auto (Semibold)
+    - Subheading 2: 20px/Auto (Semibold)
+    - Subheading 3: 18px/Auto (Medium)
+    - Paragraph 1: 16px/Auto (Regular)
+    - Paragraph 2: 15px/Auto (Regular)
+    - Menu: 12px/Auto (Regular/Bold)
+    - Button: 12px/Auto (Medium)
+    - Tag: 12px/Auto (Medium)
 
 - **Spacing System**: Based on a 4px grid
 

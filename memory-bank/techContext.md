@@ -118,17 +118,43 @@ CSS variables are defined in `variables.css` and include:
   --color-border: #4F5D6A;
   
   /* Typography */
-  --font-family-primary: 'Montserrat', sans-serif;
-  --font-family-secondary: 'Roboto', sans-serif;
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
+  --font-family-primary: 'Manrope', sans-serif;
+  --font-family-secondary: 'Manrope', sans-serif;
+  
+  /* Font Sizes based on Figma Text Styles */
+  --font-size-button: 0.75rem;    /* 12px */
+  --font-size-menu: 0.75rem;      /* 12px */
+  --font-size-tag: 0.75rem;       /* 12px */
+  --font-size-paragraph-2: 0.9375rem; /* 15px */
+  --font-size-paragraph-1: 1rem;      /* 16px */
+  --font-size-subheading-3: 1.125rem;  /* 18px */
+  --font-size-subheading-2: 1.25rem;   /* 20px */
+  --font-size-subheading-1: 1.875rem;  /* 30px */
+  --font-size-heading: 2.5rem;         /* 40px */
+  --font-size-headline: 4.375rem;      /* 70px */
+  
+  /* Legacy font sizes (keeping for backward compatibility) */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.5rem;   /* 40px */
+  --font-size-5xl: 4.375rem; /* 70px */
+  
+  /* Line Heights */
+  --line-height-auto: 1.5;
+  --line-height-headline: 80px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
   
   /* Spacing */
   --spacing-xs: 0.25rem;
