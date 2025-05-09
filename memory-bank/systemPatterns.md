@@ -125,10 +125,10 @@ The website uses standard HTML navigation with consistent linking between pages:
 
 ## File Structure
 
-The project follows a clean, organized file structure:
+The project follows a clean, organized file structure in the root directory:
 
 ```
-pikzilla-static/
+/
 ├── assets/
 │   ├── Icons/
 │   │   ├── Blog News/
@@ -161,6 +161,8 @@ pikzilla-static/
 ├── blog.html
 └── contact.html
 ```
+
+This structure ensures that GitHub Pages correctly serves the website from the root directory.
 
 ## Key Technical Decisions
 

@@ -33,6 +33,11 @@ Each page has been implemented with responsive design principles, following the 
 - Added animations and transitions for interactive elements
 - Updated typography to use Manrope with Figma text styles
 
+### Project Structure
+- Consolidated project to use root directory only for all files
+- Copied all files from pikzilla-static to root directory
+- Ensured GitHub Pages displays the latest changes
+
 ## Active Decisions
 
 ### Design System
