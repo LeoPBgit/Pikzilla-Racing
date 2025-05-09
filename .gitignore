@@ -48,3 +48,4 @@ Thumbs.db
 .cache/
 .npm/
 .eslintcache
+docs/figma-token.txt

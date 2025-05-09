@@ -2,7 +2,7 @@
 
 A professional racing team website built with HTML, CSS, and JavaScript, showcasing the team's achievements, vehicles, upcoming races, and team members.
 
-![Pikzilla Racing Logo](Graphic%20Design%20Assets/Logo/Pikzilla%20Logo.svg)
+![Pikzilla Racing Logo](assets/Logo/Pikzilla%20Logo.svg)
 
 ## Project Overview
 
@@ -28,13 +28,21 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 ## Directory Structure
 
 - **Root Directory**: Main website implementation
-  - `assets/`: Static assets (images, icons, logos, vectors)
-  - `css/`: Stylesheets (styles.css, variables.css)
-  - `js/`: JavaScript files (main.js)
   - HTML files for each page (index.html, team.html, etc.)
-- **`Graphic Design Assets/`**: Original design assets
-- **`memory-bank/`**: Project documentation
-- **`visual references/`**: Design references for each page
+  - `assets/`: Static assets organized by type
+    - `Images/`: Photographs and raster graphics
+    - `Icons/`: UI icons and symbols
+    - `Logo/`: Brand logos in various formats
+    - `Vectors/`: Vector graphics and illustrations
+  - `css/`: Stylesheets
+    - `styles.css`: Main stylesheet
+    - `variables.css`: CSS variables for theming
+  - `js/`: JavaScript files
+    - `main.js`: Main JavaScript functionality
+  - `docs/`: Documentation and development resources
+    - `memory-bank/`: Project documentation
+    - `visual-references/`: Design references for each page
+    - `figma-token.txt`: Figma access token (gitignored)
 
 > **Note**: All development should be done directly in the root directory. The site is deployed from the root directory via GitHub Pages.
 
@@ -80,7 +88,7 @@ The Pikzilla Racing website is deployed using GitHub Pages:
 
 ## Project Documentation
 
-Detailed documentation about the project can be found in the `memory-bank/` directory:
+Detailed documentation about the project can be found in the `docs/memory-bank/` directory:
 
 - `projectbrief.md`: Project requirements and goals
 - `productContext.md`: User personas and problem statement
@@ -120,7 +128,7 @@ The project uses a consistent design system with CSS variables for theming:
 
 ## Screenshots
 
-View the `pikzilla-racing-showcase.html` file for a comprehensive showcase of all pages.
+Screenshots of each page can be found in the `docs/visual-references/` directory.
 
 ## License
 

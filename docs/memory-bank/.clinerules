@@ -1,0 +1,193 @@
+# Pikzilla Racing Project Rules
+
+## Project Conventions
+
+### File Naming
+- HTML files: Lowercase with hyphens (e.g., `team.html`)
+- CSS files: Lowercase with hyphens (e.g., `styles.css`)
+- JavaScript files: Lowercase with hyphens (e.g., `main.js`)
+- Image files: Descriptive names with hyphens (e.g., `hero-banner.jpg`)
+
+### Code Style
+- Use HTML5 semantic elements
+- Use CSS3 with variables for theming
+- Use vanilla JavaScript (ES6+)
+- Prefer const over let when variables won't be reassigned
+- Use descriptive variable and function names
+- Add comments for complex logic
+
+### HTML Structure
+- Use proper document structure with doctype, html, head, and body tags
+- Include meta tags for viewport and character encoding
+- Use semantic elements (header, nav, main, section, article, footer)
+- Keep markup clean and minimal
+- Use proper heading hierarchy (h1-h6)
+- Include appropriate ARIA attributes for accessibility
+
+### CSS Conventions
+- Use BEM naming convention for CSS classes
+- Global styles in styles.css
+- Variables defined in variables.css
+- Use CSS variables for theming
+- Mobile-first approach with media queries for larger screens
+
+### Asset Management
+- Store assets in the assets directory
+- Organize assets by type (Icons, Images, Logo, Vectors)
+- Use relative paths for asset loading
+- Optimize images before adding to the project
+
+## Workflow Patterns
+
+### Development Process
+1. Review requirements and visual references
+2. Create HTML structure
+3. Implement basic styling
+4. Add JavaScript functionality
+5. Add responsive behavior
+6. Test and refine
+
+### Documentation
+- Update memory bank files when making significant changes
+- Document key decisions and their rationale
+- Keep progress.md updated with completed work
+- Document known issues and their status
+
+### Testing Strategy
+- Manual testing on different devices and browsers
+- Check responsive behavior at all breakpoints
+- Verify asset loading and display
+- Test navigation and interactive elements
+
+## Critical Implementation Paths
+
+### Page Structure
+1. Create HTML file (e.g., `team.html`)
+2. Include links to CSS files
+3. Set up basic page structure with semantic elements
+4. Include header and footer
+5. Implement page-specific content
+6. Add responsive styling
+
+### Asset Loading
+1. Ensure assets are in the correct directory
+2. Use relative paths from the HTML file
+3. Implement fallback for missing assets
+4. Optimize images for performance
+
+### Styling Implementation
+1. Define global and page-specific classes
+2. Use CSS variables for theming
+3. Implement responsive behavior
+4. Test on different screen sizes
+
+## User Preferences
+
+### Visual Design
+- Dark theme with orange accents
+- Clean, modern typography
+- Dynamic, racing-inspired elements
+- High-quality images of cars and racing events
+
+### Content Presentation
+- Clear hierarchy of information
+- Engaging headlines and copy
+- Strategic use of call-to-action buttons
+- Balance of text and visual elements
+
+### Navigation
+- Intuitive, easy-to-use navigation
+- Clear indication of current page
+- Accessible on all device sizes
+- Smooth transitions between pages
+
+## Project-Specific Patterns
+
+### Repository Structure
+- All website files are stored in the root directory
+- Never create duplicate copies of files in subdirectories
+- GitHub Pages is configured to serve from the root directory of the master branch
+- The deployment URL is https://leopbgit.github.io/Pikzilla-Racing/
+
+### Deployment Workflow
+1. Make changes to files in the root directory
+2. Test changes locally by opening HTML files in a browser
+3. Commit changes with descriptive commit messages
+4. Push changes to the master branch
+5. GitHub Pages automatically rebuilds and deploys the site
+6. Changes are typically visible within a few minutes
+
+### Page Structure
+- Each page follows a similar structure:
+  1. Hero section with background image
+  2. Introduction or overview section
+  3. Main content sections
+  4. Call-to-action or related content
+
+### Responsive Patterns
+- Mobile: Single column layout
+- Tablet: Two column layout for some sections
+- Desktop: Multi-column layout with larger images
+- Large Desktop: Same as desktop with increased spacing
+
+### Interactive Elements
+- Buttons: Orange background with white text
+- Links: White text with orange hover state
+- Cards: Subtle hover effect with elevation
+- Forms: Clear labels and validation feedback
+
+## Known Challenges
+
+### Browser Compatibility
+- Some CSS features not supported in older browsers
+- Solution: Add fallbacks for critical features
+
+### Responsive Design Edge Cases
+- Some layouts break at specific screen sizes
+- Solution: Add additional media queries for these cases
+
+### JavaScript Functionality
+- Implementing interactive elements consistently
+- Solution: Use progressive enhancement approach
+
+### Form Handling
+- Client-side validation implementation
+- Solution: Use HTML5 validation with JavaScript enhancement
+
+## Evolution of Project Decisions
+
+### Initial Approach
+- Started with basic page structure
+- Focused on implementing visual design
+- Used simple HTML structure
+
+### Current Approach
+- More semantic HTML structure
+- Better separation of concerns
+- More consistent styling with CSS variables
+- Improved asset management
+
+### Future Direction
+- Enhanced interactivity
+- Better performance optimization
+- Improved accessibility
+- Integration with backend services
+
+## Tool Usage Patterns
+
+### Visual Studio Code
+- Use HTML, CSS, and JavaScript extensions
+- Use Prettier for code formatting
+- Use Live Server for local development
+
+### Browser Developer Tools
+- Use for debugging layout issues
+- Check network requests for asset loading
+- Test responsive design with device emulation
+- Monitor performance with Lighthouse
+
+### File Management
+- Organize files by type and purpose
+- Keep related files together
+- Use consistent naming conventions
+- Maintain clear directory structure
