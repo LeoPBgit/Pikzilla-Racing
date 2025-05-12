@@ -1094,7 +1094,9 @@ button:hover {
 .btn-primary:hover {
   background-color: transparent;
   color: #000000;
-  border: 2px solid #000000; /* Increased border thickness */
+  border: 1px solid #000000; /* Keep border consistent */
+  outline: 1px solid #000000; /* Add outline for thicker appearance */
+  outline-offset: 0px; /* Ensure outline sits right at the edge */
 }
 
 /* Inverse button - For dark backgrounds (black) and over images */
@@ -1108,7 +1110,9 @@ button:hover {
 .btn-inverse:hover {
   background-color: transparent;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF; /* Increased border thickness */
+  border: 1px solid #FFFFFF; /* Keep border consistent */
+  outline: 1px solid #FFFFFF; /* Add outline for thicker appearance */
+  outline-offset: 0px; /* Ensure outline sits right at the edge */
 }
 
 /* Outline button - White background with black border and text */
@@ -1121,7 +1125,9 @@ button:hover {
 .btn-outline:hover {
   background-color: transparent;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF; /* Increased border thickness */
+  border: 1px solid #FFFFFF; /* Keep border consistent */
+  outline: 1px solid #FFFFFF; /* Add outline for thicker appearance */
+  outline-offset: 0px; /* Ensure outline sits right at the edge */
 }
 
 /* Dashed button - White background with dashed border */
@@ -1133,7 +1139,9 @@ button:hover {
 
 .btn-dashed:hover {
   background-color: #F5F5F5; /* Light gray background on hover */
-  border: 2px dashed #000000; /* Increased border thickness */
+  border: 1px dashed #000000; /* Keep border consistent */
+  outline: 1px dashed #000000; /* Add outline for thicker appearance */
+  outline-offset: 0px; /* Ensure outline sits right at the edge */
 }
 
 /* Context-specific button classes */
@@ -1146,7 +1154,9 @@ button:hover {
 .dark-bg .btn-primary:hover, .image-bg .btn-primary:hover {
   background-color: transparent;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF; /* Increased border thickness */
+  border: 1px solid #FFFFFF; /* Keep border consistent */
+  outline: 1px solid #FFFFFF; /* Add outline for thicker appearance */
+  outline-offset: 0px; /* Ensure outline sits right at the edge */
 }
 
 /* Add image-bg class to sections with background images */
