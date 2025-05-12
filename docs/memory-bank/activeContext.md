@@ -32,6 +32,8 @@ Each page has been implemented with responsive design principles, following the 
 - Implemented responsive breakpoints
 - Added animations and transitions for interactive elements
 - Updated typography to use Manrope with Figma text styles
+- Established section spacing standards (120px vertical padding for main content sections)
+- Defined image styling standards (no border-radius for content images)
 
 ### Project Structure and Deployment
 - Consolidated project to use root directory only for all files

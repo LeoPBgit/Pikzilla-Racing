@@ -124,7 +124,10 @@ The project uses a consistent design system with CSS variables for theming:
     - Button: 12px/Auto (Medium)
     - Tag: 12px/Auto (Medium)
 
-- **Spacing System**: Based on a 4px grid
+- **Spacing System**: 
+  - Based on a 4px grid
+  - Section vertical padding: 120px top and bottom for main content sections
+  - Image Style: No rounded corners on content images (flat edges)
 
 ## Screenshots
 
