@@ -14,6 +14,7 @@
 - [x] Created appropriate subdirectories for different asset types
 - [x] Copied assets from source to the project's assets directory
 - [x] Implemented proper asset loading in HTML pages
+- [x] Updated Welcome section image from "Welcome.jpg" to "Welcome with Edit.png"
 
 ### Page Structure
 - [x] Created consistent header and footer across all pages

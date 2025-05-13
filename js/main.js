@@ -39,6 +39,74 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Car Slider functionality
+  const prevCarButton = document.getElementById('prevCar');
+  const nextCarButton = document.getElementById('nextCar');
+  const carSlideContainers = document.querySelectorAll('.car-slide-container');
+  
+  if (prevCarButton && nextCarButton && carSlideContainers.length > 0) {
+    let currentSlideIndex = 0;
+    
+    // Function to show the current slide container with animation
+    function showSlideContainer(index, direction = 'next') {
+      // Find the currently active slide
+      const activeSlide = document.querySelector('.car-slide-container.active');
+      const nextSlide = carSlideContainers[index];
+      
+      // Set the initial position based on direction
+      if (direction === 'next') {
+        nextSlide.style.transform = 'translateX(30px)'; // Start from right
+      } else {
+        nextSlide.style.transform = 'translateX(-30px)'; // Start from left
+      }
+      
+      if (activeSlide) {
+        // Step 1: Add fade-out class to the current slide
+        if (direction === 'next') {
+          activeSlide.style.transform = 'translateX(-30px)'; // Exit to left
+        } else {
+          activeSlide.style.transform = 'translateX(30px)'; // Exit to right
+        }
+        activeSlide.style.opacity = '0';
+        
+        // Step 2: Wait for animation to complete
+        setTimeout(() => {
+          // Step 3: Remove active class from current slide
+          activeSlide.classList.remove('active');
+          
+          // Step 4: Add active class to new slide
+          nextSlide.classList.add('active');
+          
+          // Step 5: Animate the new slide in
+          setTimeout(() => {
+            nextSlide.style.opacity = '1';
+            nextSlide.style.transform = 'translateX(0)';
+          }, 50); // Small delay to ensure the active class is applied first
+        }, 400); // Match the CSS transition duration
+      } else {
+        // Initial load - no animation needed
+        nextSlide.classList.add('active');
+        nextSlide.style.opacity = '1';
+        nextSlide.style.transform = 'translateX(0)';
+      }
+    }
+    
+    // Previous button click handler
+    prevCarButton.addEventListener('click', function() {
+      currentSlideIndex = (currentSlideIndex - 1 + carSlideContainers.length) % carSlideContainers.length;
+      showSlideContainer(currentSlideIndex, 'prev');
+    });
+    
+    // Next button click handler
+    nextCarButton.addEventListener('click', function() {
+      currentSlideIndex = (currentSlideIndex + 1) % carSlideContainers.length;
+      showSlideContainer(currentSlideIndex, 'next');
+    });
+    
+    // Initialize the slider
+    showSlideContainer(currentSlideIndex);
+  }
+  
   // Position the indicator under the active link on page load
   if (activeLink) {
     positionIndicator(activeLink);

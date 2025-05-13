@@ -721,6 +721,42 @@ button:hover {
   border: 1px solid var(--color-border);
 }
 
+/* Border SVG Gradient Enhancement */
+.section-border {
+  filter: drop-shadow(0 0 3px rgba(255, 115, 1, 0.5));
+  transition: filter 0.3s ease;
+}
+
+.section-border:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 44, 1, 0.7));
+}
+
+/* News Card Styles */
+.news-card {
+  background-color: #000000;
+}
+
+.news-card .card-content {
+  background-color: #000000;
+}
+
+.news-card .card-title {
+  color: #FFFFFF;
+}
+
+.news-card .card-text {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.news-card .card-link {
+  color: var(--color-accent);
+}
+
+.news-card .card-link:hover {
+  color: var(--color-primary);
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
@@ -1018,6 +1054,331 @@ button:hover {
 @media (max-width: 576px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Car Slider Styles */
+.car-slider {
+  position: relative;
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-2xl) 0;
+  overflow: hidden;
+}
+
+.slider-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slider-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.1;
+}
+
+.slider-content {
+  position: relative;
+  z-index: 2;
+  min-height: 300px; /* Ensure the container has enough height for the slides */
+}
+
+.car-slide-container {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.car-slide-container.active {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+  position: relative;
+}
+
+.car-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.car-slide-image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.car-slide-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.car-slide-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.car-brand-logo {
+  height: 25px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.porsche-logo {
+  height: 16px; /* Make Porsche logo smaller than McLaren logo */
+}
+
+.car-name {
+  font-size: var(--font-size-paragraph-1);
+  margin-bottom: 0;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: none;
+  color: var(--color-text);
+  font-size: 24px;
+  padding: var(--spacing-sm);
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-normal);
+}
+
+.slider-arrow:hover {
+  background: linear-gradient(90deg, #FF7301, #FF2C01);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.slider-arrow.prev {
+  left: var(--spacing-sm);
+}
+
+.slider-arrow.next {
+  right: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .car-slide-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+  
+  .car-slide-image {
+    height: 200px;
+  }
+  
+  .car-brand-logo {
+    height: 20px;
+  }
+  
+  .car-name {
+    font-size: var(--font-size-paragraph-2);
+  }
+}
+
+/* Upcoming Events Section Styles */
+.upcoming-events-section {
+  color: #FFFFFF;
+}
+
+.upcoming-events-grid {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: var(--spacing-2xl);
+}
+
+/* Left Column Styles */
+.upcoming-events-left {
+  padding-right: var(--spacing-xl);
+}
+
+.event-rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.event-row {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: var(--spacing-md);
+  border-radius: 0;
+}
+
+.event-icon {
+  height: 24px;
+  width: auto;
+  margin-right: var(--spacing-md);
+}
+
+.event-text {
+  color: #000000;
+  font-weight: var(--font-weight-medium);
+}
+
+.events-info {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.calendar-icon {
+  height: 24px;
+  width: auto;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+  filter: brightness(0) invert(1); /* Make the icon white */
+}
+
+/* Right Column Styles */
+.upcoming-events-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.featured-event {
+  margin-top: 10px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  padding: var(--spacing-xl) var(--spacing-2xl) var(--spacing-xl) var(--spacing-xl); /* Increased right padding */
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top instead of center */
+  gap: 30px; /* Increased gap to 30px between left and right sides */
+  width: 100%;
+}
+
+.featured-event-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0; /* Remove any right padding */
+}
+
+.featured-date-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9; /* Tighten the spacing between month and day */
+}
+
+.featured-date-month {
+  font-size: 5rem; /* 80pt */
+  font-weight: var(--font-weight-extrabold);
+  display: block;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.featured-date-day {
+  font-size: 7.5rem; /* 120pt */
+  font-weight: var(--font-weight-extrabold);
+  display: block;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+}
+
+.featured-event-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 5px; /* Keep padding to align logo with MAY */
+  height: 100%; /* Make it full height */
+  justify-content: space-between; /* Space between logo and text */
+}
+
+.featured-logo {
+  width: 100%; /* Match width to the text below */
+  height: auto;
+  margin-bottom: 0; /* Remove margin to not affect positioning */
+}
+
+.featured-event-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 0.9; /* Tighten the spacing between location and name */
+  align-self: flex-end; /* Align to the end of the container */
+  margin-bottom: 5px; /* Fine-tune bottom alignment with 04 */
+}
+
+.featured-location {
+  font-size: 2.375rem; /* 38pt */
+  font-weight: var(--font-weight-extrabold);
+  color: #FFFFFF;
+}
+
+.featured-name {
+  font-size: 3.125rem; /* 50pt */
+  font-weight: var(--font-weight-extrabold);
+  color: #FFFFFF;
+}
+
+/* Responsive Styles for Upcoming Events */
+@media (max-width: 992px) {
+  .upcoming-events-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .upcoming-events-right {
+    align-items: flex-start;
+  }
+  
+  .upcoming-events-right .section-title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .event-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .event-icon {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .featured-event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .featured-event-left {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .featured-event-right {
+    align-items: flex-start;
+  }
+  
+  .featured-event-text {
+    align-items: flex-start;
   }
 }
 

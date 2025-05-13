@@ -6,6 +6,7 @@
   <title>Pikzilla Racing - Professional Racing Team</title>
   <meta name="description" content="Pikzilla Racing is a professional racing team competing in various motorsport events. Discover our team, cars, and upcoming races.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/custom-featured-event.css">
   <link rel="icon" href="assets/Logo/Pikzilla Head.svg">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -85,14 +86,14 @@
         <div class="grid grid-2" style="gap: 96px;">
           <!-- Image now on the left (without rounded corners) -->
           <div>
-            <img src="assets/Images/Home Page/Welcome.jpg" alt="Pikzilla Racing Team" style="width: 100%;">
+            <img src="assets/Images/Home Page/Welcome with Edit.png" alt="Pikzilla Racing Team" style="width: 100%;">
           </div>
           
           <!-- Text content now on the right -->
           <div>
             <!-- Add the Border SVG here -->
             <img src="assets/Vectors/Border.svg" alt="Decorative border" class="section-border" style="width: 100%; margin-bottom: var(--spacing-md);">
-            <h2>Welcome to Pikzilla Racing</h2>
+            <h2>WELCOME TO PIKZILLA RACING</h2>
             <p>Founded with a passion for speed and precision, Pikzilla Racing has quickly established itself as a formidable presence in the motorsport world. Our team combines cutting-edge technology with exceptional driving talent to achieve outstanding results on the track.</p>
             <p>At Pikzilla Racing, we believe in pushing boundaries and challenging conventions. Our innovative approach to racing has led to numerous victories and a growing reputation for excellence.</p>
             <p>Whether you're a dedicated racing enthusiast or new to the sport, we invite you to join us on this exciting journey as we continue to pursue greatness in every race.</p>
@@ -102,13 +103,151 @@
       </div>
     </section>
 
-    <!-- Latest News Section -->
-    <section class="section" style="background-color: var(--color-secondary);">
+    <!-- Feature Cars Section -->
+    <section class="section" style="background-color: var(--color-secondary); padding-top: 120px; padding-bottom: 120px;">
       <div class="container">
-        <h2 class="section-title">Latest News</h2>
+        <h2 class="text-left">FEATURE CARS</h2>
+        <p class="mb-lg">Our supercars aren't just vehicles—they're expressions of automotive art, engineering excellence, and our unwavering passion for performance. Each machine in our collection has been meticulously selected, thoughtfully modified, and expertly tuned to deliver exhilarating experiences both on and off the track.</p>
+        
+        <!-- Call to Action -->
+        <div class="mt-xl mb-xl">
+          <a href="cars.html" class="btn btn-primary">Explore Full Garage</a>
+        </div>
+        
+        <!-- Car Slider -->
+        <div class="car-slider">
+          <!-- Slider Background -->
+          <div class="slider-background">
+            <img src="assets/Logo/Pikzilla Text.svg" alt="Pikzilla" class="slider-background-image">
+          </div>
+          
+          <!-- Slider Content -->
+          <div class="slider-content">
+            <div class="car-slide-container active" id="slide1">
+              <!-- Car 1 -->
+              <div class="car-item">
+                <div class="car-slide-image">
+                  <img src="assets/Images/Home Page/1.png" alt="750S Spider">
+                </div>
+                <div class="car-slide-info">
+                  <img src="assets/Vectors/Mclaren.svg" alt="McLaren" class="car-brand-logo">
+                  <h3 class="car-name">750S Spider</h3>
+                </div>
+              </div>
+              
+              <!-- Car 2 -->
+              <div class="car-item">
+                <div class="car-slide-image">
+                  <img src="assets/Images/Home Page/2.png" alt="911 GT3 RS">
+                </div>
+                <div class="car-slide-info">
+                  <img src="assets/Vectors/Porsche.svg" alt="Porsche" class="car-brand-logo porsche-logo">
+                  <h3 class="car-name">911 GT3 RS</h3>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Second slide container with the same content -->
+            <div class="car-slide-container" id="slide2">
+              <!-- Car 1 -->
+              <div class="car-item">
+                <div class="car-slide-image">
+                  <img src="assets/Images/Home Page/1.png" alt="750S Spider">
+                </div>
+                <div class="car-slide-info">
+                  <img src="assets/Vectors/Mclaren.svg" alt="McLaren" class="car-brand-logo">
+                  <h3 class="car-name">750S Spider</h3>
+                </div>
+              </div>
+              
+              <!-- Car 2 -->
+              <div class="car-item">
+                <div class="car-slide-image">
+                  <img src="assets/Images/Home Page/2.png" alt="911 GT3 RS">
+                </div>
+                <div class="car-slide-info">
+                  <img src="assets/Vectors/Porsche.svg" alt="Porsche" class="car-brand-logo porsche-logo">
+                  <h3 class="car-name">911 GT3 RS</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button class="slider-arrow prev" id="prevCar" aria-label="Previous cars">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-arrow next" id="nextCar" aria-label="Next cars">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="section upcoming-events-section" style="background-color: #000000; padding: 120px 0;">
+      <div class="container">
+        <div class="upcoming-events-grid">
+          <!-- Left Column (Wider) -->
+          <div class="upcoming-events-left">
+            <!-- Event Rows -->
+            <div class="event-rows">
+              <div class="event-row">
+                <img src="assets/Icons/Home Page/Wheel.svg" alt="Event" class="event-icon">
+                <span class="event-text">May 25 - Mountain Pass Challenge</span>
+              </div>
+              <div class="event-row">
+                <img src="assets/Icons/Home Page/Wheel.svg" alt="Event" class="event-icon">
+                <span class="event-text">May 25 - Summer Sprint Series</span>
+              </div>
+              <div class="event-row">
+                <img src="assets/Icons/Home Page/Wheel.svg" alt="Event" class="event-icon">
+                <span class="event-text">May 25 - Coastal Supercar Rally</span>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <a href="#" class="btn btn-inverse mt-lg">See Event Calendar</a>
+            
+            <!-- Calendar Icon and Paragraph -->
+            <div class="events-info mt-lg">
+              <img src="assets/Icons/Home Page/Calendar.svg" alt="Calendar" class="calendar-icon">
+              <p>Mark your calendar and be part of the Pikzilla experience. Can't make it in person? Follow our social channels for live updates and highlights from every event.</p>
+            </div>
+          </div>
+          
+          <!-- Right Column (Narrower) -->
+          <div class="upcoming-events-right">
+            <h2 class="section-title text-left" style="color: #FFFFFF;">UPCOMING EVENTS</h2>
+            
+            <!-- Featured Event Container -->
+            <div class="featured-event">
+              <div class="featured-event-left">
+                <div class="featured-date-container">
+                  <span class="featured-date-month">MAY</span>
+                  <span class="featured-date-day">04</span>
+                </div>
+              </div>
+              <div class="featured-event-right">
+                <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" class="featured-logo">
+                <div class="featured-event-text">
+                  <span class="featured-location">Ohio 2025</span>
+                  <span class="featured-name">RACING</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="section" style="background-color: #FFFFFF;">
+      <div class="container">
+        <h2 class="section-title">LATEST NEWS</h2>
         <div class="grid grid-3">
           <!-- News Card 1 -->
-          <div class="card">
+          <div class="card news-card">
             <div class="card-image">
               <img src="assets/Images/Home Page/New 1.jpg" alt="Podium Finish">
             </div>
@@ -120,7 +259,7 @@
           </div>
           
           <!-- News Card 2 -->
-          <div class="card">
+          <div class="card news-card">
             <div class="card-image">
               <img src="assets/Images/Home Page/New 2.jpg" alt="New Partnership">
             </div>
@@ -132,7 +271,7 @@
           </div>
           
           <!-- News Card 3 -->
-          <div class="card">
+          <div class="card news-card">
             <div class="card-image">
               <img src="assets/Images/Home Page/New 3.jpg" alt="Driver Signing">
             </div>
@@ -152,7 +291,7 @@
     <!-- Upcoming Events Section -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Upcoming Races</h2>
+        <h2 class="section-title">UPCOMING RACES</h2>
         
         <!-- Event 1 -->
         <div class="event">
@@ -194,18 +333,7 @@
       </div>
     </section>
 
-    <!-- Sponsors Section -->
-    <section class="section" style="background-color: var(--color-secondary);">
-      <div class="container">
-        <h2 class="section-title">Our Partners</h2>
-        <div class="flex justify-center items-center gap-lg" style="flex-wrap: wrap;">
-          <img src="assets/Vectors/Mclaren.svg" alt="Sponsor 1" style="height: 60px;">
-          <img src="assets/Vectors/Border.svg" alt="Sponsor 2" style="height: 60px;">
-          <img src="assets/Vectors/Social Media.svg" alt="Sponsor 3" style="height: 60px;">
-          <img src="assets/Logo/Pikzilla Head.svg" alt="Sponsor 4" style="height: 60px;">
-        </div>
-      </div>
-    </section>
+    <!-- Sponsors Section removed as requested -->
   </main>
 
   <!-- Footer -->

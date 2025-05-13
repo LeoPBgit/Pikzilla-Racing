@@ -25,6 +25,7 @@ Each page has been implemented with responsive design principles, following the 
 - Organized assets in the assets directory
 - Structured assets by type (Icons, Images, Logo, Vectors)
 - Implemented proper asset loading in HTML pages
+- Updated Welcome section image from "Welcome.jpg" to "Welcome with Edit.png" for enhanced visual appeal
 
 ### Styling System
 - Utilized CSS variables for consistent theming
