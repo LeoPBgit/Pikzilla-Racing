@@ -58,11 +58,15 @@
   --spacing-3xl: 3rem;     /* 48px */
   --spacing-4xl: 4rem;     /* 64px */
   
+  /* Specific Spacing Rules */
+  --spacing-title-to-paragraph: 20px;  /* Spacing between section titles and paragraphs */
+  --spacing-paragraph-to-button: 40px; /* Spacing between paragraphs and buttons */
+  
   /* Borders */
-  --border-radius-sm: 0.25rem;  /* 4px */
-  --border-radius-md: 0.5rem;   /* 8px */
-  --border-radius-lg: 1rem;     /* 16px */
-  --border-radius-full: 9999px;
+  --border-radius-sm: 0;  /* No rounded corners */
+  --border-radius-md: 0;  /* No rounded corners */
+  --border-radius-lg: 0;  /* No rounded corners */
+  --border-radius-full: 0; /* No rounded corners */
   
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);

@@ -88,6 +88,8 @@
 - Clean, modern typography
 - Dynamic, racing-inspired elements
 - High-quality images of cars and racing events
+- Flat design with no rounded corners on any elements
+- All UI components must have 0px border-radius (buttons, cards, images, inputs, etc.)
 
 ### Content Presentation
 - Clear hierarchy of information
@@ -123,12 +125,20 @@
   2. Introduction or overview section
   3. Main content sections
   4. Call-to-action or related content
+  5. 150px spacing before the footer
+
+### Spacing Rules
+- Section vertical padding: 120px top and bottom for main content sections
+- Footer spacing: 150px spacing before the footer on all pages
+- Title-to-paragraph spacing: 20px between section titles and paragraphs
+- Paragraph-to-button spacing: 40px between paragraphs and buttons
 
 ### Responsive Patterns
 - Mobile: Single column layout
 - Tablet: Two column layout for some sections
 - Desktop: Multi-column layout with larger images
 - Large Desktop: Same as desktop with increased spacing
+- Footer: 150px spacing before the footer on all pages
 
 ### Interactive Elements
 - Buttons: Orange background with white text

@@ -226,6 +226,7 @@ The website implements responsive design using:
 3. **Mobile-First Approach**: Designing for mobile and enhancing for larger screens
 4. **Flexible Images**: Images that scale with their containers
 5. **CSS Grid and Flexbox**: For complex, responsive layouts
+6. **Consistent Spacing**: Standard spacing rules, including 150px spacing before the footer on all pages
 
 ```css
 /* Example Responsive Pattern */
@@ -234,6 +235,21 @@ The website implements responsive design using:
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: var(--spacing-md);
+}
+
+/* Spacing Patterns */
+.footer {
+  margin-top: 150px; /* Standard spacing before footer on all pages */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-title-to-paragraph); /* 20px spacing between titles and paragraphs */
+}
+
+p + .btn, 
+p + button, 
+.btn-container {
+  margin-top: var(--spacing-paragraph-to-button); /* 40px spacing between paragraphs and buttons */
 }
 
 @media (max-width: 768px) {
@@ -250,6 +266,20 @@ The website implements responsive design using:
 3. **CSS Organization**: Structuring CSS for efficiency
 4. **Resource Minification**: Reducing file sizes for production
 5. **Browser Caching**: Leveraging browser caching for static assets
+
+## Design System Patterns
+
+1. **Flat Design**: No rounded corners on any UI elements (border-radius: 0)
+   - All buttons, cards, images, containers, inputs, etc. must have sharp edges
+   - This creates a consistent, modern aesthetic throughout the site
+   - Implemented via CSS variables with all border-radius values set to 0
+   ```css
+   /* Border radius variables */
+   --border-radius-sm: 0;
+   --border-radius-md: 0;
+   --border-radius-lg: 0;
+   --border-radius-full: 0;
+   ```
 
 ## Accessibility Patterns
 

@@ -127,7 +127,13 @@ The project uses a consistent design system with CSS variables for theming:
 - **Spacing System**: 
   - Based on a 4px grid
   - Section vertical padding: 120px top and bottom for main content sections
-  - Image Style: No rounded corners on content images (flat edges)
+  - Footer spacing: 150px spacing before the footer on all pages
+  - Title-to-paragraph spacing: 20px between section titles and paragraphs
+  - Paragraph-to-button spacing: 40px between paragraphs and buttons
+
+- **Design Elements**:
+  - Flat Design: No rounded corners on ANY elements (buttons, cards, images, containers, inputs, etc.)
+  - Sharp Edges: All UI elements must have 0px border-radius for a consistent, modern look
 
 ## Screenshots
 

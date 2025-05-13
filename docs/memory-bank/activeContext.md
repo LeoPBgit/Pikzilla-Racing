@@ -20,6 +20,8 @@ Each page has been implemented with responsive design principles, following the 
 - Implemented CSS for styling
 - Added responsive design for all screen sizes
 - Integrated assets from the Graphic Design Assets folder
+- Added 150px spacing before the footer on all pages
+- Removed "View All News" button from the Latest News section
 
 ### Asset Management
 - Organized assets in the assets directory
@@ -33,8 +35,13 @@ Each page has been implemented with responsive design principles, following the 
 - Implemented responsive breakpoints
 - Added animations and transitions for interactive elements
 - Updated typography to use Manrope with Figma text styles
-- Established section spacing standards (120px vertical padding for main content sections)
-- Defined image styling standards (no border-radius for content images)
+- Established comprehensive spacing standards:
+  - 120px vertical padding for main content sections
+  - 150px spacing before the footer on all pages
+  - 20px spacing between section titles and paragraphs
+  - 40px spacing between paragraphs and buttons
+- Implemented flat design with no rounded corners on any UI elements (0px border-radius)
+- Ensured consistent sharp edges across all components (buttons, cards, images, inputs, etc.)
 
 ### Project Structure and Deployment
 - Consolidated project to use root directory only for all files
