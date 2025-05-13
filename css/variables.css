@@ -60,7 +60,7 @@
   
   /* Specific Spacing Rules */
   --spacing-title-to-paragraph: 20px;  /* Spacing between section titles and paragraphs */
-  --spacing-paragraph-to-button: 40px; /* Spacing between paragraphs and buttons */
+  --spacing-paragraph-to-button: 20px; /* Spacing between paragraphs and buttons */
   
   /* Borders */
   --border-radius-sm: 0;  /* No rounded corners */

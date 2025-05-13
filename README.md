@@ -129,7 +129,8 @@ The project uses a consistent design system with CSS variables for theming:
   - Section vertical padding: 120px top and bottom for main content sections
   - Footer spacing: 150px spacing before the footer on all pages
   - Title-to-paragraph spacing: 20px between section titles and paragraphs
-  - Paragraph-to-button spacing: 40px between paragraphs and buttons
+  - Paragraph-to-button spacing: 20px between paragraphs and buttons
+  - Border-to-heading spacing: 40px spacing below the border.svg vector in the welcome section
 
 - **Design Elements**:
   - Flat Design: No rounded corners on ANY elements (buttons, cards, images, containers, inputs, etc.)

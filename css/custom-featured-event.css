@@ -58,15 +58,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 5px; /* Keep padding to align logo with MAY */
+  padding-top: 0; /* Remove padding to position elements manually */
   height: 100%; /* Make it full height */
   justify-content: space-between; /* Space between logo and text */
+  position: relative; /* Add relative positioning */
 }
 
 .featured-logo {
   width: 100%; /* Match width to the text below */
   height: auto;
-  margin-bottom: 0; /* Remove margin to not affect positioning */
+  margin-bottom: 0; /* Removed spacing between logo and text */
+  margin-top: 15px; /* Adjusted to vertically center with MAY */
 }
 
 .featured-event-text {
@@ -74,6 +76,6 @@
   flex-direction: column;
   align-items: flex-end;
   line-height: 0.9; /* Tighten the spacing between location and name */
-  align-self: flex-end; /* Align to the end of the container */
-  margin-bottom: 5px; /* Fine-tune bottom alignment with 04 */
+  margin-bottom: 0; /* Remove bottom margin */
+  margin-top: 0; /* Removed spacing completely to have no gap with the logo */
 }

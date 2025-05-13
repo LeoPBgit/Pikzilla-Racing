@@ -249,7 +249,11 @@ h1, h2, h3, h4, h5, h6 {
 p + .btn, 
 p + button, 
 .btn-container {
-  margin-top: var(--spacing-paragraph-to-button); /* 40px spacing between paragraphs and buttons */
+  margin-top: var(--spacing-paragraph-to-button); /* 20px spacing between paragraphs and buttons */
+}
+
+.section-border {
+  margin-bottom: var(--spacing-2xl); /* 40px spacing below the border.svg vector */
 }
 
 @media (max-width: 768px) {

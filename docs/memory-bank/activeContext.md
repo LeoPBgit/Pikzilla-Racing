@@ -39,7 +39,8 @@ Each page has been implemented with responsive design principles, following the 
   - 120px vertical padding for main content sections
   - 150px spacing before the footer on all pages
   - 20px spacing between section titles and paragraphs
-  - 40px spacing between paragraphs and buttons
+  - 20px spacing between paragraphs and buttons
+  - 40px spacing below the border.svg vector in the welcome section
 - Implemented flat design with no rounded corners on any UI elements (0px border-radius)
 - Ensured consistent sharp edges across all components (buttons, cards, images, inputs, etc.)
 
