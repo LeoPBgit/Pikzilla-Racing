@@ -723,13 +723,13 @@ button:hover {
 
 /* Border SVG Gradient Enhancement */
 .section-border {
-  filter: drop-shadow(0 0 3px rgba(255, 115, 1, 0.5));
   transition: filter 0.3s ease;
 }
 
 .section-border:hover {
-  filter: drop-shadow(0 0 5px rgba(255, 44, 1, 0.7));
+  /* Hover effect removed */
 }
+
 
 /* News Card Styles */
 .news-card {
@@ -1138,7 +1138,7 @@ button:hover {
 }
 
 .porsche-logo {
-  height: 16px; /* Make Porsche logo smaller than McLaren logo */
+  height: 14px; /* Make Porsche logo smaller than McLaren logo */
 }
 
 .car-name {
