@@ -301,7 +301,7 @@ The website implements responsive design using:
 3. **Mobile-First Approach**: Designing for mobile and enhancing for larger screens
 4. **Flexible Images**: Images that scale with their containers
 5. **CSS Grid and Flexbox**: For complex, responsive layouts
-6. **Consistent Spacing**: Standard spacing rules, including 150px spacing before the footer on all pages
+6. **Consistent Spacing**: Standard spacing rules with consistent vertical padding for sections
 
 ```css
 /* Example Responsive Pattern */
@@ -314,7 +314,7 @@ The website implements responsive design using:
 
 /* Spacing Patterns */
 .footer {
-  margin-top: 150px; /* Standard spacing before footer on all pages */
+  margin-top: 0; /* No additional spacing before footer */
 }
 
 h1, h2, h3, h4, h5, h6 {

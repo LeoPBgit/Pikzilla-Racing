@@ -38,6 +38,7 @@
 - [x] Updated typography to Manrope with Figma text styles
 - [x] Replaced logical CSS properties with traditional ones for better browser compatibility
 - [x] Added smooth page transitions between all pages
+- [x] Updated footer spacing to remove additional margin before the footer
 
 ### JavaScript Enhancements
 - [x] Created page-transitions.js for smooth navigation between pages

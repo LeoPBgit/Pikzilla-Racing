@@ -43,7 +43,7 @@ Each page has been implemented with responsive design principles, following the 
   - Changed text-align: start to text-align: left
 - Established comprehensive spacing standards:
   - 120px vertical padding for main content sections
-  - 150px spacing before the footer on all pages
+  - No additional spacing before the footer
   - 20px spacing between section titles and paragraphs
   - 20px spacing between paragraphs and buttons
   - 40px spacing below the border.svg vector in the welcome section
