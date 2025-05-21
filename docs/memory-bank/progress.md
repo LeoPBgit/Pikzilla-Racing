@@ -36,6 +36,7 @@
 - [x] Developed responsive designs for all pages
 - [x] Implemented consistent styling across the site
 - [x] Updated typography to Manrope with Figma text styles
+- [x] Replaced logical CSS properties with traditional ones for better browser compatibility
 
 ### Project Structure and Deployment
 - [x] Consolidated project to use root directory only for all files

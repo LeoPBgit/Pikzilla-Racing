@@ -49,6 +49,11 @@ The project follows a consistent page structure:
 
 The project uses a CSS-based styling approach with:
 
+1. **CSS Properties**
+   - Uses traditional CSS properties (e.g., margin-bottom, width) instead of logical properties
+   - Ensures better browser compatibility and easier debugging
+   - Examples: margin-top/bottom, padding-top/bottom, width/height
+
 1. **CSS Variables**: Defined in `variables.css` for consistent theming
 2. **Global Styles**: Main styles defined in `styles.css`
 3. **Responsive Design**: Media queries for different screen sizes

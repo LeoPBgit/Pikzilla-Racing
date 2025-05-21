@@ -15,6 +15,7 @@ Pikzilla Racing is a professional racing team website designed to serve as a cen
 - **Comprehensive Content Structure**: Six key sections organized logically for easy navigation
 - **High-Quality Visual Elements**: Professional images of cars, team members, and racing events
 - **Clean Code Architecture**: Maintainable code with consistent styling and organization
+- **Browser Compatibility**: Uses traditional CSS properties instead of logical properties for better browser support
 
 ## Pages
 
@@ -135,6 +136,13 @@ The project uses a consistent design system with CSS variables for theming:
 - **Design Elements**:
   - Flat Design: No rounded corners on ANY elements (buttons, cards, images, containers, inputs, etc.)
   - Sharp Edges: All UI elements must have 0px border-radius for a consistent, modern look
+
+- **News Card Structure**:
+  - Layout: Flex container with column direction
+  - Card Content: Black background (#000000) with large padding (var(--spacing-lg))
+  - Text Colors: White text for title and content
+  - Button Alignment: Left-aligned, automatically pushed to bottom using margin-top: auto
+  - Text Spacing: 20px margin between text and button
 
 ## Screenshots
 

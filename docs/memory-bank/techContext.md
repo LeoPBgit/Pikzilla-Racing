@@ -12,6 +12,7 @@ The Pikzilla Racing website is built using the following technologies:
 ### Styling
 - **CSS**: Using global CSS files and CSS variables
 - **Responsive Design**: Media queries and flexible layouts for all device sizes
+- **Browser Compatibility**: Traditional CSS properties (e.g., margin-bottom, width) instead of logical properties for better browser support
 
 ### Asset Management
 - **Static Assets**: Images, icons, and other media stored in the assets directory

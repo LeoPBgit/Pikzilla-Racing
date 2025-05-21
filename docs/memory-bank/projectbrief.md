@@ -25,6 +25,8 @@ Pikzilla Racing is a professional racing team website designed to showcase the t
    - Implement responsive design principles
    - Ensure fast loading times and optimal performance
    - Organize code in a clean, structured manner
+   - Use traditional CSS properties for maximum browser compatibility
+   - Maintain consistent layout and functionality across all modern browsers
 
 4. **Content Requirements**
    - High-quality images of cars, team members, and racing events

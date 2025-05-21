@@ -39,7 +39,7 @@
     <nav class="main-nav">
       <div class="container">
         <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="index.html" class="nav-link active">HOME</a></li>
           <li><a href="team.html" class="nav-link">TEAM</a></li>
           <li><a href="cars.html" class="nav-link">CARS</a></li>
           <li><a href="racing.html" class="nav-link">RACING</a></li>
@@ -83,7 +83,7 @@
     <!-- Welcome Section -->
     <section class="section" style="padding-top: 120px; padding-bottom: 120px;">
       <div class="container">
-        <div class="grid" style="gap: 96px; grid-template-columns: 40fr 60fr;">
+        <div class="grid" style="grid-template-columns: 40fr 60fr; gap: 40px;">
           <!-- Image now on the left (without rounded corners) -->
           <div>
             <img src="assets/Images/Home Page/Welcome with Edit.png" alt="Pikzilla Racing Team" style="width: 100%;">
@@ -92,12 +92,12 @@
           <!-- Text content now on the right -->
           <div>
             <!-- Add the Border SVG here -->
-            <img src="assets/Vectors/Border.svg" alt="Decorative border" class="section-border" style="width: 100%; margin-bottom: var(--spacing-2xl);">
-            <h2>WELCOME TO PIKZILLA RACING</h2>
-            <p>Founded in 2019 by a group of supercar enthusiasts with a shared dream, Pikzilla Racing has quickly evolved from weekend track days to becoming one of the most passionate amateur racing teams in the region. We don't just drive cars—we live and breathe the culture of automotive excellence.</p>
-            <p>Our philosophy is simple: combine cutting-edge performance engineering with raw driving talent and an unquenchable thirst for adrenaline. While we may not compete at the professional level, our dedication to the art and science of racing is second to none.</p>
-            <p style="margin-bottom: 20px;">Join us on our journey as we push boundaries, break personal records, and share our love for the world's most extraordinary machines.</p>
-            <a href="team.html" class="btn btn-primary">Meet Our Team</a>
+            <img src="assets/Vectors/Border.svg" alt="Decorative border" class="section-border" style="margin-top: 20px; margin-bottom: 20px;">
+            <h2 style="text-align: left;">WELCOME TO PIKZILLA RACING</h2>
+            <p style="text-align: left;">Founded in 2019 by a group of supercar enthusiasts with a shared dream, Pikzilla Racing has quickly evolved from weekend track days to becoming one of the most passionate amateur racing teams in the region. We don't just drive cars—we live and breathe the culture of automotive excellence.</p>
+            <p style="text-align: left;">Our philosophy is simple: combine cutting-edge performance engineering with raw driving talent and an unquenchable thirst for adrenaline. While we may not compete at the professional level, our dedication to the art and science of racing is second to none.</p>
+            <p style="margin-top: 20px; margin-bottom: 20px;">Join us on our journey as we push boundaries, break personal records, and share our love for the world's most extraordinary machines.</p>
+            <a href="team.html" class="btn btn-primary" style="text-align: left;">Meet Our Team</a>
           </div>
         </div>
       </div>
@@ -107,10 +107,10 @@
     <section class="section" style="background-color: var(--color-secondary); padding-top: 120px; padding-bottom: 120px;">
       <div class="container">
         <h2 class="text-left">FEATURE CARS</h2>
-        <p style="margin-bottom: var(--spacing-title-to-paragraph);">Our supercars aren't just vehicles—they're expressions of automotive art, engineering excellence, and our unwavering passion for performance. Each machine in our collection has been meticulously selected, thoughtfully modified, and expertly tuned to deliver exhilarating experiences both on and off the track.</p>
+        <p style="margin-left: 0; margin-right: 0; width: 700px;">Our supercars aren't just vehicles—they're expressions of automotive art, engineering excellence, and our unwavering passion for performance. Each machine in our collection has been meticulously selected, thoughtfully modified, and expertly tuned to deliver exhilarating experiences both on and off the track.</p>
         
         <!-- Call to Action -->
-        <div style="margin-top: var(--spacing-paragraph-to-button);">
+        <div style="margin-left: 0; margin-right: 0; width: 700px;">
           <a href="cars.html" class="btn btn-primary">Explore Full Garage</a>
         </div>
         
@@ -207,10 +207,10 @@
             </div>
             
             <!-- Button -->
-            <a href="#" class="btn btn-inverse" style="margin-top: var(--spacing-paragraph-to-button); margin-bottom: 20px;">See Event Calendar</a>
+            <a href="#" class="btn btn-inverse" style="margin-left: 0; margin-right: 0; width: 700px;">See Event Calendar</a>
             
             <!-- Calendar Icon and Paragraph -->
-            <div class="events-info" style="margin-top: var(--spacing-paragraph-to-button);">
+            <div class="events-info" style="margin-left: 0; margin-right: 0; width: 700px;">
               <img src="assets/Icons/Home Page/Calendar.svg" alt="Calendar" class="calendar-icon">
               <p>Mark your calendar and be part of the Pikzilla experience. Can't make it in person? Follow our social channels for live updates and highlights from every event.</p>
             </div>
@@ -221,7 +221,7 @@
             <h2 class="text-left" style="color: #FFFFFF;">UPCOMING EVENTS</h2>
             
             <!-- Featured Event Container -->
-            <div class="featured-event" style="margin-top: var(--spacing-title-to-paragraph);">
+            <div class="featured-event" style="margin-left: 0; margin-right: 0; width: 700px;">
               <div class="featured-event-left">
                 <div class="featured-date-container">
                   <span class="featured-date-month">MAY</span>
@@ -244,67 +244,70 @@
     <!-- Latest News Section -->
     <section class="section" style="background-color: #FFFFFF; padding-top: 120px; padding-bottom: 120px;">
       <div class="container">
-        <div style="display: flex; align-items: center; margin-bottom: var(--spacing-2xl);">
-          <h2 class="text-left" style="margin-bottom: 0; white-space: nowrap; margin-right: 20px;">LATEST NEWS</h2>
-          <div style="flex-grow: 1; height: 23px; overflow: hidden;">
-            <img src="assets/Vectors/Border.svg" alt="Decorative border" class="section-border" style="width: 100%; height: 23px;">
-          </div>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+          <tr>
+            <td style="width: auto; padding: 0; vertical-align: middle;">
+              <h2 style="margin: 0; white-space: nowrap; margin-right: 30px; padding: 5px;">LATEST NEWS</h2>
+            </td>
+            <td style="width: 100%; padding: 0; vertical-align: middle;">
+              <img src="assets/Vectors/Border.svg" alt="Decorative border" class="section-border" style="width: 700px; height: 40px; display: inline-block;">
+            </td>
+          </tr>
+        </table>
+        <p style="margin-top: 20px; margin-bottom: 20px; text-align: left;">Stay up to date with the latest developments from Pikzilla Racing. From technical innovations and race results to team announcements and behind-the-scenes insights, our news section keeps you connected with everything happening in the world of Pikzilla Racing.</p>
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+          <a href="blog.html" class="btn btn-primary">View All News</a>
         </div>
-        <p style="margin-bottom: var(--spacing-title-to-paragraph); text-align: left;">Our supercars aren't just vehicles—they're expressions of automotive art, engineering excellence, and our unwavering passion for performance. Each machine in our collection has been meticulously selected, thoughtfully modified, and expertly tuned to deliver exhilarating experiences both on and off the track.</p>
-        <div class="grid grid-4">
+        <div class="grid grid-4" style="gap: 30px;">
           <!-- News Card 1 -->
           <div class="card news-card">
             <div class="card-image">
-              <img src="assets/Images/Home Page/New 1.jpg" alt="Scorpion Upgrade">
+              <img src="assets/Images/Home Page/New 2.jpg" alt="New Team Member">
             </div>
             <div class="card-content">
-              <h3 class="card-title" style="margin-bottom: 20px;">The Scorpion's New Sting</h3>
-              <div class="card-date" style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); margin-bottom: 20px;">April 18, 2025</div>
-              <p class="card-text" style="margin-bottom: 0;">Just completed a comprehensive aerodynamic upgrade to The Scorpion, including a custom rear wing and redesigned front splitter. Initial testing shows a 15% improvement in downforce without sacrificing top speed.</p>
-              <a href="blog.html" class="btn btn-inverse" style="margin-top: -5px;">Read More</a>
+              <h3 class="card-title">Welcoming Our New Lead Engineer</h3>
+              <div class="card-date" style="color: #FFFFFF; height: 40px; margin-top: 20px;">April 28, 2025</div>
+              <p class="card-text">We're thrilled to announce that Sarah Chen, former Formula 1 aerodynamics specialist, has joined Pikzilla Racing as our new Lead Engineer. Sarah brings over a decade of experience and will be instrumental in our upcoming vehicle development programs.</p>
+              <a href="blog.html" class="btn btn-inverse">Read More</a>
             </div>
           </div>
           
-          <!-- News Card 2 -->
           <div class="card news-card">
             <div class="card-image">
-              <img src="assets/Images/Home Page/New 2.jpg" alt="Scorpion Upgrade">
+              <img src="assets/Images/Home Page/New 3.jpg" alt="Race Victory">
             </div>
             <div class="card-content">
-              <h3 class="card-title" style="margin-bottom: 20px;">The Scorpion's New Sting</h3>
-              <div class="card-date" style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); margin-bottom: 20px;">April 18, 2025</div>
-              <p class="card-text" style="margin-bottom: 0;">Just completed a comprehensive aerodynamic upgrade to The Scorpion, including a custom rear wing and redesigned front splitter. Initial testing shows a 15% improvement in downforce without sacrificing top speed.</p>
-              <a href="blog.html" class="btn btn-inverse" style="margin-top: -5px;">Read More</a>
+              <h3 class="card-title">Podium Finish at Mountain Circuit</h3>
+              <div class="card-date" style="color: #FFFFFF; height: 40px; margin-top: 20px;">April 10, 2025</div>
+              <p class="card-text">Congratulations to our racing team for securing a second-place finish at the Mountain Circuit Championship! Despite challenging weather conditions, our drivers showed exceptional skill and determination throughout the race.</p>
+              <a href="blog.html" class="btn btn-inverse">Read More</a>
             </div>
           </div>
           
-          <!-- News Card 3 -->
           <div class="card news-card">
             <div class="card-image">
-              <img src="assets/Images/Home Page/New 3.jpg" alt="Scorpion Upgrade">
+              <img src="assets/Images/Home Page/New 4.jpg" alt="Sponsorship Announcement">
             </div>
             <div class="card-content">
-              <h3 class="card-title" style="margin-bottom: 20px;">The Scorpion's New Sting</h3>
-              <div class="card-date" style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); margin-bottom: 20px;">April 18, 2025</div>
-              <p class="card-text" style="margin-bottom: 0;">Just completed a comprehensive aerodynamic upgrade to The Scorpion, including a custom rear wing and redesigned front splitter. Initial testing shows a 15% improvement in downforce without sacrificing top speed.</p>
-              <a href="blog.html" class="btn btn-inverse" style="margin-top: -5px;">Read More</a>
+              <h3 class="card-title">New Partnership Announced</h3>
+              <div class="card-date" style="color: #FFFFFF; height: 40px; margin-top: 20px;">March 25, 2025</div>
+              <p class="card-text">We're excited to announce our new partnership with TechDrive Industries, a leading manufacturer of high-performance automotive components. This collaboration will provide our team with cutting-edge technology and support for the upcoming racing season.</p>
+              <a href="blog.html" class="btn btn-inverse">Read More</a>
             </div>
           </div>
-          
-          <!-- News Card 4 -->
+
           <div class="card news-card">
             <div class="card-image">
-              <img src="assets/Images/Home Page/New 4.jpg" alt="Scorpion Upgrade">
+              <img src="assets/Images/Home Page/New 1.jpg" alt="Track Day Success">
             </div>
             <div class="card-content">
-              <h3 class="card-title" style="margin-bottom: 20px;">The Scorpion's New Sting</h3>
-              <div class="card-date" style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); margin-bottom: 20px;">April 18, 2025</div>
-              <p class="card-text" style="margin-bottom: 0;">Just completed a comprehensive aerodynamic upgrade to The Scorpion, including a custom rear wing and redesigned front splitter. Initial testing shows a 15% improvement in downforce without sacrificing top speed.</p>
-              <a href="blog.html" class="btn btn-inverse" style="margin-top: -5px;">Read More</a>
+              <h3 class="card-title">Track Day Success</h3>
+              <div class="card-date" style="color: #FFFFFF; height: 40px; margin-top: 20px;">March 15, 2025</div>
+              <p class="card-text">Our recent track day event was a huge success! Team members pushed their limits and set new personal records. The day was filled with adrenaline, learning, and camaraderie as we continue to hone our racing skills.</p>
+              <a href="blog.html" class="btn btn-inverse">Read More</a>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
 
@@ -375,8 +378,8 @@
         
         <div class="footer-newsletter">
           <h5>Newsletter</h5>
-          <p style="margin-bottom: var(--spacing-title-to-paragraph);">Join the Pikzilla family for exclusive updates, event invitations, and behind-the-scenes content.</p>
-          <form class="newsletter-form" style="margin-top: var(--spacing-paragraph-to-button);">
+          <p style="margin-left: 0; margin-right: 0; width: 700px;">Join the Pikzilla family for exclusive updates, event invitations, and behind-the-scenes content.</p>
+          <form class="newsletter-form" style="margin-left: 0; margin-right: 0; width: 700px;">
             <input type="email" placeholder="Your email" class="newsletter-input" required>
             <button type="submit" class="btn btn-inverse newsletter-button">Subscribe</button>
           </form>
@@ -397,5 +400,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>

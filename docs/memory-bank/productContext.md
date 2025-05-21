@@ -49,6 +49,8 @@ Pikzilla Racing needs a website that:
 1. Reflects the team's professional image and racing heritage
 2. Provides up-to-date information on races, team members, and vehicles
 3. Engages fans with compelling content and easy navigation
+4. Works consistently across all modern browsers through the use of traditional CSS properties
+5. Maintains high performance and reliability for all users regardless of their browser choice
 4. Attracts potential sponsors with a polished presentation
 5. Serves as a resource for media and industry professionals
 

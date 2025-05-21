@@ -35,6 +35,11 @@ Each page has been implemented with responsive design principles, following the 
 - Implemented responsive breakpoints
 - Added animations and transitions for interactive elements
 - Updated typography to use Manrope with Figma text styles
+- Replaced logical CSS properties with traditional ones for better browser compatibility
+  - Changed padding-block-start/end to padding-top/bottom
+  - Changed margin-block-start/end to margin-top/bottom
+  - Changed inline-size/block-size to width/height
+  - Changed text-align: start to text-align: left
 - Established comprehensive spacing standards:
   - 120px vertical padding for main content sections
   - 150px spacing before the footer on all pages
