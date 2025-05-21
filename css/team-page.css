@@ -102,6 +102,7 @@
   font-weight: var(--font-weight-extrabold);
   text-transform: uppercase;
   margin: 0 20px;
+  white-space: nowrap;
 }
 
 .team-members-grid {
