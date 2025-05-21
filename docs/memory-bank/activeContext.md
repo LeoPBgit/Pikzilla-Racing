@@ -22,6 +22,7 @@ Each page has been implemented with responsive design principles, following the 
 - Integrated assets from the Graphic Design Assets folder
 - Added 150px spacing before the footer on all pages
 - Removed "View All News" button from the Latest News section
+- Implemented smooth page transitions between all pages using sessionStorage and CSS transitions
 
 ### Asset Management
 - Organized assets in the assets directory

@@ -64,6 +64,7 @@ The Pikzilla Racing website is deployed using GitHub Pages:
 - **HTML5**: For structure and content
 - **CSS3**: For styling and layout with variables for theming
 - **JavaScript**: For interactivity and dynamic elements
+  - **Page Transitions**: Smooth transitions between pages using sessionStorage and CSS transitions
 
 ## Getting Started
 

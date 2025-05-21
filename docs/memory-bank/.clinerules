@@ -101,7 +101,7 @@
 - Intuitive, easy-to-use navigation
 - Clear indication of current page
 - Accessible on all device sizes
-- Smooth transitions between pages
+- Smooth transitions between pages using sessionStorage and CSS transitions
 
 ## Project-Specific Patterns
 
@@ -145,6 +145,17 @@
 - Links: White text with orange hover state
 - Cards: Subtle hover effect with elevation
 - Forms: Clear labels and validation feedback
+
+### Page Transitions
+- Smooth transitions between pages using sessionStorage to track navigation state
+- CSS transitions for opacity to create fade effects
+- No blank/white screen during page transitions
+- Maintains visual continuity during navigation
+- Implementation in page-transitions.js with the following approach:
+  1. Track navigation state using sessionStorage
+  2. Apply transitions only when navigating between internal pages
+  3. Use requestAnimationFrame for smooth animations
+  4. Maintain opacity during navigation to prevent blank screens
 
 ## Known Challenges
 

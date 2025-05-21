@@ -12,15 +12,18 @@ flowchart TD
     B --> E[Header]
     B --> F[Footer]
     B --> G[Navigation]
+    B --> PT[Page Transitions]
     C --> H[variables.css]
     C --> I[styles.css]
     D --> J[main.js]
-    A --> K[Home Page]
-    A --> L[Team Page]
-    A --> M[Cars Page]
-    A --> N[Racing Page]
-    A --> O[Blog Page]
-    A --> P[Contact Page]
+    D --> K[nav.js]
+    D --> L[page-transitions.js]
+    A --> M[Home Page]
+    A --> N[Team Page]
+    A --> O[Cars Page]
+    A --> P[Racing Page]
+    A --> Q[Blog Page]
+    A --> R[Contact Page]
 ```
 
 ## Core Design Patterns
@@ -32,6 +35,7 @@ The project follows a consistent page structure:
 1. **Shared Elements**: Included in all pages
    - Header: Navigation and branding
    - Footer: Contact information and secondary navigation
+   - Page Transitions: Smooth transitions between pages
 
 2. **Page-Specific Content**: Unique to each page
    - Home: Landing page with featured content
@@ -130,6 +134,70 @@ The website uses standard HTML navigation with consistent linking between pages:
 </nav>
 ```
 
+## Page Transitions Pattern
+
+The website implements smooth page transitions to enhance the user experience:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant CurrentPage
+    participant SessionStorage
+    participant NewPage
+    
+    User->>CurrentPage: Click navigation link
+    CurrentPage->>SessionStorage: Set navigating flag
+    CurrentPage->>NewPage: Browser navigates to new page
+    NewPage->>SessionStorage: Check navigating flag
+    SessionStorage->>NewPage: Return flag value
+    NewPage->>NewPage: Skip fade-in if coming from internal page
+    NewPage->>SessionStorage: Clear navigating flag
+    NewPage->>User: Display new page content
+```
+
+### Implementation Details
+
+1. **SessionStorage State Management**
+   - Uses sessionStorage to track navigation state between pages
+   - Sets a 'navigating' flag when internal navigation occurs
+   - Checks for this flag when a new page loads
+
+2. **CSS Transitions**
+   - Uses CSS opacity transitions for smooth fade effects
+   - Transition duration: 300ms with ease timing function
+   - Applied to the body element for consistent behavior
+
+3. **JavaScript Coordination**
+   - page-transitions.js handles the transition logic
+   - Detects internal navigation vs. fresh page loads
+   - Uses requestAnimationFrame for smooth animations
+   - Prevents blank screens during navigation
+
+```javascript
+// Example of Page Transition Pattern
+document.addEventListener('DOMContentLoaded', () => {
+    // Set a flag in sessionStorage to indicate this page is loaded
+    sessionStorage.setItem('lastPage', window.location.href);
+    
+    // Add transition class to the body
+    document.body.classList.add('transition-ready');
+    
+    // If we're coming from another page in the site, we're already visible
+    // If we're loading the page fresh, fade in
+    if (!sessionStorage.getItem('navigating')) {
+        // Fresh page load - fade in
+        document.body.style.opacity = '0';
+        requestAnimationFrame(() => {
+            document.body.style.opacity = '1';
+        });
+    } else {
+        // Coming from navigation - already visible
+        document.body.style.opacity = '1';
+        sessionStorage.removeItem('navigating');
+    }
+});
+```
+
 ## Repository and Deployment Structure
 
 ### File Structure
@@ -168,7 +236,9 @@ Pikzilla-Racing/
 │   ├── styles.css     # Main stylesheet
 │   └── variables.css  # CSS variables for theming
 ├── js/                # JavaScript files
-│   └── main.js        # Main JavaScript functionality
+│   ├── main.js        # Main JavaScript functionality
+│   ├── nav.js         # Navigation functionality
+│   └── page-transitions.js # Page transition effects
 └── docs/              # Documentation and development resources
     ├── memory-bank/   # Project documentation
     ├── visual-references/ # Design references

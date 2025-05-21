@@ -37,6 +37,11 @@
 - [x] Implemented consistent styling across the site
 - [x] Updated typography to Manrope with Figma text styles
 - [x] Replaced logical CSS properties with traditional ones for better browser compatibility
+- [x] Added smooth page transitions between all pages
+
+### JavaScript Enhancements
+- [x] Created page-transitions.js for smooth navigation between pages
+- [x] Implemented sessionStorage-based state management for transitions
 
 ### Project Structure and Deployment
 - [x] Consolidated project to use root directory only for all files

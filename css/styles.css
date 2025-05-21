@@ -116,51 +116,143 @@ button:hover {
   margin-bottom: var(--spacing-2xl);
 }
 
-/* Navigation Styles */
-.nav-menu {
+/* New Header and Navigation Styles */
+/* Top Bar Styles */
+.top-bar {
+  background-color: #000000;
+  padding: 10px 0;
+  height: 40px; /* Fixed height */
+}
+
+.top-bar-content {
   display: flex;
-  gap: 2rem;
-  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.top-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.top-action-link {
+  color: #FFFFFF;
+  font-size: var(--font-size-xs);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.top-action-link i {
+  font-size: 14px;
+}
+
+/* Logo Container Styles */
+.logo-container {
+  background-color: #000000;
+  padding: 15px 0;
+  text-align: center;
+  height: 75px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo-link img {
+  height: 45px;
+  width: auto;
+}
+
+/* Main Navigation Styles */
+.main-navigation {
+  background-color: #000000;
+  padding: 10px 0;
+  border-bottom: none;
+  margin-bottom: var(--spacing-2xl);
+  height: 45px; /* Fixed height */
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-.nav-menu::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
-  width: var(--underline-width, 0);
-  left: var(--underline-offset-x, 0);
-  transition: all 0.3s ease;
-  z-index: 1;
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.nav-item {
+  margin: 0;
 }
 
 .nav-link {
-  position: relative;
-  text-decoration: none;
   color: #FFFFFF;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--color-accent);
+  font-size: var(--font-size-menu);
+  font-weight: 400; /* Regular weight for inactive items */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 5px 0;
+  display: block;
 }
 
 .nav-link.active {
-  color: #FFFFFF;
-  font-weight: var(--font-weight-extrabold);
+  color: #FFFFFF; /* White color for active items */
+  font-weight: 800; /* Extrabold weight for active items */
 }
 
-.nav-link.active::after {
-  content: '';
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 5px;
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+  right: 15px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    z-index: 1000;
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .top-action-link span {
+    display: none;
+  }
 }
 
 /* Utility classes */
@@ -247,70 +339,46 @@ button:hover {
   position: relative;
 }
 
-.nav-menu::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
-  width: var(--underline-width, 0);
-  left: var(--underline-offset-x, 0);
-  transition: all 0.3s ease;
-  z-index: 1;
-}
-
 .nav-menu li {
   margin: 0;
+  position: relative;
 }
+
+/* No underline for any menu item */
 
 .nav-link {
   color: #FFFFFF;
   font-size: var(--font-size-menu);
-  font-weight: var(--font-weight-medium);
+  font-weight: 400; /* Regular weight for inactive items */
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 0.5rem 0;
   position: relative;
-  transition: color 0.3s ease;
+  transition: none !important; /* Explicitly disable transitions */
+  transform: translateZ(0); /* Use hardware acceleration */
+  backface-visibility: hidden; /* Prevent flickering */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  -moz-osx-font-smoothing: grayscale;
+  width: auto; /* Prevent width changes */
+  display: inline-block; /* Ensure consistent display */
 }
 
+/* Completely disable hover effects */
 .nav-link:hover {
-  color: var(--color-accent);
+  color: #FFFFFF !important;
+  transform: translateZ(0) !important; /* Force no movement */
+  font-weight: 400 !important; /* Keep regular weight on hover */
 }
 
 .nav-link.active {
-  color: #FFFFFF;
-  font-weight: var(--font-weight-extrabold);
+  color: #FFFFFF; /* White color for active items */
+  font-weight: 800 !important; /* Extrabold weight for active items */
+  background-color: transparent; /* Remove background */
+  padding: 0.5rem 0; /* Remove horizontal padding */
+  margin: 0; /* Remove margin adjustments */
 }
 
-.nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
-}
-
-.nav-link {
-  color: #FFFFFF;
-}
-
-.nav-link:hover {
-  color: var(--color-accent);
-}
-
-.nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
-}
 
 /* Mobile menu button */
 .mobile-menu-button {
@@ -453,11 +521,6 @@ button:hover {
   position: relative; /* Added for positioning the indicator */
 }
 
-/* Active indicator that will be animated */
-.nav-indicator {
-  position: absolute;
-  height: 3px;
-}
 
 /* News Cards */
 .news-card {
@@ -488,31 +551,8 @@ button:hover {
   align-self: flex-start;
   margin-top: auto;
 }
-  bottom: -10px;
-  background: linear-gradient(90deg, #FF7301, #FF2C01); /* Official Orange to Red gradient */
-  transition: all 0.3s ease-in-out;
-  z-index: 1;
-}
 
-.nav-link {
-  color: #FFFFFF; /* Official White */
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-medium);
-  transition: color var(--transition-normal);
-  position: relative;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  letter-spacing: 1px;
-  font-size: var(--font-size-menu);
-}
 
-.nav-link:hover {
-  color: #FFFFFF;
-}
-
-.nav-link.active {
-  color: #FFFFFF; /* Official White */
-  font-weight: var(--font-weight-extrabold);
-}
 
 /* Remove the static indicator since we're using an animated one */
 
@@ -1350,7 +1390,7 @@ button:hover {
 }
 
 .slider-arrow:hover {
-  background: linear-gradient(90deg, #FF7301, #FF2C01);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1723,6 +1763,11 @@ p + .btn,
 p + button, 
 .btn-container {
   margin-top: var(--spacing-paragraph-to-button); /* 40px spacing between paragraphs and buttons */
+}
+
+/* Page Transition Styles */
+.transition-ready {
+  transition: opacity 300ms ease;
 }
 
 /* Figma Text Styles */

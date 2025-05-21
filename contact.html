@@ -13,37 +13,44 @@
 <body>
   <!-- Header -->
   <header class="header">
+    <!-- Top Bar with Search and Login -->
     <div class="top-bar">
-      <div class="container top-bar-container">
-        <div class="spacer"></div>
-        <div class="top-right">
-          <a href="#" class="search-button">
-            <span>Search</span>
-            <i class="fas fa-search"></i>
-          </a>
-          <a href="#" class="login-button">
-            <span>Login</span>
-            <i class="fas fa-user"></i>
-          </a>
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="spacer"></div>
+          <div class="top-actions">
+            <a href="#" class="top-action-link">
+              <span>Search</span>
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="top-action-link">
+              <span>Login</span>
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container header-container">
-      <div class="logo">
-        <a href="index.html">
+    
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <div class="container">
+        <a href="index.html" class="logo-link">
           <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
         </a>
       </div>
     </div>
-    <nav class="main-nav">
+    
+    <!-- Main Navigation -->
+    <nav class="main-navigation">
       <div class="container">
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">HOME</a></li>
-          <li><a href="team.html" class="nav-link">TEAM</a></li>
-          <li><a href="cars.html" class="nav-link">CARS</a></li>
-          <li><a href="racing.html" class="nav-link">RACING</a></li>
-          <li><a href="blog.html" class="nav-link">BLOG</a></li>
-          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="team.html" class="nav-link">TEAM</a></li>
+          <li class="nav-item"><a href="cars.html" class="nav-link">CARS</a></li>
+          <li class="nav-item"><a href="racing.html" class="nav-link">RACING</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">BLOG</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">CONTACT</a></li>
         </ul>
         <button class="mobile-menu-button">
           <i class="fas fa-bars"></i>
@@ -328,5 +335,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/page-transitions.js"></script>
 </body>
 </html>

@@ -1,20 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Mobile menu toggle
-  const mobileMenuButton = document.querySelector('.mobile-menu-button');
-  const navMenu = document.querySelector('.nav-menu');
+  // Mobile menu toggle is now handled in nav.js
   
-  if (mobileMenuButton && navMenu) {
-    mobileMenuButton.addEventListener('click', function() {
-      navMenu.classList.toggle('active');
-    });
-  }
-  
-  // Create and add the animated indicator
-  const indicator = document.createElement('div');
-  indicator.className = 'nav-indicator';
-  navMenu.appendChild(indicator);
-  
-  // Set active nav link based on current page and position the indicator
+  // Set active nav link based on current page
   const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
   const navLinks = document.querySelectorAll('.nav-link');
   
@@ -26,17 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
       link.classList.add('active');
       activeLink = link;
     }
-    
-    // Add event listeners for hover effect
-    link.addEventListener('mouseenter', function() {
-      positionIndicator(this);
-    });
-    
-    link.addEventListener('mouseleave', function() {
-      if (activeLink) {
-        positionIndicator(activeLink);
-      }
-    });
   });
   
   // Car Slider functionality
@@ -107,19 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlideContainer(currentSlideIndex);
   }
   
-  // Position the indicator under the active link on page load
-  if (activeLink) {
-    positionIndicator(activeLink);
-  }
-  
-  // Function to position the indicator
-  function positionIndicator(element) {
-    indicator.style.width = `${element.offsetWidth}px`;
-    indicator.style.left = `${element.offsetLeft}px`;
-  }
-  
   // Search button functionality
-  const searchButton = document.querySelector('.search-button');
+  const searchButton = document.querySelector('.top-action-link');
   if (searchButton) {
     searchButton.addEventListener('click', function(e) {
       e.preventDefault();
