@@ -1081,10 +1081,9 @@ button:hover {
 .team-member-image {
   width: 200px;
   height: 200px;
-  border-radius: 0; /* No rounded corners */
+  border-radius: 50%; /* Make it circular */
   overflow: hidden;
   margin: 0 auto var(--spacing-md);
-  border: 3px solid var(--color-primary);
 }
 
 .team-member-image img {
