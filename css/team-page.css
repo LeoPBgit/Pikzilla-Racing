@@ -98,8 +98,8 @@
 }
 
 .team-section-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: var(--font-size-subheading-1);
+  font-weight: var(--font-weight-extrabold);
   text-transform: uppercase;
   margin: 0 20px;
 }
