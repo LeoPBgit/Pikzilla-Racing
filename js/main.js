@@ -83,15 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlideContainer(currentSlideIndex);
   }
   
-  // Search button functionality
-  const searchButton = document.querySelector('.top-action-link');
-  if (searchButton) {
-    searchButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      // For now, just show an alert. In a real implementation, this would open a search modal
-      alert('Search functionality will be implemented in a future update.');
-    });
-  }
+  // Search button functionality is now handled in search.js
   
   // Contact form validation
   const contactForm = document.querySelector('.contact-form');
