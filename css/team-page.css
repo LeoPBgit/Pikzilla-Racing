@@ -72,13 +72,18 @@
   justify-content: center;
   background-color: #FFFFFF;
   color: #000000;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   font-weight: 600;
 }
 
 .organization-tab i {
   margin-right: 10px;
+}
+
+.organization-logo {
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* Team Members Section */
