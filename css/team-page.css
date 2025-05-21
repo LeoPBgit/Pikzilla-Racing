@@ -1,0 +1,230 @@
+/* Team Page Specific Styles */
+
+/* Orange Divider Lines */
+.orange-divider {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FF4500;
+  margin: 20px 0;
+}
+
+/* Hero Section with Two Columns */
+.team-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.team-hero-content {
+  padding-right: 20px;
+}
+
+.team-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.team-hero-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.team-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Organization Section */
+.organization-section {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.organization-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.organization-description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.organization-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.organization-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.organization-tab i {
+  margin-right: 10px;
+}
+
+/* Team Members Section */
+.team-members-section {
+  padding: 80px 0;
+}
+
+.team-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.team-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.team-member-card {
+  text-align: center;
+}
+
+.team-member-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+.team-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.team-member-position {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.team-member-tag {
+  display: inline-block;
+  background-color: #FF4500;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Join Team Section */
+.join-team-section {
+  background-color: #FF4500;
+  color: #FFFFFF;
+  padding: 80px 0;
+}
+
+.join-team-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.join-team-content {
+  padding-right: 20px;
+}
+
+.join-team-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.join-team-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.join-team-button {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.join-team-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.join-team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.join-team-image-large {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .team-hero {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .join-team-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-members-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .join-team-images {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .join-team-image-large {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
