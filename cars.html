@@ -57,164 +57,152 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-background">
-        <img src="assets/Images/Car Page/Car.jpg" alt="Pikzilla Racing Car">
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">ENGINEERING EXCELLENCE</h1>
-          <p class="hero-subtitle">Discover the cutting-edge technology and precision engineering behind our high-performance racing vehicles.</p>
-          <a href="#features" class="btn btn-inverse hero-button">Explore Features</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Current Season Car -->
+    <!-- Collection Section -->
     <section class="section" style="padding-top: 120px; padding-bottom: 120px;">
       <div class="container">
-        <h2 class="section-title">Current Season: PZ-X23</h2>
+        <h1 class="section-title text-center" style="font-size: var(--font-size-headline); line-height: var(--line-height-headline); font-weight: var(--font-weight-extrabold); margin-bottom: var(--spacing-title-to-paragraph);">EXPLORE OUR COLLECTION</h1>
         
-        <div class="grid grid-2">
-          <div>
-            <img src="assets/Images/Car Page/Car.jpg" alt="PZ-X23 Racing Car" style="border-radius: var(--border-radius-md); width: 100%;">
+        <!-- Subheading -->
+        <p class="text-center" style="margin-bottom: var(--spacing-paragraph-to-button);">Our growing fleet encompasses three distinct categories, each representing a different facet of our racing passion:</p>
+        
+        <!-- Pikzilla Logo -->
+        <div class="text-center" style="margin-bottom: var(--spacing-2xl);">
+          <img src="assets/Logo/Pikzilla Text.svg" alt="Pikzilla" style="height: 120px; display: inline-block; max-width: 100%;">
+        </div>
+        
+        <!-- Car Categories -->
+        <div class="car-categories" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xl);">
+          <div class="category">
+            <h3>Track Performance</h3>
+            <p>Engineered for maximum speed and handling on professional racing circuits.</p>
           </div>
-          <div>
-            <h3>The Pinnacle of Racing Technology</h3>
-            <p>The PZ-X23 represents the culmination of our engineering team's expertise and innovation. Designed for the 2025 racing season, this vehicle combines aerodynamic efficiency, power, and handling precision to deliver exceptional performance on any track.</p>
-            <p>Our latest model features a redesigned chassis for improved weight distribution, advanced aerodynamic elements for enhanced downforce, and a state-of-the-art power unit that delivers both performance and reliability.</p>
+          <div class="category">
+            <h3>Road Monsters</h3>
+            <p>Street-legal beasts that combine luxury with race-inspired performance.</p>
+          </div>
+          <div class="category">
+            <h3>Concept Vehicles</h3>
+            <p>Experimental designs pushing the boundaries of automotive engineering.</p>
+          </div>
+        </div>
+        
+        <!-- Divider -->
+        <div class="divider" style="border-bottom: 1px dashed var(--color-primary); margin-bottom: var(--spacing-xl);"></div>
+        
+        <!-- Featured Car -->
+        <div class="featured-car" style="margin-bottom: var(--spacing-xl);">
+          <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S" style="width: 100%; margin-bottom: var(--spacing-md);">
+          
+          <!-- Thumbnails -->
+          <div class="car-thumbnails" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
+            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 1" style="width: 100%;">
+            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 2" style="width: 100%;">
+            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 3" style="width: 100%;">
+            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 4" style="width: 100%;">
+          </div>
+        </div>
+        
+        <!-- Car Details -->
+        <div class="grid grid-2" style="margin-bottom: var(--spacing-xl);">
+          <div class="car-info">
+            <h2 class="car-title">McLaren 720S</h2>
+            <p class="car-description">The McLaren 720S embodies our philosophy of relentless performance. With its revolutionary aerodynamics, lightweight carbon fiber construction, and twin-turbocharged V8 engine, it delivers an unparalleled driving experience on both road and track.</p>
+            <p>The 720S represents the perfect balance between raw power and precise handling, making it a formidable competitor in any racing environment. Its advanced suspension system and electronic stability controls allow drivers to push the limits with confidence.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: var(--spacing-md);">View Details</a>
+          </div>
+          
+          <!-- Car Specifications -->
+          <div class="car-specs">
+            <h3>Performance Metrics</h3>
             
-            <div class="car-specs">
-              <div class="spec-item">
-                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
-                <div>
-                  <div class="spec-label">Top Speed</div>
-                  <div class="spec-value">340 km/h</div>
-                </div>
+            <!-- Specs with Progress Bars -->
+            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
+                <span>Top Speed</span>
+                <span>341 km/h</span>
               </div>
-              
-              <div class="spec-item">
-                <div class="spec-icon"><i class="fas fa-bolt"></i></div>
-                <div>
-                  <div class="spec-label">Power</div>
-                  <div class="spec-value">850 HP</div>
-                </div>
+              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
+                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 95%; height: 100%;"></div>
               </div>
-              
-              <div class="spec-item">
-                <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
-                <div>
-                  <div class="spec-label">Weight</div>
-                  <div class="spec-value">745 kg</div>
-                </div>
+            </div>
+            
+            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
+                <span>Acceleration (0-100 km/h)</span>
+                <span>2.9 seconds</span>
               </div>
-              
-              <div class="spec-item">
-                <div class="spec-icon"><i class="fas fa-clock"></i></div>
-                <div>
-                  <div class="spec-label">0-100 km/h</div>
-                  <div class="spec-value">2.4 seconds</div>
-                </div>
+              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
+                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 90%; height: 100%;"></div>
+              </div>
+            </div>
+            
+            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
+                <span>Power</span>
+                <span>720 HP</span>
+              </div>
+              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
+                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 85%; height: 100%;"></div>
+              </div>
+            </div>
+            
+            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
+                <span>Torque</span>
+                <span>770 Nm</span>
+              </div>
+              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
+                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 80%; height: 100%;"></div>
+              </div>
+            </div>
+            
+            <div class="spec-item">
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
+                <span>Weight-to-Power Ratio</span>
+                <span>2.23 kg/hp</span>
+              </div>
+              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
+                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 88%; height: 100%;"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Key Features -->
-    <section id="features" class="section" style="background-color: var(--color-secondary); padding-top: 120px; padding-bottom: 120px;">
-      <div class="container">
-        <h2 class="section-title">Key Features</h2>
-        
-        <div class="grid grid-3" style="margin-top: var(--spacing-title-to-paragraph);">
-          <!-- Aerodynamics -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title"><i class="fas fa-wind" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Advanced Aerodynamics</h3>
-              <p class="card-text">Our aerodynamics package has been refined through extensive wind tunnel testing and computational fluid dynamics simulations. The result is a car that generates optimal downforce while minimizing drag, allowing for exceptional cornering speeds and stability.</p>
-            </div>
-          </div>
-          
-          <!-- Power Unit -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title"><i class="fas fa-engine" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Hybrid Power Unit</h3>
-              <p class="card-text">The PZ-X23 features our most advanced hybrid power unit to date. Combining a high-revving internal combustion engine with cutting-edge energy recovery systems, it delivers exceptional power and efficiency throughout the race.</p>
-            </div>
-          </div>
-          
-          <!-- Chassis -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title"><i class="fas fa-car" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Lightweight Chassis</h3>
-              <p class="card-text">Our carbon fiber monocoque chassis represents the perfect balance between strength and weight. Engineered to provide maximum driver protection while minimizing mass, it forms the foundation of the car's exceptional handling characteristics.</p>
-            </div>
-          </div>
-          
-          <!-- Suspension -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title"><i class="fas fa-cogs" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Adaptive Suspension</h3>
-              <p class="card-text">The PZ-X23's suspension system features advanced adaptive damping technology that continuously adjusts to track conditions and driving inputs. This provides optimal tire contact and grip in all situations, from high-speed straights to technical corners.</p>
-            </div>
-          </div>
-          
-          <!-- Electronics -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title"><i class="fas fa-microchip" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Advanced Electronics</h3>
-              <p class="card-text">Our proprietary electronic control systems manage everything from power delivery to differential settings. With thousands of parameters monitored in real-time, the car can be fine-tuned for optimal performance on any track and in any conditions.</p>
-            </div>
-          </div>
-          
-          <!-- Braking System -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title"><i class="fas fa-brake-system" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Carbon Ceramic Brakes</h3>
-              <p class="card-text">The braking system features carbon ceramic discs and specially developed calipers for exceptional stopping power and fade resistance. Combined with our regenerative braking system, it provides both performance and efficiency.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Development Process -->
-    <section class="section" style="padding-top: 120px; padding-bottom: 120px;">
-      <div class="container">
-        <h2 class="section-title">Development Process</h2>
-        
-        <div class="grid grid-2">
-          <div>
-            <h3>From Concept to Track</h3>
-            <p>The development of each Pikzilla Racing car begins long before the season starts. Our design team works closely with engineers, aerodynamicists, and drivers to create a vehicle that pushes the boundaries of what's possible within the regulations.</p>
-            <p>The process begins with extensive computer modeling and simulation, followed by wind tunnel testing of scale models. As the design evolves, full-size components are manufactured and tested, culminating in the assembly of the complete car.</p>
-            <p>Before its competitive debut, each car undergoes rigorous testing on various tracks and in different conditions. This allows us to fine-tune performance and ensure reliability when it matters most—on race day.</p>
-            <p>Throughout the season, our development team continues to refine and improve the car, introducing updates based on data analysis and driver feedback. This relentless pursuit of performance is what drives Pikzilla Racing forward.</p>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/Images/Car Page/Car.jpg" alt="Car Development" style="border-radius: var(--border-radius-md); max-width: 100%;">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technical Partners -->
+    
+    <!-- More Cars Section -->
     <section class="section" style="background-color: var(--color-secondary); padding-top: 120px; padding-bottom: 120px;">
       <div class="container">
-        <h2 class="section-title">Technical Partners</h2>
-        <p style="text-align: center; margin-bottom: var(--spacing-title-to-paragraph);">Our success is built on collaboration with industry-leading technical partners who share our commitment to innovation and excellence.</p>
+        <h2 class="section-title">More in Our Collection</h2>
         
-        <div class="flex justify-center items-center gap-lg" style="flex-wrap: wrap;">
-          <img src="assets/Vectors/Mclaren.svg" alt="Technical Partner 1" style="height: 60px;">
-          <img src="assets/Vectors/Border.svg" alt="Technical Partner 2" style="height: 60px;">
-          <img src="assets/Vectors/Social Media.svg" alt="Technical Partner 3" style="height: 60px;">
-          <img src="assets/Logo/Pikzilla Head.svg" alt="Technical Partner 4" style="height: 60px;">
+        <div class="grid grid-2" style="gap: var(--spacing-xl);">
+          <!-- Car 1 -->
+          <div class="car-card">
+            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren Senna" style="width: 100%; margin-bottom: var(--spacing-md);">
+            <h3>McLaren Senna</h3>
+            <p>Named after the legendary Formula 1 driver Ayrton Senna, this track-focused hypercar represents the ultimate expression of McLaren's performance philosophy.</p>
+            <div class="car-quick-specs" style="display: flex; justify-content: space-between; margin-top: var(--spacing-md);">
+              <span>800 HP</span>
+              <span>340 km/h</span>
+              <span>2.8s (0-100)</span>
+            </div>
+          </div>
+          
+          <!-- Car 2 -->
+          <div class="car-card">
+            <img src="assets/Images/Car Page/Car.jpg" alt="Ferrari SF90 Stradale" style="width: 100%; margin-bottom: var(--spacing-md);">
+            <h3>Ferrari SF90 Stradale</h3>
+            <p>Ferrari's first series production PHEV (Plug-in Hybrid Electric Vehicle) is a technological tour de force, combining a V8 turbo engine with three electric motors.</p>
+            <div class="car-quick-specs" style="display: flex; justify-content: space-between; margin-top: var(--spacing-md);">
+              <span>1000 HP</span>
+              <span>340 km/h</span>
+              <span>2.5s (0-100)</span>
+            </div>
+          </div>
         </div>
         
-        <div style="text-align: center; margin-top: var(--spacing-paragraph-to-button);">
-          <a href="contact.html" class="btn btn-primary">Become a Partner</a>
+        <div style="text-align: center; margin-top: var(--spacing-xl);">
+          <a href="#" class="btn btn-primary">View All Cars</a>
         </div>
       </div>
     </section>
