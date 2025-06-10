@@ -364,15 +364,15 @@ button:hover {
   display: inline-block; /* Ensure consistent display */
 }
 
-/* Completely disable hover effects */
+/* Enable hover effects with red color */
 .nav-link:hover {
-  color: #FFFFFF !important;
+  color: var(--color-primary) !important; /* Red color on hover */
   transform: translateZ(0) !important; /* Force no movement */
   font-weight: 400 !important; /* Keep regular weight on hover */
 }
 
 .nav-link.active {
-  color: #FFFFFF; /* White color for active items */
+  color: var(--color-primary) !important; /* Red color for active items */
   font-weight: 800 !important; /* Extrabold weight for active items */
   background-color: transparent; /* Remove background */
   padding: 0.5rem 0; /* Remove horizontal padding */
@@ -651,6 +651,23 @@ button:hover {
 .contact-info a:hover, 
 .social-links a:hover {
   color: var(--color-primary);
+}
+
+/* Social Links Horizontal Layout */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.social-links p:first-child {
+  width: 100%;
+  margin-bottom: var(--spacing-sm);
+}
+
+.social-links p:not(:first-child) {
+  margin: 0;
 }
 
 /* Footer Divider */

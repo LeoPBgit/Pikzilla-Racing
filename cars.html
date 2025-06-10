@@ -63,107 +63,103 @@
         <h1 class="section-title text-center" style="font-size: var(--font-size-headline); line-height: var(--line-height-headline); font-weight: var(--font-weight-extrabold); margin-bottom: var(--spacing-title-to-paragraph);">EXPLORE OUR COLLECTION</h1>
         
         <!-- Subheading -->
-        <p class="text-center" style="margin-bottom: var(--spacing-paragraph-to-button);">Our growing fleet encompasses three distinct categories, each representing a different facet of our racing passion:</p>
+        <p class="text-center" style="margin-bottom: var(--spacing-4xl);">Our growing fleet encompasses three distinct categories, each representing a different facet of our racing passion:</p>
         
         <!-- Pikzilla Logo -->
-        <div class="text-center" style="margin-bottom: var(--spacing-2xl);">
+        <div class="text-center" style="margin-bottom: var(--spacing-4xl);">
           <img src="assets/Logo/Pikzilla Text.svg" alt="Pikzilla" style="height: 120px; display: inline-block; max-width: 100%;">
         </div>
         
         <!-- Car Categories -->
-        <div class="car-categories" style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xl);">
+        <div class="car-categories" style="display: flex; justify-content: space-between; gap: var(--spacing-2xl); margin-bottom: var(--spacing-xl);">
           <div class="category">
-            <h3>Track Performance</h3>
-            <p>Engineered for maximum speed and handling on professional racing circuits.</p>
+            <h3>Track Dominators</h3>
+            <p>Purpose-built for maximum performance on closed circuits, these machines prioritize lap times, cornering ability, and pure driving excitement.</p>
           </div>
           <div class="category">
-            <h3>Road Monsters</h3>
-            <p>Street-legal beasts that combine luxury with race-inspired performance.</p>
+            <h3>Rally Rockets</h3>
+            <p>Engineered to conquer varied terrain with agility and durability, our rally-focused vehicles bring Pikzilla Racing's spirit of adventure off the beaten path.</p>
           </div>
           <div class="category">
-            <h3>Concept Vehicles</h3>
-            <p>Experimental designs pushing the boundaries of automotive engineering.</p>
+            <h3>Show Stoppers</h3>
+            <p>Some cars command attention through sheer presence and style. These head-turning machines represent the aesthetic dimension of our automotive passion.</p>
           </div>
         </div>
         
         <!-- Divider -->
-        <div class="divider" style="border-bottom: 1px dashed var(--color-primary); margin-bottom: var(--spacing-xl);"></div>
+        <div class="divider" style="margin-bottom: var(--spacing-4xl); text-align: center;">
+          <img src="assets/Vectors/Border.svg" alt="Decorative border" class="section-border" style="width: 700px; height: 40px; max-width: 100%; display: inline-block;">
+        </div>
         
         <!-- Featured Car -->
         <div class="featured-car" style="margin-bottom: var(--spacing-xl);">
-          <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S" style="width: 100%; margin-bottom: var(--spacing-md);">
+          <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S" style="width: 100%; margin-bottom: var(--spacing-md);">
           
-          <!-- Thumbnails -->
-          <div class="car-thumbnails" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
-            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 1" style="width: 100%;">
-            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 2" style="width: 100%;">
-            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 3" style="width: 100%;">
-            <img src="assets/Images/Car Page/Car.jpg" alt="McLaren 720S View 4" style="width: 100%;">
+          <!-- Thumbnails Gallery -->
+          <div class="car-thumbnails-gallery" style="position: relative; margin-bottom: var(--spacing-4xl); display: flex; align-items: center; justify-content: center;">
+            <div class="thumbnails-container" style="overflow: hidden; width: calc(100% - 120px); margin: 0 auto;">
+              <div class="thumbnails-slider" style="display: flex; gap: var(--spacing-md); transition: transform 0.3s ease; justify-content: center;">
+                <div class="thumbnail-wrapper" style="flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4);">
+                  <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S View 1" class="thumbnail-image" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s ease;" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper" style="flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4);">
+                  <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S View 2" class="thumbnail-image" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s ease;" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper" style="flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4);">
+                  <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S View 3" class="thumbnail-image" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s ease;" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper" style="flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4);">
+                  <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S View 4" class="thumbnail-image" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s ease;" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper" style="flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4);">
+                  <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S View 5" class="thumbnail-image" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s ease;" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper" style="flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4);">
+                  <img src="assets/Images/Car Page/Feature Car.png" alt="McLaren 720S View 6" class="thumbnail-image" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s ease;" onclick="changeMainImage(this.src)">
+                </div>
+              </div>
+            </div>
+            <button class="slider-arrow prev" onclick="slideThumbnails(-1)" aria-label="Previous thumbnails">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next" onclick="slideThumbnails(1)" aria-label="Next thumbnails">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </div>
         
-        <!-- Car Details -->
-        <div class="grid grid-2" style="margin-bottom: var(--spacing-xl);">
-          <div class="car-info">
-            <h2 class="car-title">McLaren 720S</h2>
-            <p class="car-description">The McLaren 720S embodies our philosophy of relentless performance. With its revolutionary aerodynamics, lightweight carbon fiber construction, and twin-turbocharged V8 engine, it delivers an unparalleled driving experience on both road and track.</p>
-            <p>The 720S represents the perfect balance between raw power and precise handling, making it a formidable competitor in any racing environment. Its advanced suspension system and electronic stability controls allow drivers to push the limits with confidence.</p>
-            <a href="#" class="btn btn-primary" style="margin-top: var(--spacing-md);">View Details</a>
-          </div>
-          
-          <!-- Car Specifications -->
-          <div class="car-specs">
-            <h3>Performance Metrics</h3>
-            
-            <!-- Specs with Progress Bars -->
-            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
-              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
-                <span>Top Speed</span>
-                <span>341 km/h</span>
+        <!-- Car Description Section -->
+        <div class="car-description-section">
+          <div class="grid" style="grid-template-columns: 1fr 2fr; gap: var(--spacing-4xl); align-items: start;">
+            <!-- Left Column (Short) -->
+            <div class="car-info-left" style="text-align: left; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <!-- Car Icon -->
+                <div style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
+                  <i class="fas fa-car" style="font-size: var(--font-size-xl); color: var(--color-text);"></i>
+                  <span style="font-size: var(--font-size-paragraph-1); font-weight: var(--font-weight-medium);">CAR</span>
+                </div>
+                
+                <!-- Red Scorpion Title -->
+                <h2 style="font-size: var(--font-size-heading); font-weight: var(--font-weight-bold); color: var(--color-primary); margin-bottom: var(--spacing-md);">Red Scorpion</h2>
+                
+                <!-- McLaren 720S Text -->
+                <p style="font-size: var(--font-size-paragraph-1); font-weight: var(--font-weight-medium);">McLaren 720S</p>
               </div>
-              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
-                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 95%; height: 100%;"></div>
-              </div>
-            </div>
-            
-            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
-              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
-                <span>Acceleration (0-100 km/h)</span>
-                <span>2.9 seconds</span>
-              </div>
-              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
-                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 90%; height: 100%;"></div>
+              
+              <!-- Pikzilla Color Logo at bottom of left column -->
+              <div style="margin-top: auto;">
+                <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 60px; width: auto;">
               </div>
             </div>
             
-            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
-              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
-                <span>Power</span>
-                <span>720 HP</span>
-              </div>
-              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
-                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 85%; height: 100%;"></div>
-              </div>
-            </div>
-            
-            <div class="spec-item" style="margin-bottom: var(--spacing-md);">
-              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
-                <span>Torque</span>
-                <span>770 Nm</span>
-              </div>
-              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
-                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 80%; height: 100%;"></div>
-              </div>
-            </div>
-            
-            <div class="spec-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs);">
-                <span>Weight-to-Power Ratio</span>
-                <span>2.23 kg/hp</span>
-              </div>
-              <div class="progress-bar-bg" style="background-color: #333; height: 8px;">
-                <div class="progress-bar-fill" style="background-color: var(--color-primary); width: 88%; height: 100%;"></div>
-              </div>
+            <!-- Right Column (Wide) -->
+            <div class="car-description-right">
+              <p style="margin-bottom: var(--spacing-lg); line-height: 1.7; font-size: var(--font-size-paragraph-1);">The flagship of our fleet, this McLaren 720S has been transformed into a track weapon through extensive yet thoughtful modifications. With its distinctive Pikzilla Racing livery and aggressive aerodynamic package, The Scorpion announces its presence with authority.</p>
+              
+              <p style="margin-bottom: var(--spacing-lg); line-height: 1.7; font-size: var(--font-size-paragraph-1);">The heart of this beast remains the twin-turbocharged 4.0L V8, now producing an astonishing 750 bhp thanks to custom ECU mapping and an enhanced cooling system. A fully adjustable racing suspension setup, lightweight forged wheels, and competition-grade carbon ceramic brakes complete the performance equation.</p>
+              
+              <p style="line-height: 1.7; font-size: var(--font-size-paragraph-1);">Inside, a careful balance maintains road usability while incorporating the safety and data acquisition systems essential for serious track use. The Scorpion represents the perfect balance of technological sophistication and raw, visceral performance.</p>
             </div>
           </div>
         </div>
@@ -250,10 +246,10 @@
           <h5>Social Media</h5>
           <div class="social-links">
             <p>Follow Us:</p>
-            <p><a href="#" class="social-link">[Instagram]</a></p>
-            <p><a href="#" class="social-link">[Twitter]</a></p>
-            <p><a href="#" class="social-link">[YouTube]</a></p>
-            <p><a href="#" class="social-link">[Facebook]</a></p>
+            <p><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></p>
+            <p><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="#" class="social-link"><i class="fab fa-youtube"></i></a></p>
+            <p><a href="#" class="social-link"><i class="fab fa-facebook"></i></a></p>
           </div>
         </div>
       </div>
@@ -297,5 +293,53 @@
   <script src="js/nav.js"></script>
   <script src="js/page-transitions.js"></script>
   <script src="js/search.js"></script>
+  
+  <!-- Car Gallery JavaScript -->
+  <script>
+    let currentSlideIndex = 0;
+    const thumbnailsPerView = 4;
+    
+    function changeMainImage(imageSrc) {
+      const mainImage = document.querySelector('.featured-car img');
+      mainImage.src = imageSrc;
+    }
+    
+    function slideThumbnails(direction) {
+      const slider = document.querySelector('.thumbnails-slider');
+      const thumbnails = document.querySelectorAll('.thumbnail-image');
+      const totalThumbnails = thumbnails.length;
+      const maxSlides = Math.max(0, totalThumbnails - thumbnailsPerView);
+      
+      currentSlideIndex += direction;
+      
+      // Ensure we don't go beyond bounds
+      if (currentSlideIndex < 0) {
+        currentSlideIndex = 0;
+      } else if (currentSlideIndex > maxSlides) {
+        currentSlideIndex = maxSlides;
+      }
+      
+      // Calculate the transform percentage
+      const translateX = -(currentSlideIndex * (100 / thumbnailsPerView));
+      slider.style.transform = `translateX(${translateX}%)`;
+      
+      // Update arrow visibility
+      updateArrowVisibility();
+    }
+    
+    function updateArrowVisibility() {
+      const prevArrow = document.querySelector('.slider-arrow.prev');
+      const nextArrow = document.querySelector('.slider-arrow.next');
+      
+      // Keep arrows always visible
+      prevArrow.style.display = 'block';
+      nextArrow.style.display = 'block';
+    }
+    
+    // Initialize arrow visibility on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      updateArrowVisibility();
+    });
+  </script>
 </body>
 </html>
