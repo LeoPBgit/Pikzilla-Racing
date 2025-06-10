@@ -1171,12 +1171,14 @@ button:hover {
 .event-image {
   flex: 0 0 300px;
   height: 200px;
+  overflow: hidden;
 }
 
 .event-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .event-content {
