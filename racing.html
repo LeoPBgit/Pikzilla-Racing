@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Racing Events - Pikzilla Racing</title>
   <meta name="description" content="Stay updated with Pikzilla Racing's upcoming and past racing events. Find information about race schedules, venues, and results.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20250610">
   <link rel="icon" href="assets/Logo/Pikzilla Head.svg">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -73,6 +73,177 @@
     }
     .main-nav {
       margin-bottom: 0px !important;
+    }
+    
+    /* Force upcoming events images to have consistent height */
+    .event-image {
+      height: 300px !important;
+      width: 300px !important;
+      flex-shrink: 0 !important;
+    }
+    
+    .event-image img {
+      height: 100% !important;
+      width: 100% !important;
+      object-fit: cover !important;
+    }
+    
+    /* Force past events card images to be 300px width */
+    .card-image {
+      width: 300px !important;
+      height: 200px !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      position: relative !important;
+    }
+    
+    .card-image img {
+      display: none !important;
+    }
+    
+    /* Ensure cards have no background that could show through */
+    .card {
+      background: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    
+    .card-content {
+      background-color: #000000 !important;
+    }
+    
+    .card-title {
+      color: #FFFFFF !important;
+    }
+    
+    .card-text {
+      color: #FFFFFF !important;
+    }
+    
+    /* Left align Upcoming Events title */
+    #upcoming-events .section-title {
+      text-align: left !important;
+    }
+    
+    /* Left align Past Events title */
+    .section-title {
+      text-align: left !important;
+    }
+    
+    /* Make upcoming events cards black background */
+    #upcoming-events .event {
+      background-color: #000000 !important;
+      border: none !important;
+      border-radius: 0px !important;
+      box-shadow: none !important;
+    }
+    
+    #upcoming-events .event-content {
+      background-color: #000000 !important;
+      color: #FFFFFF !important;
+      padding: var(--spacing-lg) var(--spacing-2xl) var(--spacing-lg) var(--spacing-lg) !important;
+    }
+    
+    #upcoming-events .event-title {
+      color: #FFFFFF !important;
+    }
+    
+    #upcoming-events .event-location {
+      color: #FFFFFF !important;
+    }
+    
+    #upcoming-events .event-description {
+      color: #FFFFFF !important;
+    }
+    
+    #upcoming-events .event-date {
+      color: #FFFFFF !important;
+    }
+    
+    /* Add to Calendar button styling */
+    .add-to-calendar-btn {
+      position: absolute !important;
+      top: var(--spacing-lg) !important;
+      right: var(--spacing-2xl) !important;
+      background-color: #FFFFFF !important;
+      color: #000000 !important;
+      border: none !important;
+      padding: 8px 12px !important;
+      font-size: 12px !important;
+      font-weight: 600 !important;
+      cursor: pointer !important;
+      z-index: 10 !important;
+      border-radius: 0px !important;
+    }
+    
+    .add-to-calendar-btn:hover {
+      background-color: transparent !important;
+      color: #FFFFFF !important;
+      border: 1px solid #FFFFFF !important;
+      outline: 1px solid #FFFFFF !important;
+      outline-offset: 0px !important;
+    }
+    
+    #upcoming-events .event {
+      position: relative !important;
+    }
+    
+    /* Ensure NO rounded borders anywhere on the racing page */
+    .card, .event, .container, section, .card-image, .event-image, 
+    .card-content, .event-content, .btn, img, .grid, .flex {
+      border-radius: 0px !important;
+    }
+    
+    /* Make all upcoming events cards the same height */
+    #upcoming-events .event {
+      min-height: 300px !important;
+      display: flex !important;
+    }
+    
+    #upcoming-events .event-content {
+      flex: 1 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }
+    
+    /* Event divider line styling */
+    .event-divider {
+      width: 50% !important;
+      height: 1px !important;
+      background-color: #FFFFFF !important;
+      margin: var(--spacing-sm) 0 !important;
+      border: none !important;
+    }
+    
+    /* Event logo styling */
+    .event-logo {
+      position: absolute !important;
+      top: calc(var(--spacing-lg) + 50px) !important;
+      right: var(--spacing-2xl) !important;
+      text-align: right !important;
+    }
+    
+    .event-logo img {
+      height: 20px !important;
+      width: auto !important;
+    }
+    
+    /* Past events card styling */
+    .card-content-top {
+      background-color: var(--color-secondary) !important;
+      color: #000000 !important;
+    }
+    
+    .card-content-top .card-title {
+      color: #000000 !important;
+    }
+    
+    .card-content-top div {
+      color: #000000 !important;
     }
   </style>
 </head>
@@ -178,278 +349,170 @@
         
         <!-- Event 1 -->
         <div class="event">
+          <button class="add-to-calendar-btn">Add to Calendar</button>
           <div class="event-image">
             <img src="assets/Images/Racing Page/Event 1.jpg" alt="Silverstone Circuit">
           </div>
           <div class="event-content">
-            <div class="event-date">June 15-17, 2025</div>
-            <h3 class="event-title">British Grand Prix</h3>
+            <h3 class="event-title">Mountain Pass Challenge</h3>
+            <div class="event-date">May 15-16, 2025</div>
             <div class="event-location">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Silverstone Circuit, United Kingdom</span>
+              <span>Redwood Circuit, Northern California</span>
             </div>
-            <p class="event-description">Join us at the iconic Silverstone Circuit for the British Grand Prix, one of the most prestigious events on the racing calendar. Witness Pikzilla Racing compete against the world's best on this historic track known for its challenging corners and unpredictable weather.</p>
-            <div class="flex gap-md mt-md">
-              <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-primary">Event Details</a>
+            <div class="event-divider"></div>
+            <p class="event-description">Time Attack Competition</p>
+            <p class="event-description">A technical 2.8-mile circuit featuring 14 corners and 350 feet of elevation change. This two-day event includes practice sessions, qualifying runs, and timed competition.</p>
+            <div class="event-logo">
+              <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
             </div>
           </div>
         </div>
         
         <!-- Event 2 -->
         <div class="event">
+          <button class="add-to-calendar-btn">Add to Calendar</button>
           <div class="event-image">
             <img src="assets/Images/Racing Page/Event 2.jpg" alt="Monza Circuit">
           </div>
           <div class="event-content">
-            <div class="event-date">July 5-7, 2025</div>
-            <h3 class="event-title">Italian Grand Prix</h3>
+            <h3 class="event-title">Summer Sprint Series</h3>
+            <div class="event-date">June 8-9, 2025</div>
             <div class="event-location">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Autodromo Nazionale Monza, Italy</span>
+              <span>Lakeside International Raceway</span>
             </div>
-            <p class="event-description">Experience the thrill of high-speed racing at the Temple of Speed. The Italian Grand Prix at Monza is known for its long straights and passionate fans, creating an electric atmosphere that makes this event truly special.</p>
-            <div class="flex gap-md mt-md">
-              <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-primary">Event Details</a>
+            <div class="event-divider"></div>
+            <p class="event-description">Circuit Racing</p>
+            <p class="event-description">Our first full circuit racing event of the season includes both daytime and evening sessions. The 3.1-mile track features a challenging mix of high-speed straights and technical sections.</p>
+            <div class="event-logo">
+              <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
             </div>
           </div>
         </div>
         
         <!-- Event 3 -->
         <div class="event">
+          <button class="add-to-calendar-btn">Add to Calendar</button>
           <div class="event-image">
             <img src="assets/Images/Racing Page/Event 3.jpg" alt="Suzuka Circuit">
           </div>
           <div class="event-content">
-            <div class="event-date">August 23-25, 2025</div>
-            <h3 class="event-title">Japanese Grand Prix</h3>
+            <h3 class="event-title">Coastal Supercar Rally</h3>
+            <div class="event-date">July 22, 2025</div>
             <div class="event-location">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Suzuka Circuit, Japan</span>
+              <span>Pacific Coast Highway</span>
             </div>
-            <p class="event-description">The challenging Suzuka Circuit awaits as Pikzilla Racing takes on one of the most technical tracks in motorsport. With its unique figure-eight layout and demanding corners, this race is a true test of driver skill and car performance.</p>
-            <div class="flex gap-md mt-md">
-              <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-primary">Event Details</a>
+            <div class="event-divider"></div>
+            <p class="event-description">Charity Exhibition</p>
+            <p class="event-description">A non-competitive event supporting local children's charities. This scenic drive showcases our vehicles while raising funds for an important cause.</p>
+            <div class="event-logo">
+              <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
             </div>
           </div>
         </div>
         
         <!-- Event 4 -->
         <div class="event">
+          <button class="add-to-calendar-btn">Add to Calendar</button>
           <div class="event-image">
             <img src="assets/Images/Racing Page/Event 4.jpg" alt="Circuit of the Americas">
           </div>
           <div class="event-content">
-            <div class="event-date">October 18-20, 2025</div>
-            <h3 class="event-title">United States Grand Prix</h3>
+            <h3 class="event-title">Desert Endurance Challenge</h3>
+            <div class="event-date">August 18-20, 2025</div>
             <div class="event-location">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Circuit of the Americas, Austin, Texas</span>
+              <span>Mojave Speedway</span>
             </div>
-            <p class="event-description">The Circuit of the Americas presents a modern challenge with its mix of fast straights, tight corners, and elevation changes. Join us in Austin for an exciting race weekend filled with action both on and off the track.</p>
-            <div class="flex gap-md mt-md">
-              <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-primary">Event Details</a>
+            <div class="event-divider"></div>
+            <p class="event-description">Endurance Testing</p>
+            <p class="event-description">A grueling test of vehicle reliability and team strategy under extreme conditions. This event focuses on consistency and mechanical sympathy rather than outright pace.</p>
+            <div class="event-logo">
+              <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
             </div>
           </div>
         </div>
         
         <!-- Event 5 -->
         <div class="event">
+          <button class="add-to-calendar-btn">Add to Calendar</button>
           <div class="event-image">
             <img src="assets/Images/Racing Page/Event 5.jpg" alt="Yas Marina Circuit">
           </div>
           <div class="event-content">
-            <div class="event-date">December 6-8, 2025</div>
-            <h3 class="event-title">Abu Dhabi Grand Prix</h3>
+            <h3 class="event-title">Autumn Invitational</h3>
+            <div class="event-date">October 5, 2025</div>
             <div class="event-location">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Yas Marina Circuit, Abu Dhabi, UAE</span>
+              <span>Bridgestone Performance Center</span>
             </div>
-            <p class="event-description">The season finale takes place at the spectacular Yas Marina Circuit, where day turns to night during the race. This unique twilight event provides a fitting end to the racing calendar, with championship positions often decided under the lights.</p>
-            <div class="flex gap-md mt-md">
-              <a href="#" class="btn btn-primary">Buy Tickets</a>
-              <a href="#" class="btn btn-primary">Event Details</a>
+            <div class="event-divider"></div>
+            <p class="event-description">Multi-Class Competition</p>
+            <p class="event-description">Season highlight bringing together amateur racing teams from across the region. Competition includes time attack, slalom, and handling evaluation.</p>
+            <div class="event-logo">
+              <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Race Calendar -->
-    <section class="section" style="background-color: var(--color-secondary);">
-      <div class="container">
-        <h2 class="section-title">2025 Race Calendar</h2>
         
-        <div style="overflow-x: auto; margin-top: var(--spacing-title-to-paragraph);">
-          <table style="width: 100%; border-collapse: collapse;">
-            <thead>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <th style="padding: var(--spacing-md); text-align: left;">Date</th>
-                <th style="padding: var(--spacing-md); text-align: left;">Event</th>
-                <th style="padding: var(--spacing-md); text-align: left;">Location</th>
-                <th style="padding: var(--spacing-md); text-align: left;">Circuit</th>
-                <th style="padding: var(--spacing-md); text-align: left;">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">March 2-4</td>
-                <td style="padding: var(--spacing-md);">Australian Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Melbourne, Australia</td>
-                <td style="padding: var(--spacing-md);">Albert Park Circuit</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-accent);">Completed</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">April 13-15</td>
-                <td style="padding: var(--spacing-md);">Chinese Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Shanghai, China</td>
-                <td style="padding: var(--spacing-md);">Shanghai International Circuit</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-accent);">Completed</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">May 24-26</td>
-                <td style="padding: var(--spacing-md);">Monaco Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Monte Carlo, Monaco</td>
-                <td style="padding: var(--spacing-md);">Circuit de Monaco</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-accent);">Completed</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">June 15-17</td>
-                <td style="padding: var(--spacing-md);">British Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Silverstone, UK</td>
-                <td style="padding: var(--spacing-md);">Silverstone Circuit</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-primary);">Upcoming</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">July 5-7</td>
-                <td style="padding: var(--spacing-md);">Italian Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Monza, Italy</td>
-                <td style="padding: var(--spacing-md);">Autodromo Nazionale Monza</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-primary);">Upcoming</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">August 23-25</td>
-                <td style="padding: var(--spacing-md);">Japanese Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Suzuka, Japan</td>
-                <td style="padding: var(--spacing-md);">Suzuka Circuit</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-primary);">Upcoming</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">October 18-20</td>
-                <td style="padding: var(--spacing-md);">United States Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Austin, USA</td>
-                <td style="padding: var(--spacing-md);">Circuit of the Americas</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-primary);">Upcoming</span></td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--color-border);">
-                <td style="padding: var(--spacing-md);">December 6-8</td>
-                <td style="padding: var(--spacing-md);">Abu Dhabi Grand Prix</td>
-                <td style="padding: var(--spacing-md);">Abu Dhabi, UAE</td>
-                <td style="padding: var(--spacing-md);">Yas Marina Circuit</td>
-                <td style="padding: var(--spacing-md);"><span style="color: var(--color-primary);">Upcoming</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        
-        <div style="text-align: center; margin-top: var(--spacing-paragraph-to-button);">
-          <a href="#" class="btn btn-primary">Download Full Calendar</a>
+        <div style="text-align: left; margin-top: var(--spacing-paragraph-to-button); margin-bottom: var(--spacing-paragraph-to-button);">
+          <a href="#" class="btn btn-primary">Load More Events</a>
         </div>
       </div>
     </section>
 
     <!-- Past Events -->
-    <section class="section">
+    <section style="padding-top: 0px; padding-bottom: 120px;">
       <div class="container">
         <h2 class="section-title">Past Events</h2>
         
         <div class="grid grid-3">
           <!-- Past Event 1 -->
           <div class="card">
-            <div class="card-image">
-              <img src="assets/Images/Racing Page/Past Event 1.jpg" alt="Monaco Grand Prix">
-            </div>
-            <div class="card-content">
-              <div style="color: var(--color-primary); margin-bottom: var(--spacing-xs);">May 24-26, 2025</div>
-              <h3 class="card-title">Monaco Grand Prix</h3>
-              <p class="card-text">Pikzilla Racing secured a podium finish at the prestigious Monaco Grand Prix, with Chris Gurko delivering a masterful drive through the narrow streets of Monte Carlo.</p>
-              <div class="flex items-center gap-sm mt-sm" style="color: var(--color-text-secondary);">
-                <i class="fas fa-trophy" style="color: var(--color-primary);"></i>
-                <span>2nd Place</span>
+            <div class="card-content-top" style="background-color: var(--color-secondary); padding: var(--spacing-md); color: #000000;">
+              <h3 class="card-title" style="color: #000000; margin-bottom: var(--spacing-xs);">Redwood Circuit</h3>
+              <div style="color: #000000; margin-bottom: var(--spacing-md);">May 24-26, 2025</div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <a href="blog.html" class="btn btn-primary" style="font-size: 12px; padding: 6px 12px;">See More</a>
+                <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 20px; width: auto;">
               </div>
-              <a href="blog.html" class="card-link mt-md">Read Race Report <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div style="width: 100%; height: 200px; background-image: url('assets/Images/Racing Page/Past Event 1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             </div>
           </div>
           
           <!-- Past Event 2 -->
           <div class="card">
-            <div class="card-image">
-              <img src="assets/Images/Racing Page/Past Event 2.jpg" alt="Chinese Grand Prix">
-            </div>
-            <div class="card-content">
-              <div style="color: var(--color-primary); margin-bottom: var(--spacing-xs);">April 13-15, 2025</div>
-              <h3 class="card-title">Chinese Grand Prix</h3>
-              <p class="card-text">A challenging weekend in Shanghai saw the team overcome technical difficulties to secure valuable points, demonstrating resilience and teamwork.</p>
-              <div class="flex items-center gap-sm mt-sm" style="color: var(--color-text-secondary);">
-                <i class="fas fa-trophy" style="color: var(--color-primary);"></i>
-                <span>5th Place</span>
+            <div class="card-content-top" style="background-color: var(--color-secondary); padding: var(--spacing-md); color: #000000;">
+              <h3 class="card-title" style="color: #000000; margin-bottom: var(--spacing-xs);">Lakeside Raceway</h3>
+              <div style="color: #000000; margin-bottom: var(--spacing-md);">April 13-15, 2025</div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <a href="blog.html" class="btn btn-primary" style="font-size: 12px; padding: 6px 12px;">See More</a>
+                <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 20px; width: auto;">
               </div>
-              <a href="blog.html" class="card-link mt-md">Read Race Report <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div style="width: 100%; height: 200px; background-image: url('assets/Images/Racing Page/Past Event 2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             </div>
           </div>
           
           <!-- Past Event 3 -->
           <div class="card">
-            <div class="card-image">
-              <img src="assets/Images/Racing Page/Past Event 3.jpg" alt="Australian Grand Prix">
-            </div>
-            <div class="card-content">
-              <div style="color: var(--color-primary); margin-bottom: var(--spacing-xs);">March 2-4, 2025</div>
-              <h3 class="card-title">Australian Grand Prix</h3>
-              <p class="card-text">The season opener at Albert Park saw Pikzilla Racing make a strong start to the campaign, with both cars finishing in the points and showing promising pace.</p>
-              <div class="flex items-center gap-sm mt-sm" style="color: var(--color-text-secondary);">
-                <i class="fas fa-trophy" style="color: var(--color-primary);"></i>
-                <span>4th Place</span>
+            <div class="card-content-top" style="background-color: var(--color-secondary); padding: var(--spacing-md); color: #000000;">
+              <h3 class="card-title" style="color: #000000; margin-bottom: var(--spacing-xs);">Mojave Speedway</h3>
+              <div style="color: #000000; margin-bottom: var(--spacing-md);">March 2-4, 2025</div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <a href="blog.html" class="btn btn-primary" style="font-size: 12px; padding: 6px 12px;">See More</a>
+                <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 20px; width: auto;">
               </div>
-              <a href="blog.html" class="card-link mt-md">Read Race Report <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div style="width: 100%; height: 200px; background-image: url('assets/Images/Racing Page/Past Event 3.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             </div>
           </div>
         </div>
         
-        <div style="text-align: center; margin-top: var(--spacing-paragraph-to-button);">
-          <a href="blog.html" class="btn btn-primary">View All Race Reports</a>
+        <div style="text-align: left; margin-top: var(--spacing-paragraph-to-button); margin-bottom: var(--spacing-paragraph-to-button);">
+          <a href="blog.html" class="btn btn-primary">Load More Events</a>
         </div>
       </div>
     </section>
 
-    <!-- Fan Experience -->
-    <section class="section" style="background-color: var(--color-secondary);">
-      <div class="container">
-        <h2 class="section-title">Fan Experience</h2>
-        
-        <div class="grid grid-2">
-          <div>
-            <h3>Join Us Trackside</h3>
-            <p>Experience the thrill of motorsport up close by joining us at one of our racing events. As a Pikzilla Racing fan, you'll have access to exclusive experiences that bring you closer to the action.</p>
-            <p>Our fan packages include:</p>
-            <ul style="list-style-type: none; margin-bottom: var(--spacing-lg);">
-              <li style="margin-bottom: var(--spacing-sm);"><i class="fas fa-check" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Premium seating with excellent views of the track</li>
-              <li style="margin-bottom: var(--spacing-sm);"><i class="fas fa-check" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Pit lane walks and garage tours</li>
-              <li style="margin-bottom: var(--spacing-sm);"><i class="fas fa-check" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Meet and greet sessions with drivers and team members</li>
-              <li style="margin-bottom: var(--spacing-sm);"><i class="fas fa-check" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Exclusive merchandise and souvenirs</li>
-              <li style="margin-bottom: var(--spacing-sm);"><i class="fas fa-check" style="color: var(--color-primary); margin-right: var(--spacing-sm);"></i> Access to the Pikzilla Racing hospitality area</li>
-            </ul>
-            <a href="#" class="btn btn-primary">Explore Fan Packages</a>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/Images/Racing Page/Event 1.jpg" alt="Fan Experience" style="border-radius: var(--border-radius-md); max-width: 100%;">
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->

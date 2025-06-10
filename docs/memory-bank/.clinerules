@@ -131,7 +131,7 @@
 - Section vertical padding: 120px top and bottom for main content sections
 - Footer spacing: No additional spacing before the footer
 - Title-to-paragraph spacing: 20px between section titles and paragraphs
-- Paragraph-to-button spacing: 40px between paragraphs and buttons
+- Paragraph-to-button spacing: 20px between paragraphs and buttons
 
 ### Responsive Patterns
 - Mobile: Single column layout
