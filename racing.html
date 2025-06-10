@@ -9,6 +9,72 @@
   <link rel="icon" href="assets/Logo/Pikzilla Head.svg">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hero {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin-bottom: 0px !important;
+    }
+    .hero .container {
+      height: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+      padding-bottom: 0px !important;
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+    .hero-content {
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      text-align: left !important;
+      width: 100% !important;
+      position: relative !important;
+      z-index: 2 !important;
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+    .hero-content .hero-left {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+    .hero-content .hero-subtitle {
+      text-align: left !important;
+      align-self: flex-start !important;
+      color: #FFFFFF !important;
+    }
+    .hero-content .hero-right {
+      display: flex !important;
+      align-items: center !important;
+    }
+    main {
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+    main > section:first-child {
+      margin-bottom: 0px !important;
+    }
+    main > section:nth-child(2) {
+      margin-top: 0px !important;
+    }
+    .main-navigation {
+      margin-bottom: 0px !important;
+    }
+    .header {
+      margin-bottom: 0px !important;
+    }
+    body {
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+    .main-nav {
+      margin-bottom: 0px !important;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -58,15 +124,49 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-background">
-        <img src="assets/Images/Racing Page/Hero.jpg" alt="Pikzilla Racing Event">
+    <section class="hero" style="height: 440px; position: relative;">
+      <div class="hero-background" style="height: 440px;">
+        <img src="assets/Images/Racing Page/Hero.jpg" alt="Pikzilla Racing Event" style="height: 440px; object-fit: cover;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%); z-index: 1;"></div>
       </div>
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">WHERE SPEED MEETS GLORY</h1>
-          <p class="hero-subtitle">Experience the thrill of motorsport with Pikzilla Racing's upcoming and past racing events.</p>
-          <a href="#upcoming-events" class="btn btn-inverse hero-button">View Events</a>
+          <div class="hero-left">
+            <h1 class="hero-title">
+              <span class="hero-title-line">WHERE PASSION</span>
+              <span class="hero-title-line">MEETS THE TRACK</span>
+            </h1>
+            <p class="hero-subtitle">The Pikzilla Racing competitive journey</p>
+          </div>
+          <div class="hero-right">
+            <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 100px; width: auto;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Racing Spirit Section -->
+    <section style="background-color: #000000; padding-top: 120px; padding-bottom: 120px; margin-top: -1px; margin-bottom: 0px;">
+      <div class="container">
+        <h2 class="text-center" style="color: #FFFFFF; font-size: var(--font-size-heading); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-title-to-paragraph);">OUR RACING SPIRIT</h2>
+        <div style="text-align: center;">
+          <p style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); line-height: 1.7; margin-bottom: var(--spacing-lg); margin-left: 0; margin-right: 0;">At Pikzilla Racing, competition isn't just about trophies or lap times—it's about the relentless pursuit of improvement, the thrill of pushing boundaries, and the camaraderie that comes from shared passion.</p>
+          <p style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); line-height: 1.7; margin-left: 0; margin-right: 0;">While we may compete as enthusiasts rather than professionals, there's nothing casual about our approach to racing. Each event is meticulously prepared for, each vehicle optimized for specific track conditions, and each driver fully committed to extracting maximum performance when the lights go green.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Racing Calendar Section -->
+    <section style="background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); padding-top: 120px; padding-bottom: 120px; margin: 0px;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-2xl); align-items: center;">
+          <div>
+            <h2 style="color: #FFFFFF; font-size: var(--font-size-heading); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-sm); margin-left: 0; margin-right: 0;">RACING CALENDAR</h2>
+            <p style="color: #FFFFFF; font-size: var(--font-size-subheading-1); font-weight: var(--font-weight-medium); margin-left: 0; margin-right: 0;">2025 Season Schedule</p>
+          </div>
+          <div>
+            <p style="color: #FFFFFF; font-size: var(--font-size-paragraph-1); line-height: 1.7; margin-left: 0; margin-right: 0;">Join us trackside as we take on an exciting array of challenges throughout the 2025 season. From our home circuit to new territories, this year promises to be our most ambitious yet.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -416,8 +516,8 @@
         
         <div class="footer-newsletter">
           <h5>Newsletter</h5>
-          <p>Join the Pikzilla family for exclusive updates, event invitations, and behind-the-scenes content.</p>
-          <form class="newsletter-form">
+          <p style="margin-left: 0; margin-right: 0;">Join the Pikzilla family for exclusive updates, event invitations, and behind-the-scenes content.</p>
+          <form class="newsletter-form" style="margin-left: 0; margin-right: 0;">
             <input type="email" placeholder="Your email" class="newsletter-input" required>
             <button type="submit" class="btn btn-inverse newsletter-button">Subscribe</button>
           </form>
