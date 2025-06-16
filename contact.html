@@ -58,15 +58,26 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" style="height: 100vh; min-height: 600px;">
       <div class="hero-background">
-        <img src="assets/Images/Contact/Hero.jpg" alt="Pikzilla Racing Contact">
+        <img src="assets/Images/Contact/Hero.jpg" alt="Pikzilla Racing Contact" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">CONNECT WITH PIKZILLA RACING</h1>
-          <p class="hero-subtitle">We'd love to hear from you. Reach out to our team for inquiries, partnerships, or just to say hello.</p>
-          <a href="#contact-form" class="btn btn-inverse hero-button">Contact Us</a>
+      <div class="hero-gradient-overlay"></div>
+      <div class="container" style="height: 100% !important; display: flex !important; align-items: center !important; padding-top: 0 !important; margin-top: -450px !important; transform: translateY(-250px) !important;">
+        <div class="hero-content" style="width: 100%;">
+          <div class="hero-left">
+            <h1 class="hero-title">
+              <span class="hero-title-line">CONNECT WITH</span>
+              <span class="hero-title-line">PIKZILLA RACING</span>
+            </h1>
+            <div style="margin-top: var(--spacing-lg);">
+              <img src="assets/Logo/Pikzilla Text.svg" alt="Pikzilla" style="width: 100%; height: auto;">
+            </div>
+          </div>
+          <div class="hero-center">
+          </div>
+          <div class="hero-right">
+          </div>
         </div>
       </div>
     </section>
@@ -74,96 +85,116 @@
     <!-- Contact Information -->
     <section class="section">
       <div class="container">
-        <div class="grid grid-2">
-          <div>
-            <h2>Get In Touch</h2>
-            <p>Whether you're a fan, potential sponsor, or media representative, we're here to answer your questions and explore opportunities for collaboration. Fill out the form, and our team will get back to you as soon as possible.</p>
-            
-            <div class="mt-lg">
-              <h3>Contact Information</h3>
-              <div class="flex items-center gap-md mt-md">
-                <i class="fas fa-map-marker-alt" style="color: var(--color-primary); font-size: var(--font-size-xl);"></i>
-                <div>
-                  <strong>Headquarters</strong><br>
-                  123 Racing Street<br>
-                  Speedway City, SC 12345<br>
-                  United States
-                </div>
-              </div>
-              
-              <div class="flex items-center gap-md mt-md">
-                <i class="fas fa-phone" style="color: var(--color-primary); font-size: var(--font-size-xl);"></i>
-                <div>
-                  <strong>Phone</strong><br>
-                  +1 (555) 123-4567
-                </div>
-              </div>
-              
-              <div class="flex items-center gap-md mt-md">
-                <i class="fas fa-envelope" style="color: var(--color-primary); font-size: var(--font-size-xl);"></i>
-                <div>
-                  <strong>Email</strong><br>
-                  <a href="mailto:info@pikzillaracing.com">info@pikzillaracing.com</a>
-                </div>
-              </div>
-              
-              <div class="mt-lg">
-                <h3>Follow Us</h3>
-                <div class="social-links mt-md">
-                  <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                  <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-              </div>
+        <h2>REACH OUT YOUR WAY</h2>
+        
+        <!-- Contact Cards Grid -->
+        <div class="grid grid-2" style="gap: var(--spacing-lg); margin-top: var(--spacing-title-to-paragraph);">
+          <!-- Card 1 -->
+          <div style="background-color: var(--color-secondary); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); white-space: nowrap;">
+              <h3 style="margin: 0; font-size: var(--font-size-md); flex-shrink: 0;">GENERAL INQUIRIES</h3>
+              <img src="assets/Vectors/Border.svg" alt="Border" style="height: 12px; width: auto; flex-shrink: 0;">
             </div>
+            <p style="margin-bottom: var(--spacing-md); font-size: var(--font-size-paragraph-2);">For questions about our team, vehicles, events, or anything else Pikzilla Racing related.</p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Email:</strong> <a href="mailto:info@pikzillaracing.com">info@pikzillaracing.com</a></p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Phone:</strong> (555) 123-4567</p>
+            <p style="margin: 0; font-style: italic; font-size: var(--font-size-paragraph-2);">We aim to respond within 48 hours.</p>
           </div>
           
-          <div id="contact-form">
-            <form class="contact-form">
-              <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-input" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-input" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="phone" class="form-label">Phone (Optional)</label>
-                <input type="tel" id="phone" name="phone" class="form-input">
-              </div>
-              
-              <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <select id="subject" name="subject" class="form-input" required>
-                  <option value="">Select a subject</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="sponsorship">Sponsorship Opportunity</option>
-                  <option value="media">Media Request</option>
-                  <option value="careers">Careers</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-textarea" required></textarea>
-              </div>
-              
-              <div class="form-group">
-                <label class="form-checkbox">
-                  <input type="checkbox" name="subscribe" checked>
-                  <span style="margin-left: var(--spacing-xs);">Subscribe to our newsletter</span>
-                </label>
-              </div>
-              
-              <button type="submit" class="btn btn-primary form-button">Send Message</button>
-            </form>
+          <!-- Card 2 -->
+          <div style="background-color: var(--color-secondary); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); white-space: nowrap;">
+              <h3 style="margin: 0; font-size: var(--font-size-md); flex-shrink: 0;">MEDIA REQUESTS</h3>
+              <img src="assets/Vectors/Border.svg" alt="Border" style="height: 12px; width: auto; flex-shrink: 0;">
+            </div>
+            <p style="margin-bottom: var(--spacing-md); font-size: var(--font-size-paragraph-2);">For interview requests, photo permissions, or media partnership opportunities.</p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Email:</strong> <a href="mailto:media@pikzillaracing.com">media@pikzillaracing.com</a></p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Phone:</strong> (555) 123-8910</p>
+            <p style="margin: 0; font-style: italic; font-size: var(--font-size-paragraph-2);">We aim to respond within 48 hours.</p>
           </div>
+          
+          <!-- Card 3 -->
+          <div style="background-color: var(--color-secondary); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); white-space: nowrap;">
+              <h3 style="margin: 0; font-size: var(--font-size-md); flex-shrink: 0;">PARTNERSHIP OPPORTUNITIES</h3>
+              <img src="assets/Vectors/Border.svg" alt="Border" style="height: 12px; width: auto; flex-shrink: 0;">
+            </div>
+            <p style="margin-bottom: var(--spacing-md); font-size: var(--font-size-paragraph-2);">For potential sponsors, technical partners, or collaborative projects.</p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Email:</strong> <a href="mailto:partnerships@pikzillaracing.com">partnerships@pikzillaracing.com</a></p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Phone:</strong> (555) 123-5678</p>
+            <p style="margin: 0; font-style: italic; font-size: var(--font-size-paragraph-2);">We aim to respond within 48 hours.</p>
+          </div>
+          
+          <!-- Card 4 -->
+          <div style="background-color: var(--color-secondary); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
+            <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md); white-space: nowrap;">
+              <h3 style="margin: 0; font-size: var(--font-size-md); flex-shrink: 0;">EVENT INVITATIONS</h3>
+              <img src="assets/Vectors/Border.svg" alt="Border" style="height: 12px; width: auto; flex-shrink: 0;">
+            </div>
+            <p style="margin-bottom: var(--spacing-md); font-size: var(--font-size-paragraph-2);">Interested in having Pikzilla Racing participate in your event? Let's discuss.</p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Email:</strong> <a href="mailto:events@pikzillaracing.com">events@pikzillaracing.com</a></p>
+            <p style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-paragraph-2);"><strong>Phone:</strong> (555) 123-9101</p>
+            <p style="margin: 0; font-style: italic; font-size: var(--font-size-paragraph-2);">We aim to respond within 48 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+      <div class="container">
+        <h2>SEND US A MESSAGE</h2>
+        <p style="margin-bottom: var(--spacing-title-to-paragraph);">Prefer to use a form? Complete the details below and we'll get back to you as soon as possible.</p>
+        
+        <!-- Contact Form -->
+        <div style="background-color: #000000 !important; padding: var(--spacing-xl); border-radius: var(--border-radius-md); margin-top: var(--spacing-title-to-paragraph);">
+          <form class="contact-form">
+            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
+              <label for="fullName" style="color: white !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium);">Full Name (Required)</label>
+              <input type="text" id="fullName" name="fullName" required style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-paragraph-1); background-color: white !important; color: black !important;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
+              <label for="email" style="color: white !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium);">Email Address (Required)</label>
+              <input type="email" id="email" name="email" required style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-paragraph-1); background-color: white !important; color: black !important;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
+              <label for="phone" style="color: white !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium);">Phone Number (Optional)</label>
+              <input type="tel" id="phone" name="phone" style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-paragraph-1); background-color: white !important; color: black !important;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
+              <label for="subject" style="color: white !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium);">Subject</label>
+              <select id="subject" name="subject" style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-paragraph-1); background-color: white !important; color: black !important;">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiries</option>
+                <option value="media">Media Requests</option>
+                <option value="partnership">Partnership Opportunities</option>
+                <option value="events">Event Invitations</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
+              <label for="message" style="color: white !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium);">Message (Required)</label>
+              <textarea id="message" name="message" required rows="6" style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); font-size: var(--font-size-paragraph-1); resize: vertical; background-color: white !important; color: black !important;"></textarea>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: var(--spacing-xl);">
+              <label style="color: white !important; display: flex; align-items: flex-start; gap: var(--spacing-xs); cursor: pointer;">
+                <input type="checkbox" name="dataConsent" required style="margin-top: 2px;">
+                <span style="font-size: var(--font-size-paragraph-2); color: white !important;">I agree to Pikzilla Racing storing and processing my data to respond to my inquiry.</span>
+              </label>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 40px; width: auto;">
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
