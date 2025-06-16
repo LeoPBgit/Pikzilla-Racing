@@ -147,26 +147,26 @@
         <p style="margin-bottom: var(--spacing-title-to-paragraph);">Prefer to use a form? Complete the details below and we'll get back to you as soon as possible.</p>
         
         <!-- Contact Form -->
-        <div style="background-color: #000000 !important; padding: var(--spacing-xl); border-radius: 0; margin-top: var(--spacing-title-to-paragraph); border: 2px solid #000000;">
-          <form class="contact-form">
-            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
-              <label for="fullName" style="color: #FFFFFF !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1);">Full Name (Required)</label>
-              <input type="text" id="fullName" name="fullName" required style="width: 100%; padding: var(--spacing-md); border: 2px solid #FFFFFF; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
+        <div style="background-color: #000000 !important; padding: var(--spacing-xl); border-radius: 0; margin-top: var(--spacing-title-to-paragraph);">
+          <form class="contact-form" style="background-color: #000000 !important;">
+            <div class="form-group" style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-lg);">
+              <label for="fullName" style="color: #FFFFFF !important; font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1); min-width: 200px; flex-shrink: 0;">Full Name (Required)</label>
+              <input type="text" id="fullName" name="fullName" required style="flex: 1; padding: var(--spacing-md); border: none; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
             </div>
             
-            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
-              <label for="email" style="color: #FFFFFF !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1);">Email Address (Required)</label>
-              <input type="email" id="email" name="email" required style="width: 100%; padding: var(--spacing-md); border: 2px solid #FFFFFF; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
+            <div class="form-group" style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-lg);">
+              <label for="email" style="color: #FFFFFF !important; font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1); min-width: 200px; flex-shrink: 0;">Email Address (Required)</label>
+              <input type="email" id="email" name="email" required style="flex: 1; padding: var(--spacing-md); border: none; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
             </div>
             
-            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
-              <label for="phone" style="color: #FFFFFF !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1);">Phone Number (Optional)</label>
-              <input type="tel" id="phone" name="phone" style="width: 100%; padding: var(--spacing-md); border: 2px solid #FFFFFF; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
+            <div class="form-group" style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-lg);">
+              <label for="phone" style="color: #FFFFFF !important; font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1); min-width: 200px; flex-shrink: 0;">Phone Number (Optional)</label>
+              <input type="tel" id="phone" name="phone" style="flex: 1; padding: var(--spacing-md); border: none; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
             </div>
             
-            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
-              <label for="subject" style="color: #FFFFFF !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1);">Subject</label>
-              <select id="subject" name="subject" style="width: 100%; padding: var(--spacing-md); border: 2px solid #FFFFFF; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
+            <div class="form-group" style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-lg);">
+              <label for="subject" style="color: #FFFFFF !important; font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1); min-width: 200px; flex-shrink: 0;">Subject</label>
+              <select id="subject" name="subject" style="flex: 1; padding: var(--spacing-md); border: none; border-radius: 0; font-size: var(--font-size-paragraph-1); background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;">
                 <option value="">Select a subject</option>
                 <option value="general">General Inquiries</option>
                 <option value="media">Media Requests</option>
@@ -176,9 +176,9 @@
               </select>
             </div>
             
-            <div class="form-group" style="margin-bottom: var(--spacing-lg);">
-              <label for="message" style="color: #FFFFFF !important; display: block; margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1);">Message (Required)</label>
-              <textarea id="message" name="message" required rows="6" style="width: 100%; padding: var(--spacing-md); border: 2px solid #FFFFFF; border-radius: 0; font-size: var(--font-size-paragraph-1); resize: vertical; background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;"></textarea>
+            <div class="form-group" style="margin-bottom: var(--spacing-lg); display: flex; align-items: flex-start; gap: var(--spacing-lg);">
+              <label for="message" style="color: #FFFFFF !important; font-weight: var(--font-weight-medium); font-size: var(--font-size-paragraph-1); min-width: 200px; flex-shrink: 0; margin-top: var(--spacing-md);">Message (Required)</label>
+              <textarea id="message" name="message" required rows="6" style="flex: 1; padding: var(--spacing-md); border: none; border-radius: 0; font-size: var(--font-size-paragraph-1); resize: vertical; background-color: #FFFFFF !important; color: #000000 !important; box-sizing: border-box;"></textarea>
             </div>
             
             <div class="form-group" style="margin-bottom: var(--spacing-xl);">
@@ -192,7 +192,7 @@
               <div>
                 <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing" style="height: 40px; width: auto;">
               </div>
-              <button type="submit" class="btn btn-inverse" style="background-color: #FFFFFF !important; color: #000000 !important; border: 2px solid #FFFFFF !important;">Send Message</button>
+              <button type="submit" class="btn btn-inverse">Send Message</button>
             </div>
           </form>
         </div>
