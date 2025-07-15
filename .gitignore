@@ -49,3 +49,23 @@ Thumbs.db
 .npm/
 .eslintcache
 docs/figma-token.txt
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Security sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+config/secrets.json
+.env.production
+.env.staging
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+temp/
