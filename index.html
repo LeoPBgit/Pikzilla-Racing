@@ -5,25 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pikzilla Racing - Professional Racing Team</title>
   <meta name="description" content="Pikzilla Racing is a professional racing team competing in various motorsport events. Discover our team, cars, and upcoming races.">
+  <meta name="keywords" content="racing, motorsport, supercars, McLaren, Porsche, racing team, automotive">
+  <meta name="author" content="Pikzilla Racing">
+  <meta property="og:title" content="Pikzilla Racing - Professional Racing Team">
+  <meta property="og:description" content="Experience the thrill of supercar racing with Pikzilla Racing. Precision. Passion. Performance.">
+  <meta property="og:image" content="assets/Images/Home Page/Banner.jpg">
+  <meta property="og:url" content="https://leopbgit.github.io/Pikzilla-Racing/">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/custom-featured-event.css">
+  <link rel="stylesheet" href="css/accessibility.css">
   <link rel="icon" href="assets/Logo/Pikzilla Head.svg">
+  <link rel="preload" href="assets/Images/Home Page/Banner.jpg" as="image">
+  <link rel="preload" href="assets/Logo/Pikzilla Color Logo.svg" as="image">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <!-- Header -->
-  <header class="header">
+  <header class="header" role="banner">
     <!-- Top Bar with Search and Login -->
     <div class="top-bar">
       <div class="container">
         <div class="top-bar-content">
           <div class="spacer"></div>
           <div class="top-actions">
-            <a href="#" class="top-action-link">
+            <button type="button" class="top-action-link" aria-label="Open search" aria-expanded="false" aria-controls="search-modal">
               <span>Search</span>
-              <i class="fas fa-search"></i>
-            </a>
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -32,42 +45,42 @@
     <!-- Logo Container -->
     <div class="logo-container">
       <div class="container">
-        <a href="index.html" class="logo-link">
-          <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing">
+        <a href="index.html" class="logo-link" aria-label="Pikzilla Racing - Go to homepage">
+          <img src="assets/Logo/Pikzilla Color Logo.svg" alt="Pikzilla Racing logo">
         </a>
       </div>
     </div>
     
     <!-- Main Navigation -->
-    <nav class="main-navigation">
+    <nav class="main-navigation" role="navigation" aria-label="Main navigation">
       <div class="container">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="index.html" class="nav-link active">HOME</a></li>
-          <li class="nav-item"><a href="team.html" class="nav-link">TEAM</a></li>
-          <li class="nav-item"><a href="cars.html" class="nav-link">CARS</a></li>
-          <li class="nav-item"><a href="racing.html" class="nav-link">RACING</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">BLOG</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+        <ul class="nav-list" role="menubar">
+          <li class="nav-item" role="none"><a href="index.html" class="nav-link active" role="menuitem" aria-current="page">HOME</a></li>
+          <li class="nav-item" role="none"><a href="team.html" class="nav-link" role="menuitem">TEAM</a></li>
+          <li class="nav-item" role="none"><a href="cars.html" class="nav-link" role="menuitem">CARS</a></li>
+          <li class="nav-item" role="none"><a href="racing.html" class="nav-link" role="menuitem">RACING</a></li>
+          <li class="nav-item" role="none"><a href="blog.html" class="nav-link" role="menuitem">BLOG</a></li>
+          <li class="nav-item" role="none"><a href="contact.html" class="nav-link" role="menuitem">CONTACT</a></li>
         </ul>
-        <button class="mobile-menu-button">
-          <i class="fas fa-bars"></i>
+        <button class="mobile-menu-button" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
       </div>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main id="main-content" role="main">
   <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-background">
-        <img src="assets/Images/Home Page/Banner.jpg" alt="Pikzilla Racing Car">
-        <div class="hero-gradient-overlay"></div>
+        <img src="assets/Images/Home Page/Banner.jpg" alt="High-performance racing cars on track showcasing Pikzilla Racing's precision and speed" loading="eager">
+        <div class="hero-gradient-overlay" aria-hidden="true"></div>
       </div>
       <div class="container">
         <div class="hero-content">
           <div class="hero-left">
-            <h1 class="hero-title">
+            <h1 id="hero-title" class="hero-title">
               <span class="hero-title-line">PRECISION.</span>
               <span class="hero-title-line">PASSION.</span>
               <span class="hero-title-line">PERFORMANCE.</span>
@@ -77,7 +90,7 @@
             <p class="hero-subtitle">Experience the thrill of<br>supercar racing with Pikzilla Racing</p>
           </div>
           <div class="hero-right">
-            <a href="cars.html" class="btn btn-inverse hero-button">Explore Our Garage</a>
+            <a href="cars.html" class="btn btn-inverse hero-button" aria-describedby="hero-title">Explore Our Garage</a>
           </div>
         </div>
       </div>
@@ -118,70 +131,70 @@
         </div>
         
         <!-- Car Slider -->
-        <div class="car-slider">
+        <div class="car-slider" role="region" aria-label="Featured cars carousel" aria-live="polite">
           <!-- Slider Background -->
-          <div class="slider-background">
-            <img src="assets/Logo/Pikzilla Text.svg" alt="Pikzilla" class="slider-background-image">
+          <div class="slider-background" aria-hidden="true">
+            <img src="assets/Logo/Pikzilla Text.svg" alt="" class="slider-background-image">
           </div>
           
           <!-- Slider Content -->
-          <div class="slider-content">
-            <div class="car-slide-container active" id="slide1">
+          <div class="slider-content" role="group" aria-label="Car showcase">
+            <div class="car-slide-container active" id="slide1" role="tabpanel" aria-label="Slide 1 of 2">
               <!-- Car 1 -->
-              <div class="car-item">
+              <article class="car-item">
                 <div class="car-slide-image">
-                  <img src="assets/Images/Home Page/1.png" alt="750S Spider">
+                  <img src="assets/Images/Home Page/1.png" alt="McLaren 750S Spider - High-performance supercar" loading="lazy">
                 </div>
                 <div class="car-slide-info">
-                  <img src="assets/Vectors/Mclaren.svg" alt="McLaren" class="car-brand-logo">
+                  <img src="assets/Vectors/Mclaren.svg" alt="McLaren logo" class="car-brand-logo">
                   <h3 class="car-name">750S Spider</h3>
                 </div>
-              </div>
+              </article>
               
               <!-- Car 2 -->
-              <div class="car-item">
+              <article class="car-item">
                 <div class="car-slide-image">
-                  <img src="assets/Images/Home Page/2.png" alt="911 GT3 RS">
+                  <img src="assets/Images/Home Page/2.png" alt="Porsche 911 GT3 RS - Track-focused racing car" loading="lazy">
                 </div>
                 <div class="car-slide-info">
-                  <img src="assets/Vectors/Porsche.svg" alt="Porsche" class="car-brand-logo porsche-logo">
+                  <img src="assets/Vectors/Porsche.svg" alt="Porsche logo" class="car-brand-logo porsche-logo">
                   <h3 class="car-name">911 GT3 RS</h3>
                 </div>
-              </div>
+              </article>
             </div>
             
             <!-- Second slide container with the same content -->
-            <div class="car-slide-container" id="slide2">
+            <div class="car-slide-container" id="slide2" role="tabpanel" aria-label="Slide 2 of 2" aria-hidden="true">
               <!-- Car 1 -->
-              <div class="car-item">
+              <article class="car-item">
                 <div class="car-slide-image">
-                  <img src="assets/Images/Home Page/1.png" alt="750S Spider">
+                  <img src="assets/Images/Home Page/1.png" alt="McLaren 750S Spider - High-performance supercar" loading="lazy">
                 </div>
                 <div class="car-slide-info">
-                  <img src="assets/Vectors/Mclaren.svg" alt="McLaren" class="car-brand-logo">
+                  <img src="assets/Vectors/Mclaren.svg" alt="McLaren logo" class="car-brand-logo">
                   <h3 class="car-name">750S Spider</h3>
                 </div>
-              </div>
+              </article>
               
               <!-- Car 2 -->
-              <div class="car-item">
+              <article class="car-item">
                 <div class="car-slide-image">
-                  <img src="assets/Images/Home Page/2.png" alt="911 GT3 RS">
+                  <img src="assets/Images/Home Page/2.png" alt="Porsche 911 GT3 RS - Track-focused racing car" loading="lazy">
                 </div>
                 <div class="car-slide-info">
-                  <img src="assets/Vectors/Porsche.svg" alt="Porsche" class="car-brand-logo porsche-logo">
+                  <img src="assets/Vectors/Porsche.svg" alt="Porsche logo" class="car-brand-logo porsche-logo">
                   <h3 class="car-name">911 GT3 RS</h3>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
           
           <!-- Navigation Arrows -->
-          <button class="slider-arrow prev" id="prevCar" aria-label="Previous cars">
-            <i class="fas fa-chevron-left"></i>
+          <button class="slider-arrow prev" id="prevCar" aria-label="View previous cars" type="button">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
           </button>
-          <button class="slider-arrow next" id="nextCar" aria-label="Next cars">
-            <i class="fas fa-chevron-right"></i>
+          <button class="slider-arrow next" id="nextCar" aria-label="View next cars" type="button">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
           </button>
         </div>
       </div>
