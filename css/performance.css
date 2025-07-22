@@ -1,0 +1,60 @@
+/* Performance Enhancements */
+
+/* Lazy Loading Support */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Critical Resource Hints */
+.preload-hint {
+  display: none;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-family: 'Manrope';
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+}
+
+/* Reduce layout shift */
+.hero-background img,
+.card-image img,
+.team-member-photo img {
+  aspect-ratio: attr(width) / attr(height);
+  object-fit: cover;
+}
+
+/* Optimize animations for performance */
+.car-slide-container,
+.slider-arrow,
+.card {
+  will-change: transform, opacity;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .car-slide-container,
+  .slider-arrow,
+  .card,
+  .btn,
+  .nav-link {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Optimize critical rendering path */
+.above-fold {
+  contain: layout style paint;
+}
+
+.below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
